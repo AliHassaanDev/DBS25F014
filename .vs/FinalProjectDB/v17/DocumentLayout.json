@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,32 +62,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "SignUp.Designer.cs",
+              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\SignUp.Designer.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.Designer.cs",
+              "RelativeToolTip": "UI\\SignUp.Designer.cs",
+              "ViewState": "AQIAABgAAABgmZmZmZktwGsBAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:31:34.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "UI\\Login.Designer.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.Designer.cs",
+              "RelativeToolTip": "UI\\Login.Designer.cs",
+              "ViewState": "AQIAACYBAABgxszMzMwuwCQBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:31:24.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.cs",
+              "RelativeToolTip": "UI\\Login.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:30:32.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Login.cs [Design]",
+              "RelativeToolTip": "UI\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T17:30:30.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "UI\\SignUp.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.cs",
+              "RelativeToolTip": "UI\\SignUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T16:11:50.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.cs",
               "RelativeDocumentMoniker": "UI\\SignUp.cs",
               "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\SignUp.cs [Design]",
               "RelativeToolTip": "UI\\SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T14:44:56.885Z",
+              "WhenOpened": "2025-04-21T15:58:16.877Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Home.cs",
               "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Home.cs",
               "RelativeDocumentMoniker": "UI\\Home.cs",
               "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Home.cs",
               "RelativeToolTip": "UI\\Home.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAcwCIAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAADgvy0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T13:14:24.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Home.cs",
               "RelativeDocumentMoniker": "UI\\Home.cs",

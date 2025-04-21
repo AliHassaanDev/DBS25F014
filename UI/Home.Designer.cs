@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(76, 96);
+            this.label1.Location = new System.Drawing.Point(99, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 77);
             this.label1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 160);
+            this.label2.Location = new System.Drawing.Point(109, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 13);
             this.label2.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(32, 300);
+            this.kryptonButton1.Location = new System.Drawing.Point(41, 300);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.SpringGreen;
@@ -127,10 +127,11 @@
             this.kryptonButton1.StateTracking.Border.Width = 1;
             this.kryptonButton1.TabIndex = 2;
             this.kryptonButton1.Values.Text = "Get Started";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(200, 300);
+            this.kryptonButton2.Location = new System.Drawing.Point(209, 300);
             this.kryptonButton2.Name = "kryptonButton2";
             this.kryptonButton2.OverrideDefault.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton2.OverrideDefault.Back.Color2 = System.Drawing.Color.SpringGreen;
@@ -182,16 +183,17 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 3;
             this.kryptonButton2.Values.Text = "Sign Up";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(38, 206);
+            this.label3.Location = new System.Drawing.Point(52, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(303, 40);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Efficiently connecting students, teachers, \r\nand admins for better learning";
+            this.label3.Text = "Efficiently connecting students, teachers, \r\nand admins for better learning!";
             // 
             // pictureBox1
             // 

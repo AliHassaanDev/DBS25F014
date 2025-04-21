@@ -20,3 +20,4 @@ H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalPro.AAA827DA.Up2Dat
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.exe
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.pdb
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.SignUp.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Login.resources
