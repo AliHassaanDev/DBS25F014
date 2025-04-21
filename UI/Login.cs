@@ -11,14 +11,14 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace FinalProjectDB.UI
 {
-    public partial class SignUp : KryptonForm
+    public partial class Login : KryptonForm
     {
-        public SignUp()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void SignUp_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

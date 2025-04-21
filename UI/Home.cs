@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.UI;
 
 namespace FinalProjectDB
 {
@@ -31,6 +32,18 @@ namespace FinalProjectDB
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            SignUp sign = new SignUp();
+            sign.Show();
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            Login sign = new Login();
+            sign.Show();
         }
     }
 }
