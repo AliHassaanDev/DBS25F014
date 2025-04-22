@@ -21,3 +21,21 @@ H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.exe
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.pdb
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.SignUp.resources
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Login.resources
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\FinalProjectDB.exe.config
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\FinalProjectDB.exe
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\FinalProjectDB.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.csproj.AssemblyReference.cache
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.EDUMS.resources
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.Properties.Resources.resources
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.UI.Login.resources
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.UI.SignUp.resources
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.csproj.GenerateResource.cache
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.csproj.CoreCompileInputs.cache
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.csproj.CopyComplete
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.exe
+D:\2nd_Semester\DB\Final _Project\Final_Project_DB\obj\Debug\FinalProjectDB.pdb
