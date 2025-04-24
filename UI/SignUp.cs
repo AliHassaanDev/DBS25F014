@@ -50,5 +50,35 @@ namespace FinalProjectDB.UI
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
