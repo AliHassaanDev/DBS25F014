@@ -48,8 +48,14 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,8 +65,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UI\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +94,195 @@
     <Compile Include="UI\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Teachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Teachers.Designer.cs">
+      <DependentUpon>Teachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_Announcements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_Announcements.Designer.cs">
+      <DependentUpon>Teach_Announcements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AttendanceByLecture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AttendanceByLecture.Designer.cs">
+      <DependentUpon>Teach_AttendanceByLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AttendanceMark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AttendanceMark.Designer.cs">
+      <DependentUpon>Teach_AttendanceMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ComplaintFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ComplaintFile.Designer.cs">
+      <DependentUpon>Teach_ComplaintFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateResult.Designer.cs">
+      <DependentUpon>Teach_CreateResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteQuiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteQuiz.Designer.cs">
+      <DependentUpon>Teach_DeleteQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AssignmentSubmissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_AssignmentSubmissions.Designer.cs">
+      <DependentUpon>Teach_AssignmentSubmissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CourseAssignments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CourseAssignments.Designer.cs">
+      <DependentUpon>Teach_CourseAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CourseQuizes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CourseQuizes.Designer.cs">
+      <DependentUpon>Teach_CourseQuizes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateAssignment.Designer.cs">
+      <DependentUpon>Teach_CreateAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateLecture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateLecture.Designer.cs">
+      <DependentUpon>Teach_CreateLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateQuiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_CreateQuiz.Designer.cs">
+      <DependentUpon>Teach_CreateQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteAssignment.Designer.cs">
+      <DependentUpon>Teach_DeleteAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteLectures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteLectures.Designer.cs">
+      <DependentUpon>Teach_DeleteLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DeleteResult.Designer.cs">
+      <DependentUpon>Teach_DeleteResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DropCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_DropCourse.Designer.cs">
+      <DependentUpon>Teach_DropCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ProfileComplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ProfileComplete.Designer.cs">
+      <DependentUpon>Teach_ProfileComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_QuizSubmissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_QuizSubmissions.Designer.cs">
+      <DependentUpon>Teach_QuizSubmissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_RequestCourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_RequestCourse.Designer.cs">
+      <DependentUpon>Teach_RequestCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ResutsByAssesment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_ResutsByAssesment.Designer.cs">
+      <DependentUpon>Teach_ResutsByAssesment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateAssignment.Designer.cs">
+      <DependentUpon>Teach_UpdateAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateLecture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateLecture.Designer.cs">
+      <DependentUpon>Teach_UpdateLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateResult.Designer.cs">
+      <DependentUpon>Teach_UpdateResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourComplaints.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourComplaints.Designer.cs">
+      <DependentUpon>Teach_YourComplaints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourCourses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourCourses.Designer.cs">
+      <DependentUpon>Teach_YourCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourLectures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_YourLectures.Designer.cs">
+      <DependentUpon>Teach_YourLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateQuiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Teach_UpdateQuiz.Designer.cs">
+      <DependentUpon>Teach_UpdateQuiz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +302,100 @@
     <EmbeddedResource Include="UI\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Teachers.resx">
+      <DependentUpon>Teachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_Announcements.resx">
+      <DependentUpon>Teach_Announcements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_AssignmentSubmissions.resx">
+      <DependentUpon>Teach_AssignmentSubmissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_AttendanceByLecture.resx">
+      <DependentUpon>Teach_AttendanceByLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_AttendanceMark.resx">
+      <DependentUpon>Teach_AttendanceMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_ComplaintFile.resx">
+      <DependentUpon>Teach_ComplaintFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CourseAssignments.resx">
+      <DependentUpon>Teach_CourseAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CourseQuizes.resx">
+      <DependentUpon>Teach_CourseQuizes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CreateAssignment.resx">
+      <DependentUpon>Teach_CreateAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CreateLecture.resx">
+      <DependentUpon>Teach_CreateLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CreateQuiz.resx">
+      <DependentUpon>Teach_CreateQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_CreateResult.resx">
+      <DependentUpon>Teach_CreateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_DeleteAssignment.resx">
+      <DependentUpon>Teach_DeleteAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_DeleteLectures.resx">
+      <DependentUpon>Teach_DeleteLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_DeleteQuiz.resx">
+      <DependentUpon>Teach_DeleteQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_DeleteResult.resx">
+      <DependentUpon>Teach_DeleteResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_DropCourse.resx">
+      <DependentUpon>Teach_DropCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_ProfileComplete.resx">
+      <DependentUpon>Teach_ProfileComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_QuizSubmissions.resx">
+      <DependentUpon>Teach_QuizSubmissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_RequestCourse.resx">
+      <DependentUpon>Teach_RequestCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_ResutsByAssesment.resx">
+      <DependentUpon>Teach_ResutsByAssesment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_UpdateAssignment.resx">
+      <DependentUpon>Teach_UpdateAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_UpdateLecture.resx">
+      <DependentUpon>Teach_UpdateLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_UpdateQuiz.resx">
+      <DependentUpon>Teach_UpdateQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_UpdateResult.resx">
+      <DependentUpon>Teach_UpdateResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_YourComplaints.resx">
+      <DependentUpon>Teach_YourComplaints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_YourCourses.resx">
+      <DependentUpon>Teach_YourCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserControls\Teach_YourLectures.resx">
+      <DependentUpon>Teach_YourLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +423,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6325227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4112343.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

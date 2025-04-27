@@ -24,7 +24,7 @@ namespace FinalProjectDB
            
         }
 
-        private void kryptonButton2_Click_1(object sender, EventArgs e)
+        private void kryptonButton2_Click(object sender, EventArgs e)
         {
             SignUp sign = new SignUp();
             sign.Show();
@@ -54,7 +54,7 @@ namespace FinalProjectDB
         {
             Login sign = new Login();
             sign.Show();
-            this.Hide();
+            
         }
 
 
@@ -62,5 +62,12 @@ namespace FinalProjectDB
         {
 
         }
+
+        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
+        {
+
+        }
+
+        
     }
 }
