@@ -250,6 +250,60 @@
     <Compile Include="UI\Student.Designer.cs">
       <DependentUpon>Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_Attendence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_Attendence.Designer.cs">
+      <DependentUpon>Stu_Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_CourseRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_CourseRegister.Designer.cs">
+      <DependentUpon>Stu_CourseRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_ProfileComplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_ProfileComplete.Designer.cs">
+      <DependentUpon>Stu_ProfileComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_Result.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_Result.Designer.cs">
+      <DependentUpon>Stu_Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_SubmitAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_SubmitAssignment.Designer.cs">
+      <DependentUpon>Stu_SubmitAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_SubmitQuiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_SubmitQuiz.Designer.cs">
+      <DependentUpon>Stu_SubmitQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourLectures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourLectures.Designer.cs">
+      <DependentUpon>Stu_YourLectures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourAssignments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourAssignments.Designer.cs">
+      <DependentUpon>Stu_YourAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourQuizes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Student_UserControl\Stu_YourQuizes.Designer.cs">
+      <DependentUpon>Stu_YourQuizes.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Teachers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -529,6 +583,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_Attendence.resx">
+      <DependentUpon>Stu_Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_CourseRegister.resx">
+      <DependentUpon>Stu_CourseRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_ProfileComplete.resx">
+      <DependentUpon>Stu_ProfileComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_Result.resx">
+      <DependentUpon>Stu_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_SubmitAssignment.resx">
+      <DependentUpon>Stu_SubmitAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_SubmitQuiz.resx">
+      <DependentUpon>Stu_SubmitQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_YourAssignments.resx">
+      <DependentUpon>Stu_YourAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_YourLectures.resx">
+      <DependentUpon>Stu_YourLectures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_YourQuizes.resx">
+      <DependentUpon>Stu_YourQuizes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teachers.resx">
       <DependentUpon>Teachers.cs</DependentUpon>

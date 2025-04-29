@@ -83,7 +83,8 @@ namespace FinalProjectDB.UI
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            
+            Student teach = new Student();
+            teach.Show();
         }
     }
 }

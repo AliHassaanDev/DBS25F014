@@ -1,6 +1,6 @@
-﻿namespace FinalProjectDB.UI.UserControls
+﻿namespace FinalProjectDB.UI.Student_UserControl
 {
-    partial class Teach_ProfileComplete
+    partial class Stu_ProfileComplete
     {
         /// <summary> 
         /// Required designer variable.
@@ -75,8 +75,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(634, 399);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -212,8 +211,6 @@
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.TabIndex = 27;
             this.kryptonTextBox1.Text = "Enter Your Name";
-            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_nametxt);
-            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_nametxt);
             // 
             // kryptonTextBox2
             // 
@@ -235,8 +232,6 @@
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox2.TabIndex = 28;
             this.kryptonTextBox2.Text = "Enter Experience in Years";
-            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_experiencetxt);
-            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_experiencetxt);
             // 
             // kryptonTextBox3
             // 
@@ -259,8 +254,6 @@
             this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox3.TabIndex = 29;
             this.kryptonTextBox3.Text = "Enter Your Studies";
-            this.kryptonTextBox3.Enter += new System.EventHandler(this.enter_event_studytxt);
-            this.kryptonTextBox3.Leave += new System.EventHandler(this.leave_event_studytxt);
             // 
             // label5
             // 
@@ -292,15 +285,13 @@
             this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox4.TabIndex = 30;
             this.kryptonTextBox4.Text = "Enter Your Subject";
-            this.kryptonTextBox4.Enter += new System.EventHandler(this.enter_event_subjecttxt);
-            this.kryptonTextBox4.Leave += new System.EventHandler(this.leave_event_subjecttxt);
             // 
-            // Teach_ProfileComplete
+            // Stu_ProfileComplete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Teach_ProfileComplete";
+            this.Name = "Stu_ProfileComplete";
             this.Size = new System.Drawing.Size(634, 399);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -318,10 +309,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
+        private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
     }
 }
