@@ -26,6 +26,7 @@ namespace FinalProjectDB.UI
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 40);
             panel1.Controls.Add(leftBorderBtn);
+            customizeUserControl();
             dashboard1.Visible = true;
         }
 
@@ -67,34 +68,22 @@ namespace FinalProjectDB.UI
 
             }
         }
+
         private void customizePanel()
         {
             panel3.Visible = false;
-            panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
-            panel7.Visible = false;
-            panel8.Visible = false;
             panel9.Visible = false;
-        }
-        private void customizeUserControl()
-        {
-
+            panel11.Visible = false;
         }
         private void hidePanel()
         {
             if (panel3.Visible) { panel3.Visible = false; }
-            if (panel4.Visible) { panel4.Visible = false; }
             if (panel5.Visible) { panel5.Visible = false; }
             if (panel6.Visible) { panel6.Visible = false; }
-            if (panel7.Visible) { panel7.Visible = false; }
-            if (panel8.Visible) { panel8.Visible = false; }
             if (panel9.Visible) { panel9.Visible = false; }
-        }
-        private void hideUserControls()
-        {
-            if (teach_YourCourses1.Visible) { teach_YourCourses1.Visible = false; }
-            if (dashboard1.Visible) { dashboard1.Visible = false; }
+            if (panel11.Visible) { panel11.Visible = false; }
         }
         private void showPanels(Panel subMenu)
         {
@@ -108,69 +97,42 @@ namespace FinalProjectDB.UI
                 subMenu.Visible = false;
             }
         }
-        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
 
+        private void customizeUserControl()
+        {
+            dashboard1.Visible = false;
+            admin_AllCourses1.Visible = false;
+            stu_CourseRegister1.Visible= false;
+            stu_Lectures1.Visible= false;
+            stu_YourAssignments1.Visible= false;
+            stu_SubmitAssignment1.Visible= false;
+            stu_YourQuizes1.Visible= false;
+            stu_SubmitQuiz1.Visible = false;
+            stu_Attendence1.Visible = false;
+            teach_YourComplaints1.Visible = false;
+            teach_ComplaintFile1.Visible = false;
+            stu_Result1.Visible = false;
+            teach_Announcements1.Visible = false;
+            profile1.Visible = false;
+            stu_ProfileComplete1.Visible =false;
         }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
+        private void hideUserControls()
         {
-
-        }
-
-        private void iconButton24_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 321);
-            showPanels(panel9);
-        }
-
-        private void iconButton29_Click(object sender, EventArgs e)
-        {
-            hidePanel();
-            activateBtn(sender, System.Drawing.Color.Black, 401);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_YourCourses1.Visible=true;
-            activateBtn(sender, System.Drawing.Color.Black, 121);
-            showPanels(panel3);
-        }
-
-        private void iconButton5_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 161);
-            showPanels(panel4);
-        }
-
-        private void iconButton12_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 201);
-            showPanels(panel5);
-        }
-
-        private void iconButton16_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 241);
-            showPanels(panel6);
-        }
-
-        private void iconButton28_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 281);
-            showPanels(panel8);
-        }
-
-        private void iconButton23_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 361);
-            showPanels(panel7);
+            if (dashboard1.Visible) { dashboard1.Visible = false; }
+            if (admin_AllCourses1.Visible) { admin_AllCourses1.Visible = false; }
+            if (stu_CourseRegister1.Visible) { stu_CourseRegister1.Visible= false; }
+            if (stu_Lectures1.Visible) { stu_Lectures1.Visible= false; }
+            if (stu_YourAssignments1.Visible) { stu_YourAssignments1.Visible= false; }
+            if (stu_SubmitAssignment1.Visible) { stu_SubmitAssignment1.Visible= false; }
+            if (stu_YourQuizes1.Visible) { stu_YourQuizes1.Visible= false; }
+            if (stu_SubmitQuiz1.Visible) { stu_SubmitQuiz1.Visible= false; }
+            if (stu_Attendence1.Visible) { stu_Attendence1.Visible = false; }
+            if (teach_YourComplaints1.Visible) { teach_YourComplaints1.Visible = false; }
+            if (teach_ComplaintFile1.Visible) { teach_ComplaintFile1.Visible = false; }
+            if (stu_Result1.Visible) { stu_Result1.Visible = false; }
+            if (teach_Announcements1.Visible) { teach_Announcements1.Visible = false; }
+            if (profile1.Visible) { profile1.Visible = false; }
+            if (stu_ProfileComplete1.Visible) { stu_ProfileComplete1.Visible =false; }
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -179,6 +141,111 @@ namespace FinalProjectDB.UI
             activateBtn(sender, System.Drawing.Color.Black, 81);
             hideUserControls();
             dashboard1.Visible = true;
+        }
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            admin_AllCourses1.Visible=true;
+            activateBtn(sender, System.Drawing.Color.Black, 121);
+            showPanels(panel3);
+        }
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            stu_CourseRegister1.Visible=true;
+        }
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            hidePanel();
+            activateBtn(sender, System.Drawing.Color.Black, 161);
+            hideUserControls();
+            stu_Lectures1.Visible=true;
+        }
+        private void iconButton12_Click(object sender, EventArgs e)
+        {
+            activateBtn(sender, System.Drawing.Color.Black, 201);
+            showPanels(panel5);
+            hideUserControls();
+            stu_YourAssignments1.Visible=true;
+        }
+        private void iconButton11_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            stu_SubmitAssignment1.Visible=true;
+        }
+        private void iconButton16_Click(object sender, EventArgs e)
+        {
+            activateBtn(sender, System.Drawing.Color.Black, 241);
+            showPanels(panel6);
+            hideUserControls();
+            stu_YourQuizes1.Visible=true;
+        }
+        private void iconButton15_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            stu_SubmitQuiz1.Visible=true;
+        }
+        private void iconButton28_Click(object sender, EventArgs e)
+        {
+            hidePanel();
+            activateBtn(sender, System.Drawing.Color.Black, 281);
+            hideUserControls();
+            stu_Attendence1.Visible = true;
+        }
+        private void iconButton24_Click(object sender, EventArgs e)
+        {
+            activateBtn(sender, System.Drawing.Color.Black, 321);
+            showPanels(panel9);
+            hideUserControls();
+            teach_YourComplaints1.Visible=true;
+        }
+        private void iconButton25_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            teach_ComplaintFile1.Visible=true;
+        }
+        private void iconButton23_Click(object sender, EventArgs e)
+        {
+            hidePanel();
+            activateBtn(sender, System.Drawing.Color.Black, 361);
+            hideUserControls();
+            stu_Result1.Visible = true;
+        }
+        private void iconButton29_Click(object sender, EventArgs e)
+        {
+            hidePanel();
+            activateBtn(sender, System.Drawing.Color.Black, 401);
+            hideUserControls();
+            teach_Announcements1.Visible=true;
+        }
+        private void iconButton30_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            profile1.Visible=true;
+            panel11.BringToFront();
+            showPanels(panel11);
+        }
+        private void iconButton27_Click(object sender, EventArgs e)
+        {
+            hideUserControls();
+            stu_ProfileComplete1.Visible=true;
+        }
+        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void dashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stu_ProfileComplete1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

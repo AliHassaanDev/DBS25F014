@@ -79,3 +79,12 @@ H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Admin_
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Admin_UserControl.Admin_AllTeachers.resources
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Admin_UserControl.Admin_AssignedTeachers.resources
 H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Admin_UserControl.Admin_EnrolledStudents.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_CourseRegister.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_SubmitAssignment.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_YourAssignments.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_YourLectures.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_YourQuizes.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_SubmitQuiz.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_Attendence.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_Result.resources
+H:\Semester 2\DB\Final Project\FinalProjectDB\obj\Debug\FinalProjectDB.UI.Student_UserControl.Stu_ProfileComplete.resources
