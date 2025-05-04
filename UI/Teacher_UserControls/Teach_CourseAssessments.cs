@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProjectDB.UI.Student_UserControl
+namespace FinalProjectDB.UI.UserControls
 {
-    public partial class Stu_YourQuizes : UserControl
+    public partial class Teach_CourseAssessments : UserControl
     {
-        public Stu_YourQuizes()
+        public Teach_CourseAssessments()
         {
             InitializeComponent();
         }

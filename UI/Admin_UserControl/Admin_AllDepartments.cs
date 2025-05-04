@@ -16,5 +16,10 @@ namespace FinalProjectDB.UI.Admin_UserControl
         {
             InitializeComponent();
         }
+
+        private void Admin_AllDepartments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

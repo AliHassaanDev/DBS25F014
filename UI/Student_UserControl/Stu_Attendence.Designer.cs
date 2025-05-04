@@ -91,7 +91,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 31);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Attandence";
+            this.label1.Text = "Attendance";
             // 
             // label4
             // 
@@ -216,7 +216,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(227, 13);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Attandence Report";
+            this.label6.Text = "Attendance Report";
             // 
             // Stu_Attendence
             // 

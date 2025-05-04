@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\teacher_usercontrols\\teach_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Teachers.cs [Design]",
               "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teachers.cs",
               "RelativeDocumentMoniker": "UI\\Teachers.cs",
@@ -75,88 +51,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Teach_ProfileComplete.cs [Design]",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
-              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teacher_UserControls\\Teach_ProfileComplete.cs [Design]",
-              "RelativeToolTip": "UI\\Teacher_UserControls\\Teach_ProfileComplete.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:42:17.365Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Stu_ProfileComplete.cs [Design]",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
-              "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:41:04.524Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Student.cs",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student.cs",
-              "RelativeDocumentMoniker": "UI\\Student.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student.cs",
-              "RelativeToolTip": "UI\\Student.cs",
-              "ViewState": "AQIAANwAAABAMzMzM7M0wOEAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:22:34.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs [Design]",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student.cs",
-              "RelativeDocumentMoniker": "UI\\Student.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Student.cs [Design]",
-              "RelativeToolTip": "UI\\Student.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:20:41.656Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
               "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs [Design]",
               "RelativeToolTip": "UI\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T08:53:38.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs",
-              "RelativeDocumentMoniker": "UI\\Admin.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs",
-              "RelativeToolTip": "UI\\Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T07:31:09.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Teachers.cs",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teachers.cs",
-              "RelativeDocumentMoniker": "UI\\Teachers.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teachers.cs",
-              "RelativeToolTip": "UI\\Teachers.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwBcAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T11:25:58.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T08:53:38.521Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

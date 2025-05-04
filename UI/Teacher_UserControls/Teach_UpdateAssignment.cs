@@ -28,7 +28,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Assignment ID")
+            if (kryptonTextBox1.Text == "Enter Assessment ID")
             {
                 kryptonTextBox1.Text ="";
             }
@@ -38,13 +38,13 @@ namespace FinalProjectDB.UI.UserControls
         {
             if (kryptonTextBox1.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Assignment ID";
+                kryptonTextBox1.Text ="Enter Assessment ID";
             }
         }
 
         private void enter_event_topictxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter Assignment Description")
+            if (kryptonTextBox2.Text == "Enter New Assessment Description")
             {
                 kryptonTextBox2.Text ="";
             }
@@ -54,7 +54,7 @@ namespace FinalProjectDB.UI.UserControls
         {
             if (kryptonTextBox2.Text == "")
             {
-                kryptonTextBox2.Text ="Enter Assignment Description";
+                kryptonTextBox2.Text ="Enter New Assessment Description";
             }
         }
 
@@ -64,6 +64,16 @@ namespace FinalProjectDB.UI.UserControls
         }
 
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

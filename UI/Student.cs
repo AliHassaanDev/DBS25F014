@@ -73,7 +73,6 @@ namespace FinalProjectDB.UI
         {
             panel3.Visible = false;
             panel5.Visible = false;
-            panel6.Visible = false;
             panel9.Visible = false;
             panel11.Visible = false;
         }
@@ -81,7 +80,6 @@ namespace FinalProjectDB.UI
         {
             if (panel3.Visible) { panel3.Visible = false; }
             if (panel5.Visible) { panel5.Visible = false; }
-            if (panel6.Visible) { panel6.Visible = false; }
             if (panel9.Visible) { panel9.Visible = false; }
             if (panel11.Visible) { panel11.Visible = false; }
         }
@@ -104,10 +102,8 @@ namespace FinalProjectDB.UI
             admin_AllCourses1.Visible = false;
             stu_CourseRegister1.Visible= false;
             stu_Lectures1.Visible= false;
-            stu_YourAssignments1.Visible= false;
+            teach_CourseAssessments1.Visible= false;
             stu_SubmitAssignment1.Visible= false;
-            stu_YourQuizes1.Visible= false;
-            stu_SubmitQuiz1.Visible = false;
             stu_Attendence1.Visible = false;
             teach_YourComplaints1.Visible = false;
             teach_ComplaintFile1.Visible = false;
@@ -122,10 +118,8 @@ namespace FinalProjectDB.UI
             if (admin_AllCourses1.Visible) { admin_AllCourses1.Visible = false; }
             if (stu_CourseRegister1.Visible) { stu_CourseRegister1.Visible= false; }
             if (stu_Lectures1.Visible) { stu_Lectures1.Visible= false; }
-            if (stu_YourAssignments1.Visible) { stu_YourAssignments1.Visible= false; }
+            if (teach_CourseAssessments1.Visible) { teach_CourseAssessments1.Visible= false; }
             if (stu_SubmitAssignment1.Visible) { stu_SubmitAssignment1.Visible= false; }
-            if (stu_YourQuizes1.Visible) { stu_YourQuizes1.Visible= false; }
-            if (stu_SubmitQuiz1.Visible) { stu_SubmitQuiz1.Visible= false; }
             if (stu_Attendence1.Visible) { stu_Attendence1.Visible = false; }
             if (teach_YourComplaints1.Visible) { teach_YourComplaints1.Visible = false; }
             if (teach_ComplaintFile1.Visible) { teach_ComplaintFile1.Visible = false; }
@@ -166,25 +160,14 @@ namespace FinalProjectDB.UI
             activateBtn(sender, System.Drawing.Color.Black, 201);
             showPanels(panel5);
             hideUserControls();
-            stu_YourAssignments1.Visible=true;
+            teach_CourseAssessments1.Visible=true;
         }
         private void iconButton11_Click(object sender, EventArgs e)
         {
             hideUserControls();
             stu_SubmitAssignment1.Visible=true;
         }
-        private void iconButton16_Click(object sender, EventArgs e)
-        {
-            activateBtn(sender, System.Drawing.Color.Black, 241);
-            showPanels(panel6);
-            hideUserControls();
-            stu_YourQuizes1.Visible=true;
-        }
-        private void iconButton15_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            stu_SubmitQuiz1.Visible=true;
-        }
+   
         private void iconButton28_Click(object sender, EventArgs e)
         {
             hidePanel();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProjectDB.UI.UserControls
 {
-    public partial class Teach_CourseAssignments : UserControl
+    public partial class Teach_AssessmentSubmissions : UserControl
     {
-        public Teach_CourseAssignments()
+        public Teach_AssessmentSubmissions()
         {
             InitializeComponent();
         }

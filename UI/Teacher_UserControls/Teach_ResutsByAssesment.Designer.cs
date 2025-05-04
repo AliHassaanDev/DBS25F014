@@ -111,9 +111,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox2.DropDownWidth = 273;
-            this.kryptonComboBox2.Items.AddRange(new object[] {
-            "Assignment",
-            "Quiz"});
             this.kryptonComboBox2.Location = new System.Drawing.Point(3, 148);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(285, 33);
@@ -134,7 +131,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 31);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Result By Assesment";
+            this.label1.Text = "Result By Assessment";
             // 
             // label4
             // 
@@ -144,7 +141,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(285, 13);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Assesment Type";
+            this.label4.Text = "Course";
             // 
             // label2
             // 
@@ -154,7 +151,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(285, 13);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Select Assesment";
+            this.label2.Text = "Select Assessment";
             // 
             // tableLayoutPanel6
             // 

@@ -38,12 +38,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.iconButton26 = new FontAwesome.Sharp.IconButton();
             this.iconButton28 = new FontAwesome.Sharp.IconButton();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.iconButton18 = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.iconButton15 = new FontAwesome.Sharp.IconButton();
-            this.iconButton16 = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton17 = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -81,16 +75,11 @@
             this.teach_YourComplaints1 = new FinalProjectDB.UI.UserControls.Teach_YourComplaints();
             this.teach_AttendenceByLecture1 = new FinalProjectDB.UI.UserControls.Teach_AttendanceByLecture();
             this.teach_AttendenceMark1 = new FinalProjectDB.UI.UserControls.Teach_AttendanceMark();
-            this.teach_QuizSubmissions1 = new FinalProjectDB.UI.UserControls.Teach_QuizSubmissions();
-            this.teach_DeleteQuiz1 = new FinalProjectDB.UI.UserControls.Teach_DeleteQuiz();
-            this.teach_UpdateQuiz1 = new FinalProjectDB.UI.UserControls.Teach_UpdateQuiz();
-            this.teach_CreateQuiz1 = new FinalProjectDB.UI.UserControls.Teach_CreateQuiz();
-            this.teach_CourseQuizes1 = new FinalProjectDB.UI.UserControls.Teach_CourseQuizes();
-            this.teach_AssignmentSubmissions1 = new FinalProjectDB.UI.UserControls.Teach_AssignmentSubmissions();
-            this.teach_CourseAssignments1 = new FinalProjectDB.UI.UserControls.Teach_CourseAssignments();
-            this.teach_DeleteAssignment1 = new FinalProjectDB.UI.UserControls.Teach_DeleteAssignment();
+            this.teach_AssignmentSubmissions1 = new FinalProjectDB.UI.UserControls.Teach_AssessmentSubmissions();
+            this.teach_CourseAssignments1 = new FinalProjectDB.UI.UserControls.Teach_CourseAssessments();
+            this.teach_DeleteAssignment1 = new FinalProjectDB.UI.UserControls.Teach_DeleteAssessment();
             this.teach_UpdateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_UpdateAssignment();
-            this.teach_CreateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_CreateAssignment();
+            this.teach_CreateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_CreateAssessment();
             this.teach_DeleteLectures1 = new FinalProjectDB.UI.UserControls.Teach_DeleteLectures();
             this.teach_UpdateLecture1 = new FinalProjectDB.UI.UserControls.Teach_UpdateLecture();
             this.teach_CreateLecture1 = new FinalProjectDB.UI.UserControls.Teach_CreateLecture();
@@ -103,7 +92,6 @@
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,8 +129,6 @@
             this.panel1.Controls.Add(this.iconButton24);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.iconButton28);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.iconButton16);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.iconButton12);
             this.panel1.Controls.Add(this.panel4);
@@ -168,7 +154,7 @@
             this.iconButton29.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton29.IconSize = 30;
             this.iconButton29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton29.Location = new System.Drawing.Point(0, 1031);
+            this.iconButton29.Location = new System.Drawing.Point(0, 851);
             this.iconButton29.Name = "iconButton29";
             this.iconButton29.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton29.Size = new System.Drawing.Size(183, 40);
@@ -187,7 +173,7 @@
             this.panel7.Controls.Add(this.iconButton21);
             this.panel7.Controls.Add(this.iconButton22);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 926);
+            this.panel7.Location = new System.Drawing.Point(0, 746);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(183, 105);
             this.panel7.TabIndex = 20;
@@ -286,7 +272,7 @@
             this.iconButton23.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton23.IconSize = 30;
             this.iconButton23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton23.Location = new System.Drawing.Point(0, 886);
+            this.iconButton23.Location = new System.Drawing.Point(0, 706);
             this.iconButton23.Name = "iconButton23";
             this.iconButton23.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton23.Size = new System.Drawing.Size(183, 40);
@@ -302,7 +288,7 @@
             this.panel9.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel9.Controls.Add(this.iconButton25);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 851);
+            this.panel9.Location = new System.Drawing.Point(0, 671);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(183, 35);
             this.panel9.TabIndex = 8;
@@ -338,7 +324,7 @@
             this.iconButton24.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton24.IconSize = 30;
             this.iconButton24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton24.Location = new System.Drawing.Point(0, 811);
+            this.iconButton24.Location = new System.Drawing.Point(0, 631);
             this.iconButton24.Name = "iconButton24";
             this.iconButton24.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton24.Size = new System.Drawing.Size(183, 40);
@@ -354,7 +340,7 @@
             this.panel8.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.panel8.Controls.Add(this.iconButton26);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 776);
+            this.panel8.Location = new System.Drawing.Point(0, 596);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(183, 35);
             this.panel8.TabIndex = 18;
@@ -390,7 +376,7 @@
             this.iconButton28.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton28.IconSize = 30;
             this.iconButton28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton28.Location = new System.Drawing.Point(0, 736);
+            this.iconButton28.Location = new System.Drawing.Point(0, 556);
             this.iconButton28.Name = "iconButton28";
             this.iconButton28.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton28.Size = new System.Drawing.Size(183, 40);
@@ -400,124 +386,6 @@
             this.iconButton28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton28.UseVisualStyleBackColor = true;
             this.iconButton28.Click += new System.EventHandler(this.iconButton28_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel6.Controls.Add(this.iconButton18);
-            this.panel6.Controls.Add(this.iconButton13);
-            this.panel6.Controls.Add(this.iconButton14);
-            this.panel6.Controls.Add(this.iconButton15);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 596);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(183, 140);
-            this.panel6.TabIndex = 16;
-            // 
-            // iconButton18
-            // 
-            this.iconButton18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton18.FlatAppearance.BorderSize = 0;
-            this.iconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton18.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton18.IconColor = System.Drawing.Color.Black;
-            this.iconButton18.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton18.IconSize = 30;
-            this.iconButton18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton18.Location = new System.Drawing.Point(0, 105);
-            this.iconButton18.Name = "iconButton18";
-            this.iconButton18.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.iconButton18.Size = new System.Drawing.Size(183, 35);
-            this.iconButton18.TabIndex = 6;
-            this.iconButton18.Text = "View Submissions";
-            this.iconButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton18.UseVisualStyleBackColor = true;
-            this.iconButton18.Click += new System.EventHandler(this.iconButton18_Click);
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton13.IconColor = System.Drawing.Color.Black;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 30;
-            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton13.Location = new System.Drawing.Point(0, 70);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.iconButton13.Size = new System.Drawing.Size(183, 35);
-            this.iconButton13.TabIndex = 5;
-            this.iconButton13.Text = "Delete Quiz";
-            this.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton13.UseVisualStyleBackColor = true;
-            this.iconButton13.Click += new System.EventHandler(this.iconButton13_Click);
-            // 
-            // iconButton14
-            // 
-            this.iconButton14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton14.IconColor = System.Drawing.Color.Black;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.IconSize = 30;
-            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton14.Location = new System.Drawing.Point(0, 35);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.iconButton14.Size = new System.Drawing.Size(183, 35);
-            this.iconButton14.TabIndex = 4;
-            this.iconButton14.Text = "Update Quiz";
-            this.iconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton14.UseVisualStyleBackColor = true;
-            this.iconButton14.Click += new System.EventHandler(this.iconButton14_Click);
-            // 
-            // iconButton15
-            // 
-            this.iconButton15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton15.FlatAppearance.BorderSize = 0;
-            this.iconButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton15.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton15.IconColor = System.Drawing.Color.Black;
-            this.iconButton15.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton15.IconSize = 30;
-            this.iconButton15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton15.Location = new System.Drawing.Point(0, 0);
-            this.iconButton15.Name = "iconButton15";
-            this.iconButton15.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.iconButton15.Size = new System.Drawing.Size(183, 35);
-            this.iconButton15.TabIndex = 3;
-            this.iconButton15.Text = "Create Quiz";
-            this.iconButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton15.UseVisualStyleBackColor = true;
-            this.iconButton15.Click += new System.EventHandler(this.iconButton15_Click);
-            // 
-            // iconButton16
-            // 
-            this.iconButton16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton16.FlatAppearance.BorderSize = 0;
-            this.iconButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton16.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconButton16.IconColor = System.Drawing.Color.Black;
-            this.iconButton16.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton16.IconSize = 30;
-            this.iconButton16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton16.Location = new System.Drawing.Point(0, 556);
-            this.iconButton16.Name = "iconButton16";
-            this.iconButton16.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.iconButton16.Size = new System.Drawing.Size(183, 40);
-            this.iconButton16.TabIndex = 15;
-            this.iconButton16.Text = "Quizes/ Exams";
-            this.iconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton16.UseVisualStyleBackColor = true;
-            this.iconButton16.Click += new System.EventHandler(this.iconButton16_Click);
             // 
             // panel5
             // 
@@ -568,7 +436,7 @@
             this.iconButton9.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton9.Size = new System.Drawing.Size(183, 35);
             this.iconButton9.TabIndex = 5;
-            this.iconButton9.Text = "Delete Assignment";
+            this.iconButton9.Text = "Delete Assessment";
             this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton9.UseVisualStyleBackColor = true;
@@ -589,7 +457,7 @@
             this.iconButton10.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton10.Size = new System.Drawing.Size(183, 35);
             this.iconButton10.TabIndex = 4;
-            this.iconButton10.Text = "Update Assignment";
+            this.iconButton10.Text = "Update Assessment";
             this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton10.UseVisualStyleBackColor = true;
@@ -610,7 +478,7 @@
             this.iconButton11.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton11.Size = new System.Drawing.Size(183, 35);
             this.iconButton11.TabIndex = 3;
-            this.iconButton11.Text = "Create Assignment";
+            this.iconButton11.Text = "Create Assessment";
             this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton11.UseVisualStyleBackColor = true;
@@ -631,7 +499,7 @@
             this.iconButton12.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
             this.iconButton12.Size = new System.Drawing.Size(183, 40);
             this.iconButton12.TabIndex = 13;
-            this.iconButton12.Text = "Assignments";
+            this.iconButton12.Text = "Assessments";
             this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton12.UseVisualStyleBackColor = true;
@@ -972,11 +840,6 @@
             this.panel10.Controls.Add(this.teach_YourComplaints1);
             this.panel10.Controls.Add(this.teach_AttendenceByLecture1);
             this.panel10.Controls.Add(this.teach_AttendenceMark1);
-            this.panel10.Controls.Add(this.teach_QuizSubmissions1);
-            this.panel10.Controls.Add(this.teach_DeleteQuiz1);
-            this.panel10.Controls.Add(this.teach_UpdateQuiz1);
-            this.panel10.Controls.Add(this.teach_CreateQuiz1);
-            this.panel10.Controls.Add(this.teach_CourseQuizes1);
             this.panel10.Controls.Add(this.teach_AssignmentSubmissions1);
             this.panel10.Controls.Add(this.teach_CourseAssignments1);
             this.panel10.Controls.Add(this.teach_DeleteAssignment1);
@@ -1083,46 +946,6 @@
             this.teach_AttendenceMark1.Name = "teach_AttendenceMark1";
             this.teach_AttendenceMark1.Size = new System.Drawing.Size(634, 399);
             this.teach_AttendenceMark1.TabIndex = 18;
-            // 
-            // teach_QuizSubmissions1
-            // 
-            this.teach_QuizSubmissions1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teach_QuizSubmissions1.Location = new System.Drawing.Point(0, 0);
-            this.teach_QuizSubmissions1.Name = "teach_QuizSubmissions1";
-            this.teach_QuizSubmissions1.Size = new System.Drawing.Size(634, 399);
-            this.teach_QuizSubmissions1.TabIndex = 17;
-            // 
-            // teach_DeleteQuiz1
-            // 
-            this.teach_DeleteQuiz1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teach_DeleteQuiz1.Location = new System.Drawing.Point(0, 0);
-            this.teach_DeleteQuiz1.Name = "teach_DeleteQuiz1";
-            this.teach_DeleteQuiz1.Size = new System.Drawing.Size(634, 399);
-            this.teach_DeleteQuiz1.TabIndex = 16;
-            // 
-            // teach_UpdateQuiz1
-            // 
-            this.teach_UpdateQuiz1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teach_UpdateQuiz1.Location = new System.Drawing.Point(0, 0);
-            this.teach_UpdateQuiz1.Name = "teach_UpdateQuiz1";
-            this.teach_UpdateQuiz1.Size = new System.Drawing.Size(634, 399);
-            this.teach_UpdateQuiz1.TabIndex = 15;
-            // 
-            // teach_CreateQuiz1
-            // 
-            this.teach_CreateQuiz1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teach_CreateQuiz1.Location = new System.Drawing.Point(0, 0);
-            this.teach_CreateQuiz1.Name = "teach_CreateQuiz1";
-            this.teach_CreateQuiz1.Size = new System.Drawing.Size(634, 399);
-            this.teach_CreateQuiz1.TabIndex = 14;
-            // 
-            // teach_CourseQuizes1
-            // 
-            this.teach_CourseQuizes1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teach_CourseQuizes1.Location = new System.Drawing.Point(0, 0);
-            this.teach_CourseQuizes1.Name = "teach_CourseQuizes1";
-            this.teach_CourseQuizes1.Size = new System.Drawing.Size(634, 399);
-            this.teach_CourseQuizes1.TabIndex = 13;
             // 
             // teach_AssignmentSubmissions1
             // 
@@ -1248,7 +1071,6 @@
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1279,18 +1101,12 @@
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton7;
-        private System.Windows.Forms.Panel panel6;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton14;
-        private FontAwesome.Sharp.IconButton iconButton15;
-        private FontAwesome.Sharp.IconButton iconButton16;
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton iconButton10;
         private FontAwesome.Sharp.IconButton iconButton11;
         private FontAwesome.Sharp.IconButton iconButton12;
         private FontAwesome.Sharp.IconButton iconButton17;
-        private FontAwesome.Sharp.IconButton iconButton18;
         private System.Windows.Forms.Panel panel7;
         private FontAwesome.Sharp.IconButton iconButton19;
         private FontAwesome.Sharp.IconButton iconButton20;
@@ -1319,16 +1135,11 @@
         private UserControls.Dashboard dashboard2;
         private UserControls.Teach_UpdateLecture teach_UpdateLecture1;
         private UserControls.Teach_DeleteLectures teach_DeleteLectures1;
-        private UserControls.Teach_CreateAssignment teach_CreateAssignment1;
+        private UserControls.Teach_CreateAssessment teach_CreateAssignment1;
         private UserControls.Teach_UpdateAssignment teach_UpdateAssignment1;
-        private UserControls.Teach_DeleteAssignment teach_DeleteAssignment1;
-        private UserControls.Teach_CourseAssignments teach_CourseAssignments1;
-        private UserControls.Teach_AssignmentSubmissions teach_AssignmentSubmissions1;
-        private UserControls.Teach_QuizSubmissions teach_QuizSubmissions1;
-        private UserControls.Teach_DeleteQuiz teach_DeleteQuiz1;
-        private UserControls.Teach_UpdateQuiz teach_UpdateQuiz1;
-        private UserControls.Teach_CreateQuiz teach_CreateQuiz1;
-        private UserControls.Teach_CourseQuizes teach_CourseQuizes1;
+        private UserControls.Teach_DeleteAssessment teach_DeleteAssignment1;
+        private UserControls.Teach_CourseAssessments teach_CourseAssignments1;
+        private UserControls.Teach_AssessmentSubmissions teach_AssignmentSubmissions1;
         private UserControls.Teach_AttendanceByLecture teach_AttendenceByLecture1;
         private UserControls.Teach_AttendanceMark teach_AttendenceMark1;
         private UserControls.Teach_ComplaintFile teach_ComplaintFile1;
