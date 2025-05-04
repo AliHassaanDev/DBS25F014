@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FinalProjectDB.UI.UserControls
 {
-    public partial class Teach_DeleteAssignment : UserControl
+    public partial class Teach_DeleteAssessment : UserControl
     {
-        public Teach_DeleteAssignment()
+        public Teach_DeleteAssessment()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_lecturetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Assignment ID")
+            if (kryptonTextBox1.Text == "Enter Assessment ID")
             {
                 kryptonTextBox1.Text ="";
             }
@@ -37,7 +37,7 @@ namespace FinalProjectDB.UI.UserControls
         {
             if (kryptonTextBox1.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Assignment ID";
+                kryptonTextBox1.Text ="Enter Assessment ID";
             }
         }
 
@@ -47,6 +47,11 @@ namespace FinalProjectDB.UI.UserControls
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

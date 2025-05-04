@@ -73,7 +73,6 @@ namespace FinalProjectDB.UI
             panel3.Visible = false;
             panel4.Visible = false;
             panel5.Visible = false;
-            panel6.Visible = false;
             panel7.Visible = false;
             panel8.Visible = false;
             panel9.Visible = false;
@@ -94,11 +93,6 @@ namespace FinalProjectDB.UI
             teach_DeleteAssignment1.Visible= false;
             teach_CourseAssignments1.Visible = false;
             teach_AssignmentSubmissions1.Visible= false;
-            teach_CourseQuizes1.Visible = false;
-            teach_CreateQuiz1.Visible= false;
-            teach_UpdateQuiz1.Visible= false ;
-            teach_DeleteQuiz1.Visible= false;
-            teach_QuizSubmissions1.Visible= false;
             teach_AttendenceMark1.Visible = false;
             teach_AttendenceByLecture1.Visible=false;
             teach_YourComplaints1.Visible = false;
@@ -116,7 +110,6 @@ namespace FinalProjectDB.UI
             if (panel3.Visible) { panel3.Visible = false; }
             if (panel4.Visible) { panel4.Visible = false; }
             if (panel5.Visible) { panel5.Visible = false; }
-            if (panel6.Visible) { panel6.Visible = false; }
             if (panel7.Visible) { panel7.Visible = false; }
             if (panel8.Visible) { panel8.Visible = false; }
             if (panel9.Visible) { panel9.Visible = false; }
@@ -137,11 +130,6 @@ namespace FinalProjectDB.UI
             if (teach_DeleteAssignment1.Visible) { teach_DeleteAssignment1.Visible = false; }
             if (teach_CourseAssignments1.Visible) { teach_CourseAssignments1.Visible = false; }
             if (teach_AssignmentSubmissions1.Visible) { teach_AssignmentSubmissions1.Visible= false; }
-            if (teach_CourseQuizes1.Visible) { teach_CourseQuizes1.Visible = false; }
-            if (teach_CreateQuiz1.Visible) { teach_CreateQuiz1.Visible= false; }
-            if (teach_UpdateQuiz1.Visible) { teach_UpdateQuiz1.Visible= false; }
-            if (teach_DeleteQuiz1.Visible) { teach_DeleteQuiz1.Visible= false; }
-            if (teach_QuizSubmissions1.Visible) { teach_QuizSubmissions1.Visible= false; }
             if (teach_AttendenceMark1.Visible) { teach_AttendenceMark1.Visible = false; }
             if (teach_AttendenceByLecture1.Visible) { teach_AttendenceByLecture1.Visible=false; }
             if (teach_YourComplaints1.Visible) { teach_YourComplaints1.Visible = false; }
@@ -180,7 +168,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             teach_YourComplaints1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black,321);
+            activateBtn(sender, System.Drawing.Color.Black,281);
             showPanels(panel9);
         }
 
@@ -189,7 +177,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             teach_Announcements1.Visible = true;
             hidePanel();
-            activateBtn(sender, System.Drawing.Color.Black, 401);
+            activateBtn(sender, System.Drawing.Color.Black, 361);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -221,19 +209,11 @@ namespace FinalProjectDB.UI
             showPanels(panel5);
         }
 
-        private void iconButton16_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_CourseQuizes1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black,241);
-            showPanels(panel6);
-        }
-
         private void iconButton28_Click(object sender, EventArgs e)
         {
             hideUserControls();
             teach_AttendenceMark1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black,281);
+            activateBtn(sender, System.Drawing.Color.Black,241);
             showPanels(panel8);
         }
 
@@ -241,7 +221,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             teach_ResutsByAssesment1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black,361);
+            activateBtn(sender, System.Drawing.Color.Black,321);
             showPanels(panel7);
         }
 
@@ -271,10 +251,6 @@ namespace FinalProjectDB.UI
             teach_CreateLecture1.Visible=true;
         }
 
-        private void teach_YourLectures1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void iconButton7_Click(object sender, EventArgs e)
         {
@@ -306,29 +282,6 @@ namespace FinalProjectDB.UI
             teach_DeleteAssignment1.Visible=true;
         }
 
-        private void iconButton18_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_QuizSubmissions1.Visible=true;
-        }
-
-        private void iconButton15_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_CreateQuiz1.Visible=true;
-        }
-
-        private void iconButton14_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_UpdateQuiz1.Visible=true;
-        }
-
-        private void iconButton13_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            teach_DeleteQuiz1.Visible=true;
-        }
 
         private void iconButton17_Click(object sender, EventArgs e)
         {

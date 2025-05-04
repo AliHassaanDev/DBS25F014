@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FinalProjectDB.UI.UserControls
 {
-    public partial class Teach_CreateAssignment : UserControl
+    public partial class Teach_CreateAssessment : UserControl
     {
-        public Teach_CreateAssignment()
+        public Teach_CreateAssessment()
         {
             InitializeComponent();
         }
@@ -64,6 +64,11 @@ namespace FinalProjectDB.UI.UserControls
         }
 
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

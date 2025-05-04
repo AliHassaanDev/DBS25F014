@@ -16,5 +16,10 @@ namespace FinalProjectDB.UI.Admin_UserControl
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

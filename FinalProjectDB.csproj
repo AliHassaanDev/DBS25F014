@@ -274,35 +274,17 @@
     <Compile Include="UI\Student_UserControl\Stu_Result.Designer.cs">
       <DependentUpon>Stu_Result.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_SubmitAssignment.cs">
+    <Compile Include="UI\Student_UserControl\Stu_SubmitAssessment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_SubmitAssignment.Designer.cs">
-      <DependentUpon>Stu_SubmitAssignment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_SubmitQuiz.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_SubmitQuiz.Designer.cs">
-      <DependentUpon>Stu_SubmitQuiz.cs</DependentUpon>
+    <Compile Include="UI\Student_UserControl\Stu_SubmitAssessment.Designer.cs">
+      <DependentUpon>Stu_SubmitAssessment.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Student_UserControl\Stu_YourLectures.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\Student_UserControl\Stu_YourLectures.Designer.cs">
       <DependentUpon>Stu_YourLectures.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_YourAssignments.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_YourAssignments.Designer.cs">
-      <DependentUpon>Stu_YourAssignments.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_YourQuizes.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Student_UserControl\Stu_YourQuizes.Designer.cs">
-      <DependentUpon>Stu_YourQuizes.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teachers.cs">
       <SubType>Form</SubType>
@@ -352,35 +334,23 @@
     <Compile Include="UI\Teacher_UserControls\Teach_CreateResult.Designer.cs">
       <DependentUpon>Teach_CreateResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_DeleteQuiz.cs">
+    <Compile Include="UI\Teacher_UserControls\Teach_AssessmentSubmissions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_DeleteQuiz.Designer.cs">
-      <DependentUpon>Teach_DeleteQuiz.cs</DependentUpon>
+    <Compile Include="UI\Teacher_UserControls\Teach_AssessmentSubmissions.Designer.cs">
+      <DependentUpon>Teach_AssessmentSubmissions.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_AssignmentSubmissions.cs">
+    <Compile Include="UI\Teacher_UserControls\Teach_CourseAssessments.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_AssignmentSubmissions.Designer.cs">
-      <DependentUpon>Teach_AssignmentSubmissions.cs</DependentUpon>
+    <Compile Include="UI\Teacher_UserControls\Teach_CourseAssessments.Designer.cs">
+      <DependentUpon>Teach_CourseAssessments.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CourseAssignments.cs">
+    <Compile Include="UI\Teacher_UserControls\Teach_CreateAssessment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CourseAssignments.Designer.cs">
-      <DependentUpon>Teach_CourseAssignments.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CourseQuizes.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CourseQuizes.Designer.cs">
-      <DependentUpon>Teach_CourseQuizes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CreateAssignment.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CreateAssignment.Designer.cs">
-      <DependentUpon>Teach_CreateAssignment.cs</DependentUpon>
+    <Compile Include="UI\Teacher_UserControls\Teach_CreateAssessment.Designer.cs">
+      <DependentUpon>Teach_CreateAssessment.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_CreateLecture.cs">
       <SubType>UserControl</SubType>
@@ -388,17 +358,11 @@
     <Compile Include="UI\Teacher_UserControls\Teach_CreateLecture.Designer.cs">
       <DependentUpon>Teach_CreateLecture.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CreateQuiz.cs">
+    <Compile Include="UI\Teacher_UserControls\Teach_DeleteAssessment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_CreateQuiz.Designer.cs">
-      <DependentUpon>Teach_CreateQuiz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_DeleteAssignment.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_DeleteAssignment.Designer.cs">
-      <DependentUpon>Teach_DeleteAssignment.cs</DependentUpon>
+    <Compile Include="UI\Teacher_UserControls\Teach_DeleteAssessment.Designer.cs">
+      <DependentUpon>Teach_DeleteAssessment.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_DeleteLectures.cs">
       <SubType>UserControl</SubType>
@@ -423,12 +387,6 @@
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_ProfileComplete.Designer.cs">
       <DependentUpon>Teach_ProfileComplete.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_QuizSubmissions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_QuizSubmissions.Designer.cs">
-      <DependentUpon>Teach_QuizSubmissions.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_RequestCourse.cs">
       <SubType>UserControl</SubType>
@@ -477,12 +435,6 @@
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_YourLectures.Designer.cs">
       <DependentUpon>Teach_YourLectures.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_UpdateQuiz.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_UpdateQuiz.Designer.cs">
-      <DependentUpon>Teach_UpdateQuiz.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -596,20 +548,11 @@
     <EmbeddedResource Include="UI\Student_UserControl\Stu_Result.resx">
       <DependentUpon>Stu_Result.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Student_UserControl\Stu_SubmitAssignment.resx">
-      <DependentUpon>Stu_SubmitAssignment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Student_UserControl\Stu_SubmitQuiz.resx">
-      <DependentUpon>Stu_SubmitQuiz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Student_UserControl\Stu_YourAssignments.resx">
-      <DependentUpon>Stu_YourAssignments.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Student_UserControl\Stu_SubmitAssessment.resx">
+      <DependentUpon>Stu_SubmitAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Student_UserControl\Stu_YourLectures.resx">
       <DependentUpon>Stu_YourLectures.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Student_UserControl\Stu_YourQuizes.resx">
-      <DependentUpon>Stu_YourQuizes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teachers.resx">
       <DependentUpon>Teachers.cs</DependentUpon>
@@ -623,8 +566,8 @@
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_Announcements.resx">
       <DependentUpon>Teach_Announcements.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_AssignmentSubmissions.resx">
-      <DependentUpon>Teach_AssignmentSubmissions.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_AssessmentSubmissions.resx">
+      <DependentUpon>Teach_AssessmentSubmissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_AttendanceByLecture.resx">
       <DependentUpon>Teach_AttendanceByLecture.cs</DependentUpon>
@@ -635,32 +578,23 @@
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_ComplaintFile.resx">
       <DependentUpon>Teach_ComplaintFile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CourseAssignments.resx">
-      <DependentUpon>Teach_CourseAssignments.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CourseAssessments.resx">
+      <DependentUpon>Teach_CourseAssessments.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CourseQuizes.resx">
-      <DependentUpon>Teach_CourseQuizes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CreateAssignment.resx">
-      <DependentUpon>Teach_CreateAssignment.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CreateAssessment.resx">
+      <DependentUpon>Teach_CreateAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CreateLecture.resx">
       <DependentUpon>Teach_CreateLecture.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CreateQuiz.resx">
-      <DependentUpon>Teach_CreateQuiz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_CreateResult.resx">
       <DependentUpon>Teach_CreateResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_DeleteAssignment.resx">
-      <DependentUpon>Teach_DeleteAssignment.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_DeleteAssessment.resx">
+      <DependentUpon>Teach_DeleteAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_DeleteLectures.resx">
       <DependentUpon>Teach_DeleteLectures.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_DeleteQuiz.resx">
-      <DependentUpon>Teach_DeleteQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_DeleteResult.resx">
       <DependentUpon>Teach_DeleteResult.cs</DependentUpon>
@@ -670,9 +604,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_ProfileComplete.resx">
       <DependentUpon>Teach_ProfileComplete.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_QuizSubmissions.resx">
-      <DependentUpon>Teach_QuizSubmissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_RequestCourse.resx">
       <DependentUpon>Teach_RequestCourse.cs</DependentUpon>
@@ -685,9 +616,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateLecture.resx">
       <DependentUpon>Teach_UpdateLecture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateQuiz.resx">
-      <DependentUpon>Teach_UpdateQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateResult.resx">
       <DependentUpon>Teach_UpdateResult.cs</DependentUpon>

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace FinalProjectDB.UI.Student_UserControl
 {
-    public partial class Stu_SubmitAssignment : UserControl
+    public partial class Stu_SubmitAssessment : UserControl
     {
         string selectedPdfPath = "";
-        public Stu_SubmitAssignment()
+        public Stu_SubmitAssessment()
         {
             InitializeComponent();
         }

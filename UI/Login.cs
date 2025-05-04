@@ -60,5 +60,37 @@ namespace FinalProjectDB.UI
         {
 
         }
+        private void enter_event_usernametxt(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "Enter Username")
+            {
+                kryptonTextBox1.Text ="";
+            }
+        }
+        private void leave_event_usernametxt(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text == "")
+            {
+                kryptonTextBox1.Text ="Enter Username";
+            }
+        }
+      
+
+        private void enter_event_passwordtxt(object sender, EventArgs e)
+        {
+            if (kryptonTextBox2.Text == "Enter Password")
+            {
+                kryptonTextBox2.Text ="";
+                kryptonTextBox2.PasswordChar = '*';
+            }
+        }
+        private void leave_event_passwordtxt(object sender, EventArgs e)
+        {
+            if (kryptonTextBox2.Text == "")
+            {
+                kryptonTextBox2.PasswordChar = '\0';
+                kryptonTextBox2.Text ="Enter Password";
+            }
+        }
     }
 }

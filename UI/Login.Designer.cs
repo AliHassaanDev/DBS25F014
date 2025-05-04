@@ -239,6 +239,8 @@
             this.kryptonTextBox1.TabIndex = 7;
             this.kryptonTextBox1.Text = "Enter Username";
             this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_usernametxt);
+            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_usernametxt);
             // 
             // kryptonTextBox2
             // 
@@ -261,6 +263,8 @@
             this.kryptonTextBox2.TabIndex = 8;
             this.kryptonTextBox2.Text = "Enter Password";
             this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
+            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_passwordtxt);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_passwordtxt);
             // 
             // label4
             // 
