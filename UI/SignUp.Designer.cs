@@ -191,6 +191,7 @@
             this.kryptonButton1.StateTracking.Border.Width = 1;
             this.kryptonButton1.TabIndex = 15;
             this.kryptonButton1.Values.Text = "Back";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // label5
             // 
@@ -265,6 +266,8 @@
             this.kryptonTextBox2.TabIndex = 20;
             this.kryptonTextBox2.Text = "Enter Password";
             this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged_1);
+            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_passwordtxt);
+            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_passwordtxt);
             // 
             // kryptonTextBox3
             // 
@@ -286,6 +289,8 @@
             this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox3.TabIndex = 24;
             this.kryptonTextBox3.Text = "Enter Email";
+            this.kryptonTextBox3.Enter += new System.EventHandler(this.enter_event_emailtxt);
+            this.kryptonTextBox3.Leave += new System.EventHandler(this.leave_event_emailtxt);
             // 
             // kryptonTextBox1
             // 
@@ -308,6 +313,8 @@
             this.kryptonTextBox1.TabIndex = 19;
             this.kryptonTextBox1.Text = "Enter Username";
             this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_usernametxt);
+            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_usernametxt);
             // 
             // pictureBox1
             // 
