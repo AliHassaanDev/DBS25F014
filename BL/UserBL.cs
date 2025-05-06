@@ -15,12 +15,20 @@ namespace FinalProjectDB.BL
         string email;
         string username;
         string password;
-
+        int role;
         public UserBL(string email, string username, string password)
         {
             this.email = email;
             this.username = username;
             this.password = password;
+        }
+
+        public UserBL(string email, string username, string password,int role)
+        {
+            this.email = email;
+            this.username = username;
+            this.password = password;
+            this.role = role;
         }
         public UserBL(string username, string password)
         {
