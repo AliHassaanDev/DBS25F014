@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\DBS25F014\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Teachers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs",
+              "RelativeDocumentMoniker": "UI\\Teachers.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs [Design]",
+              "RelativeToolTip": "UI\\Teachers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:11:27.205Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3fd5e0cc-709a-4f8c-94c3-7f0f8dff5bb2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
+              "RelativeDocumentMoniker": "UI\\Admin.cs",
+              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T08:53:38.521Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\DBS25F014\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|h:\\semester 2\\db\\final project\\finalprojectdb\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Teachers.cs [Design]",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teachers.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs",
               "RelativeDocumentMoniker": "UI\\Teachers.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Teachers.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs [Design]",
               "RelativeToolTip": "UI\\Teachers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T11:11:27.205Z",
@@ -53,13 +53,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
               "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs [Design]",
-              "RelativeToolTip": "UI\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T08:53:38.521Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-27T08:53:38.521Z"
             }
           ]
         }
