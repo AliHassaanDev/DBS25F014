@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FinalProjectDB.UI.UserControls
 {
-    public partial class Teach_UpdateAssignment : UserControl
+    public partial class Teach_UpdateAssessment : UserControl
     {
-        public Teach_UpdateAssignment()
+        public Teach_UpdateAssessment()
         {
             InitializeComponent();
         }

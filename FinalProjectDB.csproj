@@ -400,11 +400,11 @@
     <Compile Include="UI\Teacher_UserControls\Teach_ResutsByAssesment.Designer.cs">
       <DependentUpon>Teach_ResutsByAssesment.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_UpdateAssignment.cs">
+    <Compile Include="UI\Teacher_UserControls\Teach_UpdateAssessment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Teacher_UserControls\Teach_UpdateAssignment.Designer.cs">
-      <DependentUpon>Teach_UpdateAssignment.cs</DependentUpon>
+    <Compile Include="UI\Teacher_UserControls\Teach_UpdateAssessment.Designer.cs">
+      <DependentUpon>Teach_UpdateAssessment.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Teacher_UserControls\Teach_UpdateLecture.cs">
       <SubType>UserControl</SubType>
@@ -611,8 +611,8 @@
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_ResutsByAssesment.resx">
       <DependentUpon>Teach_ResutsByAssesment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateAssignment.resx">
-      <DependentUpon>Teach_UpdateAssignment.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateAssessment.resx">
+      <DependentUpon>Teach_UpdateAssessment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_UpdateLecture.resx">
       <DependentUpon>Teach_UpdateLecture.cs</DependentUpon>

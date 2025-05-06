@@ -78,7 +78,7 @@
             this.teach_AssignmentSubmissions1 = new FinalProjectDB.UI.UserControls.Teach_AssessmentSubmissions();
             this.teach_CourseAssignments1 = new FinalProjectDB.UI.UserControls.Teach_CourseAssessments();
             this.teach_DeleteAssignment1 = new FinalProjectDB.UI.UserControls.Teach_DeleteAssessment();
-            this.teach_UpdateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_UpdateAssignment();
+            this.teach_UpdateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_UpdateAssessment();
             this.teach_CreateAssignment1 = new FinalProjectDB.UI.UserControls.Teach_CreateAssessment();
             this.teach_DeleteLectures1 = new FinalProjectDB.UI.UserControls.Teach_DeleteLectures();
             this.teach_UpdateLecture1 = new FinalProjectDB.UI.UserControls.Teach_UpdateLecture();
@@ -1136,7 +1136,7 @@
         private UserControls.Teach_UpdateLecture teach_UpdateLecture1;
         private UserControls.Teach_DeleteLectures teach_DeleteLectures1;
         private UserControls.Teach_CreateAssessment teach_CreateAssignment1;
-        private UserControls.Teach_UpdateAssignment teach_UpdateAssignment1;
+        private UserControls.Teach_UpdateAssessment teach_UpdateAssignment1;
         private UserControls.Teach_DeleteAssessment teach_DeleteAssignment1;
         private UserControls.Teach_CourseAssessments teach_CourseAssignments1;
         private UserControls.Teach_AssessmentSubmissions teach_AssignmentSubmissions1;

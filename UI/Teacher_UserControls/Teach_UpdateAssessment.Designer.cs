@@ -1,6 +1,6 @@
 ﻿namespace FinalProjectDB.UI.UserControls
 {
-    partial class Teach_UpdateAssignment
+    partial class Teach_UpdateAssessment
     {
         /// <summary> 
         /// Required designer variable.
