@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI
 {
@@ -78,7 +80,11 @@ namespace FinalProjectDB.UI
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-           
+            this.Visible = false;
+            EDUMS eDUMS = new EDUMS();
+            eDUMS.StartPosition = FormStartPosition.Manual;
+            eDUMS.Location = this.Location;
+            eDUMS.Show();
         }
         private void enter_event_usernametxt(object sender, EventArgs e)
         {
@@ -124,6 +130,30 @@ namespace FinalProjectDB.UI
                 kryptonTextBox2.PasswordChar = '\0';
                 kryptonTextBox2.Text ="Enter Password";
             }
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonTextBox3.Text != "")
+                {
+                    string username = kryptonTextBox1.Text;
+                    string email = kryptonTextBox3.Text;
+                    string password = kryptonTextBox2.Text;
+
+                    password = BCrypt.Net.BCrypt.HashPassword(password);
+
+                    UserBL student = new UserBL(email, username, password);
+                    UserDL.AddStudent(student);
+                    MessageBox.Show("Account created successfully!");
+
+                    kryptonTextBox1.Clear();
+                    kryptonTextBox2.Clear();
+                    kryptonTextBox3.Clear();
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }

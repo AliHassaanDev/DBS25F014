@@ -1,4 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -61,6 +63,64 @@ namespace FinalProjectDB.UI.Admin_UserControl
             {
                 kryptonTextBox2.Text ="Enter New Credit Hours";
             }
+        }
+
+        public void load()
+        {
+            DepartmentDL.loadDepartmentsList();
+            this.kryptonComboBox1.DataSource = null;
+            this.kryptonComboBox1.DataSource = DepartmentDL.department_list;
+
+            CourseDL.loadCoursesList();
+            this.kryptonComboBox2.DataSource = null;
+            this.kryptonComboBox2.DataSource = CourseDL.courses;
+        }
+
+        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonComboBox1.Text != "" && kryptonComboBox2.Text != "")
+                {
+                    string name = kryptonTextBox1.Text;
+                    DateTime date = kryptonDateTimePicker1.Value;
+                    int dept = DepartmentDL.getIDFromDept(kryptonComboBox1.Text);
+                    int credithours = Convert.ToInt32(kryptonTextBox2.Text);
+
+                    int course_id = CourseDL.getIDFromCourse(kryptonComboBox2.Text);
+
+                    CourseBL course = new CourseBL(name, date, credithours, dept);
+
+                    CourseDL.updateCourse(course_id, course);
+
+                    MessageBox.Show("Course updated Successfully!");
+
+                    kryptonTextBox1.Clear();
+                    kryptonTextBox2.Clear();
+
+                    load();
+                }
+            }catch(Exception ex) { MessageBox.Show(ToString(), ex.Message); }
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

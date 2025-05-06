@@ -201,7 +201,11 @@ namespace FinalProjectDB.UI
 
         private void iconButton31_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Visible = false;
+            Login login = new Login();
+            login.StartPosition = FormStartPosition.Manual;
+            login.Location = this.Location;
+            login.Show();
         }
 
         //-----------Dashboard Btn---------------------//
@@ -226,19 +230,21 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_CreateCourse1.Visible = true;
+            admin_CreateCourse1.load();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             hideUserControls();
             admin_UpdateCourse1.Visible = true;
+            admin_UpdateCourse1.load();
         }
 
         private void iconButton32_Click(object sender, EventArgs e)
         {
             hideUserControls();
             admin_DeleteCourse1.Visible = true;
-
+            admin_DeleteCourse1.load();
         }
 
         private void iconButton33_Click(object sender, EventArgs e)
@@ -278,6 +284,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_DeleteUser1.Visible = true;
+            admin_DeleteUser1.load();
         }
 
         //-----------Department Btns-------------------//
@@ -299,12 +306,14 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_UpdateDepartment1.Visible = true;
+            admin_UpdateDepartment1.load();
         }
 
         private void iconButton9_Click(object sender, EventArgs e)
         {
             hideUserControls();
             admin_DeleteDepartment1.Visible = true;
+            admin_DeleteDepartment1.load();
         }
 
         //-----------Announcement Btns-----------------//
