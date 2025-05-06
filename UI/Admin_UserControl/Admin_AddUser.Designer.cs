@@ -103,6 +103,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox2.DropDownWidth = 273;
+            this.kryptonComboBox2.Items.AddRange(new object[] {
+            "Student",
+            "Teacher",
+            "Admin"});
             this.kryptonComboBox2.Location = new System.Drawing.Point(4, 335);
             this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
@@ -159,6 +163,7 @@
             this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.TabIndex = 19;
             this.kryptonTextBox1.Text = "Enter Username";
+            this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
             this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_usernametxt);
             this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_usernametxt);
             // 
@@ -208,6 +213,7 @@
             this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox2.TabIndex = 20;
             this.kryptonTextBox2.Text = "Enter Password";
+            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
             this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_passwordtxt);
             this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_passwordtxt);
             // 
@@ -316,6 +322,7 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 16;
             this.kryptonButton2.Values.Text = "Add";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // Admin_AddUser
             // 

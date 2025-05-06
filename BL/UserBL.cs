@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 
 namespace FinalProjectDB.BL
 {
@@ -28,6 +29,7 @@ namespace FinalProjectDB.BL
             this.email = email;
             this.username = username;
             this.password = password;
+            if (role != 1 && role != 2 && role != 3) { return; }
             this.role = role;
         }
         public UserBL(string username, string password)
@@ -39,9 +41,11 @@ namespace FinalProjectDB.BL
         public string getEmail() { return email; }
         public string getUsername() { return username; }
         public string getPassword() { return password; }
+        public int getRole() { return role; }
         public void setEmail(string email) { this.email = email; }
         public void setPassword(string password) { this.password=password; }
         public void setUsername(string username) { this.username=username; }
+        public void setRole(int role) { if (role!=1 && role!=2 && role!=3) { return; } this.role = role;}
 
 
     }

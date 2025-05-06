@@ -284,6 +284,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_DeleteUser1.Visible = true;
+            admin_DeleteUser1.load();
         }
 
         //-----------Department Btns-------------------//

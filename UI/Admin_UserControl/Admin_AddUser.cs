@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.Admin_UserControl
 {
@@ -71,6 +73,46 @@ namespace FinalProjectDB.UI.Admin_UserControl
                 kryptonTextBox2.PasswordChar = '\0';
                 kryptonTextBox2.Text ="Enter Password";
             }
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonTextBox3.Text != "" && kryptonComboBox2.Text != "")
+                {
+                    string name = kryptonTextBox1.Text;
+                    string email = kryptonTextBox3.Text;
+                    string password = kryptonTextBox2.Text;
+
+                    password = BCrypt.Net.BCrypt.HashPassword(password);
+
+                    int role = 1;
+                    if (kryptonComboBox2.Text == "Student") { role = 1; }
+                    else if (kryptonComboBox2.Text == "Teacher") { role = 2; }
+                    else if (kryptonComboBox2.Text == "Admin") { role = 3; }
+
+                    UserBL user = new UserBL(email, name, password, role);
+
+                    UserDL.AddUser(user);
+
+                    MessageBox.Show("User added successfully!");
+
+                    kryptonTextBox1.Clear();
+                    kryptonTextBox2.Clear();
+                    kryptonTextBox3.Clear();
+                }
+            }catch(Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
