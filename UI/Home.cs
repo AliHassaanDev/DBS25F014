@@ -26,7 +26,10 @@ namespace FinalProjectDB
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             SignUp sign = new SignUp();
+            sign.StartPosition = FormStartPosition.Manual;
+            sign.Location = this.Location;
             sign.Show();
         }
 
@@ -52,9 +55,11 @@ namespace FinalProjectDB
 
         private void kryptonButton1_Click_1(object sender, EventArgs e)
         {
+            this.Visible = false;
             Login sign = new Login();
+            sign.StartPosition = FormStartPosition.Manual;
+            sign.Location = this.Location;
             sign.Show();
-            
         }
 
 

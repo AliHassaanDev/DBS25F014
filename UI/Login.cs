@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI
 {
@@ -64,23 +66,23 @@ namespace FinalProjectDB.UI
         {
             if (kryptonTextBox1.Text == "Enter Username")
             {
-                kryptonTextBox1.Text ="";
+                kryptonTextBox1.Text = "";
             }
         }
         private void leave_event_usernametxt(object sender, EventArgs e)
         {
             if (kryptonTextBox1.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Username";
+                kryptonTextBox1.Text = "Enter Username";
             }
         }
-      
+
 
         private void enter_event_passwordtxt(object sender, EventArgs e)
         {
             if (kryptonTextBox2.Text == "Enter Password")
             {
-                kryptonTextBox2.Text ="";
+                kryptonTextBox2.Text = "";
                 kryptonTextBox2.PasswordChar = '*';
             }
         }
@@ -89,8 +91,57 @@ namespace FinalProjectDB.UI
             if (kryptonTextBox2.Text == "")
             {
                 kryptonTextBox2.PasswordChar = '\0';
-                kryptonTextBox2.Text ="Enter Password";
+                kryptonTextBox2.Text = "Enter Password";
             }
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "")
+            {
+                string username = kryptonTextBox1.Text;
+                string password = kryptonTextBox2.Text;
+
+                UserBL user = new UserBL(username, password);
+
+                if (UserDL.Login(user)) { MessageBox.Show("Login Successful!"); }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!");
+                    UserBL.current_user_role_id = 0;
+                }
+
+                kryptonTextBox1.Clear();
+                kryptonTextBox2.Clear();
+
+                if (UserBL.current_user_role_id == 1)
+                {
+                    this.Visible = false;
+                    Student student = new Student();
+                    student.StartPosition = FormStartPosition.Manual;
+                    student.Location = this.Location;
+                    student.Show();
+                }
+                else if (UserBL.current_user_role_id == 3)
+                {
+                    this.Visible = false;
+                    Admin admin = new Admin();
+                    admin.StartPosition = FormStartPosition.Manual;
+                    admin.Location = this.Location;
+                    admin.Show();
+                }
+
+                //continue to furthure interface using this
+            }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            EDUMS eDUMS = new EDUMS();
+            eDUMS.StartPosition = FormStartPosition.Manual;
+            eDUMS.Location = this.Location;
+            eDUMS.Show();
         }
     }
 }
