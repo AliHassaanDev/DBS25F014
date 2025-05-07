@@ -123,12 +123,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\ComplaintsBL.cs" />
     <Compile Include="BL\CourseBL.cs" />
     <Compile Include="BL\DatabaseHelper.cs" />
     <Compile Include="BL\DepartmentBL.cs" />
+    <Compile Include="BL\LecturesBL.cs" />
+    <Compile Include="BL\TeacherProfile.cs" />
     <Compile Include="BL\UserBL.cs" />
+    <Compile Include="DL\ComplaintsDL.cs" />
     <Compile Include="DL\CourseDL.cs" />
     <Compile Include="DL\DepartmentDL.cs" />
+    <Compile Include="BL\TeacherCoursesBL.cs" />
+    <Compile Include="DL\LecturesDL.cs" />
+    <Compile Include="DL\TeacherProfileDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="UI\Admin.cs">
       <SubType>Form</SubType>

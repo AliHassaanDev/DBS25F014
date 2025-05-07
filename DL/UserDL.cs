@@ -17,7 +17,7 @@ namespace FinalProjectDB.DL
             user_names.Clear();
             string quer = $"SELECT username FROM users";
             var reader = DatabaseHelper.Instance.getData(quer);
-            while(reader.Read())
+            while (reader.Read())
             {
                 user_names.Add(Convert.ToString(reader["username"]));
             }
@@ -50,8 +50,8 @@ namespace FinalProjectDB.DL
         public static bool Login(UserBL student)
         {
             string query = $"CALL get_password('{student.getUsername()}')";
-            var reader=DatabaseHelper.Instance.getData(query);
-            while(reader.Read())
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
             {
                 if (BCrypt.Net.BCrypt.Verify(student.getPassword(), Convert.ToString(reader["hash_password"])))
                 {
@@ -62,6 +62,42 @@ namespace FinalProjectDB.DL
                 }
             }
             return false;
+        }
+        //teacher
+        public static String getEmail()
+        {
+            String email = "";
+            string query = $"SELECT email FROM users WHERE username='{UserBL.current_user}'";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                email = Convert.ToString(reader["email"]);
+            }
+            return email;
+        }
+        //teacher
+        public static List<UserBL> complaintUsers(String role)
+        {
+            int roleID = -1;
+            if (role == "Student")
+            {
+                roleID = 1;
+            }
+            else if (role == "Teacher")
+            {
+                roleID = 2;
+            }
+            List<UserBL> users = new List<UserBL>();
+            string query = $"SELECT user_id,username FROM users WHERE role_id='{roleID}'";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                UserBL user = new UserBL();
+                user.setUserId(Convert.ToInt32(reader["user_id"]));
+                user.setUsername(Convert.ToString(reader["username"]));
+                users.Add(user);
+            }
+            return users;
         }
     }
 }

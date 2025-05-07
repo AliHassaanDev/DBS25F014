@@ -30,17 +30,17 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.LectureDuration = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.LectureTopic = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.LectureCourseName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.LectureTime = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,16 +72,16 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox4, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.LectureDuration, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.LectureTopic, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.LectureCourseName, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 9);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonDateTimePicker1, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.LectureTime, 0, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(41, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -100,51 +100,51 @@
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // kryptonTextBox4
+            // LectureDuration
             // 
-            this.kryptonTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LectureDuration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox4.Location = new System.Drawing.Point(3, 274);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.LectureDuration.Location = new System.Drawing.Point(3, 274);
+            this.LectureDuration.Name = "LectureDuration";
+            this.LectureDuration.Size = new System.Drawing.Size(285, 32);
+            this.LectureDuration.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.LectureDuration.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureDuration.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureDuration.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox4.StateCommon.Border.Width = 1;
-            this.kryptonTextBox4.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 29;
-            this.kryptonTextBox4.Text = "Enter Lecture Duration in Hours";
-            this.kryptonTextBox4.Enter += new System.EventHandler(this.enter_event_durationtxt);
-            this.kryptonTextBox4.Leave += new System.EventHandler(this.leave_event_durationtxt);
+            this.LectureDuration.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.LectureDuration.StateCommon.Border.Rounding = 20;
+            this.LectureDuration.StateCommon.Border.Width = 1;
+            this.LectureDuration.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.LectureDuration.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LectureDuration.TabIndex = 29;
+            this.LectureDuration.Text = "Enter Lecture Duration in Hours";
+            this.LectureDuration.Enter += new System.EventHandler(this.enter_event_durationtxt);
+            this.LectureDuration.Leave += new System.EventHandler(this.leave_event_durationtxt);
             // 
-            // kryptonTextBox2
+            // LectureTopic
             // 
-            this.kryptonTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LectureTopic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox2.Location = new System.Drawing.Point(3, 176);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.LectureTopic.Location = new System.Drawing.Point(3, 176);
+            this.LectureTopic.Name = "LectureTopic";
+            this.LectureTopic.Size = new System.Drawing.Size(285, 32);
+            this.LectureTopic.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.LectureTopic.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureTopic.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureTopic.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 27;
-            this.kryptonTextBox2.Text = "Enter Lecture Topic";
-            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_topictxt);
-            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_topictxt);
+            this.LectureTopic.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.LectureTopic.StateCommon.Border.Rounding = 20;
+            this.LectureTopic.StateCommon.Border.Width = 1;
+            this.LectureTopic.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.LectureTopic.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LectureTopic.TabIndex = 27;
+            this.LectureTopic.Text = "Enter Lecture Topic";
+            this.LectureTopic.Enter += new System.EventHandler(this.enter_event_topictxt);
+            this.LectureTopic.Leave += new System.EventHandler(this.leave_event_topictxt);
             // 
             // label1
             // 
@@ -159,28 +159,28 @@
             this.label1.Text = "Create Lecture";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // kryptonTextBox1
+            // LectureCourseName
             // 
-            this.kryptonTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LectureCourseName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(3, 127);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.LectureCourseName.Location = new System.Drawing.Point(3, 127);
+            this.LectureCourseName.Name = "LectureCourseName";
+            this.LectureCourseName.Size = new System.Drawing.Size(285, 32);
+            this.LectureCourseName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.LectureCourseName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureCourseName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LectureCourseName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 20;
-            this.kryptonTextBox1.Text = "Enter Lecture Course";
-            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_coursetxt);
-            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_coursetxt);
+            this.LectureCourseName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.LectureCourseName.StateCommon.Border.Rounding = 20;
+            this.LectureCourseName.StateCommon.Border.Width = 1;
+            this.LectureCourseName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.LectureCourseName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LectureCourseName.TabIndex = 20;
+            this.LectureCourseName.Text = "Enter Lecture Course";
+            this.LectureCourseName.Enter += new System.EventHandler(this.enter_event_coursetxt);
+            this.LectureCourseName.Leave += new System.EventHandler(this.leave_event_coursetxt);
             // 
             // label4
             // 
@@ -263,6 +263,7 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 16;
             this.kryptonButton2.Values.Text = "Create";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // label2
             // 
@@ -294,23 +295,24 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Duration";
             // 
-            // kryptonDateTimePicker1
+            // LectureTime
             // 
-            this.kryptonDateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LectureTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2025, 4, 26, 0, 0, 0, 0);
-            this.kryptonDateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(3, 225);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.ShowUpDown = true;
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(285, 33);
-            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.LectureTime.CalendarTodayDate = new System.DateTime(2025, 4, 26, 0, 0, 0, 0);
+            this.LectureTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.LectureTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.LectureTime.Location = new System.Drawing.Point(3, 225);
+            this.LectureTime.Name = "LectureTime";
+            this.LectureTime.ShowUpDown = true;
+            this.LectureTime.Size = new System.Drawing.Size(285, 30);
+            this.LectureTime.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 20;
-            this.kryptonDateTimePicker1.StateCommon.Border.Width = 1;
-            this.kryptonDateTimePicker1.TabIndex = 30;
+            this.LectureTime.StateCommon.Border.Rounding = 20;
+            this.LectureTime.StateCommon.Border.Width = 1;
+            this.LectureTime.TabIndex = 30;
+            this.LectureTime.ValueNullable = new System.DateTime(2025, 5, 7, 15, 43, 0, 0);
             // 
             // tableLayoutPanel3
             // 
@@ -339,6 +341,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(227, 308);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -375,16 +378,16 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox LectureCourseName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox LectureDuration;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox LectureTopic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker LectureTime;
         private System.Windows.Forms.Label label6;
     }
 }

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using FinalProjectDB.DL;
 namespace FinalProjectDB.UI.UserControls
 {
     public partial class Teach_DropCourse : UserControl
@@ -16,6 +16,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_DropCourse()
         {
             InitializeComponent();
+            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
         }
 
         private void teach_DropCourse_Load(object sender, EventArgs e)
@@ -24,21 +25,32 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Course You Want to Drop")
+            if (DropCourseName.Text == "Enter Course You Want to Drop")
             {
-                kryptonTextBox1.Text ="";
+                DropCourseName.Text ="";
             }
         }
 
         private void leave_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (DropCourseName.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Course You Want to Drop";
+                DropCourseName.Text ="Enter Course You Want to Drop";
             }
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            String DropCourse = DropCourseName.Text;
+            CourseDL.dropTeacherCourse(DropCourse,TeacherProfileDL.getTeacherId(Login.user));
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

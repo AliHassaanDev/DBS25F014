@@ -14,9 +14,9 @@ namespace FinalProjectDB.BL
     {
         private String serverName = "127.0.0.1";
         private String port = "3306";
-        private String databaseName = "final_project";
+        private String databaseName = "finalproject";
         private String databaseUser = "root";
-        private String databasePassword = "1234567890-=1234567890-=";
+        private String databasePassword = "wow123ABC...";
 
         private DatabaseHelper() { }
 
@@ -32,12 +32,9 @@ namespace FinalProjectDB.BL
         }
         public MySqlConnection getConnection()
         {
-            string connectionString =$"server={serverName};port={port};user={databaseUser};database ={ databaseName}; password ={ databasePassword}; SslMode = Required; "; 
+            string connectionString =$"server={serverName};port={port};user={databaseUser};database={databaseName};password={databasePassword};SslMode=Required;";
             var connection = new MySqlConnection(connectionString);
             connection.Open();
-
-
-
             return connection;
         }
 

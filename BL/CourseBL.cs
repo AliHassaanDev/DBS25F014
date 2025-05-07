@@ -12,7 +12,7 @@ namespace FinalProjectDB.BL
         DateTime date;
         int creditHours;
         int dept_id;
-
+        public CourseBL() { }
         public CourseBL(string courseName, DateTime date, int creditHours, int dept_id)
         {
             this.courseName = courseName;

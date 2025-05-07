@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -14,42 +16,78 @@ namespace FinalProjectDB.UI.UserControls
     {
         public Teach_ComplaintFile()
         {
+            
             InitializeComponent();
+            ComboBox1.Items.Add("Student");
+            ComboBox1.Items.Add("Teacher");
+
+        }
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("UserID", "User ID");
+            dataGridView1.Columns.Add("UserName", "User Name");
+        }
+        private void LoadLectureIntoGridView()
+        {
+            List<UserBL> users = UserDL.complaintUsers(ComboBox1.Text);
+            foreach (var user in users)
+            {
+                dataGridView1.Rows.Add(
+                    user.getUserId(),
+                    user.getUsername()
+                );
+            }
         }
         private void enter_event_usertxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter User ID")
+            if (FileUserID.Text == "Enter User ID")
             {
-                kryptonTextBox2.Text ="";
+                FileUserID.Text ="";
             }
         }
 
         private void leave_event_usertxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (FileUserID.Text == "")
             {
-                kryptonTextBox2.Text ="Enter User ID";
+                FileUserID.Text ="Enter User ID";
             }
         }
         private void enter_event_descriptiontxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Complaint Description")
+            if (FileDescription.Text == "Enter Complaint Description")
             {
-                kryptonTextBox1.Text ="";
+                FileDescription.Text ="";
             }
         }
 
         private void leave_event_descriptiontxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (FileDescription.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Complaint Description";
+                FileDescription.Text ="Enter Complaint Description";
             }
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            int userID = Convert.ToInt32(FileUserID.Text);
+            String description = FileDescription.Text;
+            TeacherProfileDL.fileComplaint(userID, description);
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+           
+            ConfigureDataGridView();
+            LoadLectureIntoGridView();
         }
     }
 }

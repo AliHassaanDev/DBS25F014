@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -15,30 +17,61 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_DeleteLectures()
         {
             InitializeComponent();
+            ConfigureDataGridView();
+            LoadLectureIntoGridView();
         }
-
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("LectureID", "Lecture ID");
+            dataGridView1.Columns.Add("CourseName", "Course Name");
+            dataGridView1.Columns.Add("Topic", "Topic");
+            dataGridView1.Columns.Add("StartTime", "Start Time");
+            dataGridView1.Columns.Add("Duration", "Duration");
+        }
+        private void LoadLectureIntoGridView()
+        {
+            List<LecturesBL> lectures = LecturesDL.teacherLectures();
+            foreach (var lecture in lectures)
+            {
+                dataGridView1.Rows.Add(
+                    lecture.getLectureId(),
+                    lecture.getCourseName(),
+                    lecture.getTopic(),
+                    lecture.getStartTime(),
+                    lecture.getDuration()
+                );
+            }
+        }
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
         {
 
         }
         private void enter_event_lecturetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Lecture Topic")
+            if (LectureTopicDelete.Text == "Enter Lecture Topic")
             {
-                kryptonTextBox1.Text ="";
+                LectureTopicDelete.Text ="";
             }
         }
         private void leave_event_lecturetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (LectureTopicDelete.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Lecture Topic";
+                LectureTopicDelete.Text ="Enter Lecture Topic";
             }
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            String LectureTopic = LectureTopicDelete.Text;
+            LecturesDL.deleteLecture(LectureTopic);
         }
     }
 }

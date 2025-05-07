@@ -35,11 +35,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherJobExperience = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherStudies = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherSubjects = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -55,11 +55,11 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonTextBox1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonTextBox2, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonTextBox3, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.TeacherName, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.TeacherJobExperience, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.TeacherStudies, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label5, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.kryptonTextBox4, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.TeacherSubjects, 1, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -149,6 +149,7 @@
             this.kryptonButton1.StateTracking.Border.Width = 1;
             this.kryptonButton1.TabIndex = 3;
             this.kryptonButton1.Values.Text = "Done";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // label1
             // 
@@ -192,75 +193,75 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Studies";
             // 
-            // kryptonTextBox1
+            // TeacherName
             // 
-            this.kryptonTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TeacherName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(95, 91);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(444, 32);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherName.Location = new System.Drawing.Point(95, 91);
+            this.TeacherName.Name = "TeacherName";
+            this.TeacherName.Size = new System.Drawing.Size(444, 32);
+            this.TeacherName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 27;
-            this.kryptonTextBox1.Text = "Enter Your Name";
-            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_nametxt);
-            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_nametxt);
+            this.TeacherName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherName.StateCommon.Border.Rounding = 20;
+            this.TeacherName.StateCommon.Border.Width = 1;
+            this.TeacherName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherName.TabIndex = 27;
+            this.TeacherName.Text = "Enter Your Name";
+            this.TeacherName.Enter += new System.EventHandler(this.enter_event_nametxt);
+            this.TeacherName.Leave += new System.EventHandler(this.leave_event_nametxt);
             // 
-            // kryptonTextBox2
+            // TeacherJobExperience
             // 
-            this.kryptonTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TeacherJobExperience.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox2.Location = new System.Drawing.Point(95, 146);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(444, 32);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherJobExperience.Location = new System.Drawing.Point(95, 146);
+            this.TeacherJobExperience.Name = "TeacherJobExperience";
+            this.TeacherJobExperience.Size = new System.Drawing.Size(444, 32);
+            this.TeacherJobExperience.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherJobExperience.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherJobExperience.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherJobExperience.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 28;
-            this.kryptonTextBox2.Text = "Enter Experience in Years";
-            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_experiencetxt);
-            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_experiencetxt);
+            this.TeacherJobExperience.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherJobExperience.StateCommon.Border.Rounding = 20;
+            this.TeacherJobExperience.StateCommon.Border.Width = 1;
+            this.TeacherJobExperience.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherJobExperience.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherJobExperience.TabIndex = 28;
+            this.TeacherJobExperience.Text = "Enter Experience in Years";
+            this.TeacherJobExperience.Enter += new System.EventHandler(this.enter_event_experiencetxt);
+            this.TeacherJobExperience.Leave += new System.EventHandler(this.leave_event_experiencetxt);
             // 
-            // kryptonTextBox3
+            // TeacherStudies
             // 
-            this.kryptonTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TeacherStudies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox3.Location = new System.Drawing.Point(95, 201);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(444, 32);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherStudies.Location = new System.Drawing.Point(95, 201);
+            this.TeacherStudies.Name = "TeacherStudies";
+            this.TeacherStudies.Size = new System.Drawing.Size(444, 32);
+            this.TeacherStudies.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherStudies.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherStudies.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherStudies.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox3.StateCommon.Border.Width = 1;
-            this.kryptonTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 29;
-            this.kryptonTextBox3.Text = "Enter Your Studies";
-            this.kryptonTextBox3.Enter += new System.EventHandler(this.enter_event_studytxt);
-            this.kryptonTextBox3.Leave += new System.EventHandler(this.leave_event_studytxt);
+            this.TeacherStudies.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherStudies.StateCommon.Border.Rounding = 20;
+            this.TeacherStudies.StateCommon.Border.Width = 1;
+            this.TeacherStudies.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherStudies.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherStudies.TabIndex = 29;
+            this.TeacherStudies.Text = "Enter Your Studies";
+            this.TeacherStudies.Enter += new System.EventHandler(this.enter_event_studytxt);
+            this.TeacherStudies.Leave += new System.EventHandler(this.leave_event_studytxt);
             // 
             // label5
             // 
@@ -272,28 +273,28 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Subject";
             // 
-            // kryptonTextBox4
+            // TeacherSubjects
             // 
-            this.kryptonTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TeacherSubjects.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox4.Location = new System.Drawing.Point(95, 256);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(444, 32);
-            this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherSubjects.Location = new System.Drawing.Point(95, 256);
+            this.TeacherSubjects.Name = "TeacherSubjects";
+            this.TeacherSubjects.Size = new System.Drawing.Size(444, 32);
+            this.TeacherSubjects.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherSubjects.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherSubjects.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherSubjects.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox4.StateCommon.Border.Width = 1;
-            this.kryptonTextBox4.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 30;
-            this.kryptonTextBox4.Text = "Enter Your Subject";
-            this.kryptonTextBox4.Enter += new System.EventHandler(this.enter_event_subjecttxt);
-            this.kryptonTextBox4.Leave += new System.EventHandler(this.leave_event_subjecttxt);
+            this.TeacherSubjects.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherSubjects.StateCommon.Border.Rounding = 20;
+            this.TeacherSubjects.StateCommon.Border.Width = 1;
+            this.TeacherSubjects.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherSubjects.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherSubjects.TabIndex = 30;
+            this.TeacherSubjects.Text = "Enter Your Subject";
+            this.TeacherSubjects.Enter += new System.EventHandler(this.enter_event_subjecttxt);
+            this.TeacherSubjects.Leave += new System.EventHandler(this.leave_event_subjecttxt);
             // 
             // Teach_ProfileComplete
             // 
@@ -319,9 +320,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TeacherName;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TeacherJobExperience;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TeacherStudies;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox TeacherSubjects;
     }
 }

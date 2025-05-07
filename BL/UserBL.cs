@@ -12,11 +12,16 @@ namespace FinalProjectDB.BL
         public static string current_user;
         public static int current_user_id;
         public static int current_user_role_id;
-
         string email;
         string username;
         string password;
         int role;
+        int user_id;
+
+        public void setUserId(int id) { this.user_id = id; }
+        public int getUserId() { return this.user_id; }
+
+        public UserBL() { }
         public UserBL(string email, string username, string password)
         {
             this.email = email;
