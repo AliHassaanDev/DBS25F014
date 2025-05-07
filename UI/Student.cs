@@ -147,6 +147,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             stu_CourseRegister1.Visible=true;
+            stu_CourseRegister1.load();
         }
         private void iconButton5_Click(object sender, EventArgs e)
         {

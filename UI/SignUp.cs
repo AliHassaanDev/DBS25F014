@@ -155,5 +155,10 @@ namespace FinalProjectDB.UI
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

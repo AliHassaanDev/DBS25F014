@@ -46,5 +46,10 @@ namespace FinalProjectDB.DL
             string query = $"DELETE FROM courses WHERE course_id={course_id}";
             DatabaseHelper.Instance.Update(query);
         }
+        public static void RegisterCourse(CourseBL course)
+        {
+            string query = $"INSERT INTO enrollments (student_id,course_id,enrolled_date) VALUES ({UserBL.current_user_id},{course.getCourseId()},NOW())";
+            DatabaseHelper.Instance.Update(query);
+        }
     }
 }

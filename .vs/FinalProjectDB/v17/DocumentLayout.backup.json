@@ -3,12 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\DBS25F014\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\studentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\studentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\studentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\studentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\departmentdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\departmentdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +102,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Teachers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs",
-              "RelativeDocumentMoniker": "UI\\Teachers.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs [Design]",
-              "RelativeToolTip": "UI\\Teachers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T11:11:27.205Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -51,13 +122,276 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Stu_CourseRegister.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAawDkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:12:40.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StudentsDL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs",
+              "RelativeDocumentMoniker": "DL\\StudentsDL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs",
+              "RelativeToolTip": "DL\\StudentsDL.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAArwCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:46:55.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "BL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs",
+              "RelativeToolTip": "BL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:53:43.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stu_CourseRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
+              "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:12:32.995Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseDL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs",
+              "RelativeDocumentMoniker": "DL\\CourseDL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs",
+              "RelativeToolTip": "DL\\CourseDL.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA0wDUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:26:37.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs",
+              "RelativeDocumentMoniker": "BL\\CourseBL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs",
+              "RelativeToolTip": "BL\\CourseBL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:26:16.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Stu_ProfileComplete.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAASwIsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:24:00.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentsBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs",
+              "RelativeDocumentMoniker": "BL\\StudentsBL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs",
+              "RelativeToolTip": "BL\\StudentsBL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:13:21.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
+              "RelativeToolTip": "UI\\Login.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAD4v2gAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:17:47.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Stu_ProfileComplete.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
+              "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:23:45.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs",
+              "RelativeDocumentMoniker": "DL\\UserDL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs",
+              "RelativeToolTip": "DL\\UserDL.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAA7wBIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:04:40.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs [Design]",
+              "RelativeToolTip": "UI\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:17:45.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs",
+              "RelativeToolTip": "UI\\SignUp.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAASwJwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:16:35.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs [Design]",
+              "RelativeToolTip": "UI\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:16:32.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\UserBL.cs",
+              "RelativeDocumentMoniker": "BL\\UserBL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\UserBL.cs",
+              "RelativeToolTip": "BL\\UserBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:05:53.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartmentDL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\DepartmentDL.cs",
+              "RelativeDocumentMoniker": "DL\\DepartmentDL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\DepartmentDL.cs",
+              "RelativeToolTip": "DL\\DepartmentDL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:45:55.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Admin_CreateDepartment.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "RelativeToolTip": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAIAzwC4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:27:50.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Admin_CreateDepartment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs [Design]",
+              "RelativeToolTip": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:27:48.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Student.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
+              "RelativeDocumentMoniker": "UI\\Student.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs [Design]",
+              "RelativeToolTip": "UI\\Student.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:23:12.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
+              "RelativeDocumentMoniker": "UI\\Admin.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
+              "RelativeToolTip": "UI\\Admin.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAMwOgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:36:04.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
-              "ToolTip": "H:\\Semester 2\\DB\\Final Project\\FinalProjectDB\\UI\\Admin.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs [Design]",
+              "RelativeToolTip": "UI\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T08:53:38.521Z"
+              "WhenOpened": "2025-05-07T13:36:01.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
+              "RelativeDocumentMoniker": "UI\\Student.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
+              "RelativeToolTip": "UI\\Student.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAvwJAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:11:56.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Teachers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs",
+              "RelativeDocumentMoniker": "UI\\Teachers.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs [Design]",
+              "RelativeToolTip": "UI\\Teachers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:56:55.422Z"
             }
           ]
         }

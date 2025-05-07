@@ -8,6 +8,7 @@ namespace FinalProjectDB.BL
 {
     internal class CourseBL
     {
+        int courseId;
         string courseName;
         DateTime date;
         int creditHours;
@@ -20,7 +21,12 @@ namespace FinalProjectDB.BL
             this.creditHours = creditHours;
             this.dept_id = dept_id;
         }
+        public CourseBL(int id)
+        {
+            this.courseId=id;
+        }
 
+        public int getCourseId() { return  this.courseId; }
         public void setCourseName(string courseName) { this.courseName = courseName; }
         public void setDate(DateTime date) { this.date = date;}
         public void setCreditHours(int creditHours) {  this.creditHours = creditHours;}

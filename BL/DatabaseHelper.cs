@@ -16,7 +16,7 @@ namespace FinalProjectDB.BL
         private String port = "3306";
         private String databaseName = "final_project";
         private String databaseUser = "root";
-        private String databasePassword = "1234567890-=1234567890-=";
+        private String databasePassword = "alihassaan16904$";
 
         private DatabaseHelper() { }
 

@@ -419,5 +419,9 @@ namespace FinalProjectDB.UI
             admin_AssignedTeachers1.Visible = true;
         }
 
+        private void admin_AssignedTeachers1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

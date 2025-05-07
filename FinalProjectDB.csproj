@@ -126,9 +126,11 @@
     <Compile Include="BL\CourseBL.cs" />
     <Compile Include="BL\DatabaseHelper.cs" />
     <Compile Include="BL\DepartmentBL.cs" />
+    <Compile Include="BL\StudentsBL.cs" />
     <Compile Include="BL\UserBL.cs" />
     <Compile Include="DL\CourseDL.cs" />
     <Compile Include="DL\DepartmentDL.cs" />
+    <Compile Include="DL\StudentsDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="UI\Admin.cs">
       <SubType>Form</SubType>
