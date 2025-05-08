@@ -9,8 +9,19 @@ namespace FinalProjectDB.DL
 {
     internal class CourseDL
     {
+        public static List<CourseBL> list = new List<CourseBL>();
         public static List<string> courses = new List<string>();
 
+        public static void loadGridviewlist()
+        {
+            list.Clear();
+            string query = $"SELECT * FROM final_project.courses";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                list.Add(new CourseBL(Convert.ToInt32(reader["course_id"]),Convert.ToString(reader["course_title"]), Convert.ToDateTime(reader["end_date"]), Convert.ToInt32(reader["credit_hours"]), Convert.ToInt32(reader["department_id"])));
+            }
+        }
         public static void loadCoursesList()
         {
             courses.Clear();

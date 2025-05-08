@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -35,6 +36,17 @@ namespace FinalProjectDB.UI.UserControls
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            label1.Text = UserBL.current_user;
+            label3.Text= UserBL.current_user_email;
         }
     }
 }

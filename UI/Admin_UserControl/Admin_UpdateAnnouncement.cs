@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.Admin_UserControl
 {
@@ -53,6 +55,41 @@ namespace FinalProjectDB.UI.Admin_UserControl
             {
                 kryptonTextBox2.Text ="Enter New Announcement Description";
             }
+        }
+
+        public void load()
+        {
+            AnnouncementDL.loadAnnouncementList();
+            kryptonComboBox2.DataSource = null;
+            kryptonComboBox2.DataSource = AnnouncementDL.announcements_name;
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonComboBox2.Text!="")
+                {
+                    string title = kryptonTextBox1.Text;
+                    string description = kryptonTextBox2.Text;
+                    DateTime created = DateTime.Now;
+
+                    int id = AnnouncementDL.getIDFromAnnouncement(kryptonComboBox2.Text);
+
+                    AnnouncementBL announcement = new AnnouncementBL(title, description, created);
+
+                    AnnouncementDL.UpdateAnnouncement(announcement,id);
+
+                    MessageBox.Show("Announcement updated successfully!");
+
+                    load();
+
+                    kryptonTextBox1.Clear();
+                    kryptonTextBox2.Clear();
+
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }

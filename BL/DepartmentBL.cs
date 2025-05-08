@@ -11,15 +11,20 @@ namespace FinalProjectDB.BL
         int id;
         string name;
 
+        public int GridViewID { get; set; }
+        public string GridViewName { get; set; }
+
+        public DepartmentBL(int GridViewID, string GridViewName) 
+        {
+            this.GridViewID = GridViewID;
+            this.GridViewName = GridViewName;
+        }
+
         public DepartmentBL(string name)
         {
             this.name = name;
         }
-        public DepartmentBL(int id, string name)
-        {
-            this.id = id;
-            this.name = name;
-        }
+        
         public int getId() { return id; }
         public string getName() { return name; }
 

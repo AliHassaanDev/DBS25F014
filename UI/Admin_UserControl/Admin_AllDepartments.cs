@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.Admin_UserControl
 {
@@ -17,9 +18,16 @@ namespace FinalProjectDB.UI.Admin_UserControl
             InitializeComponent();
         }
 
+        public void load()
+        {
+            DepartmentDL.GridViewloadDepartmentsList();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = DepartmentDL.list;
+            dataGridView1.AutoGenerateColumns=true;
+        }
         private void Admin_AllDepartments_Load(object sender, EventArgs e)
         {
-
+            load();
         }
     }
 }

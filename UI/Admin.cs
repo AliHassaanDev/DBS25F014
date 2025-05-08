@@ -221,6 +221,7 @@ namespace FinalProjectDB.UI
         private void iconButton2_Click(object sender, EventArgs e)
         {
             hideUserControls();
+            admin_AllCourses1.load();
             admin_AllCourses1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 121);
             showPanels(panel3);
@@ -250,6 +251,7 @@ namespace FinalProjectDB.UI
         private void iconButton33_Click(object sender, EventArgs e)
         {
             hideUserControls();
+            admin_AssignCourse1.load();
             admin_AssignCourse1.Visible = true;
         }
 
@@ -278,6 +280,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_UpdateUser1.Visible = true;
+            admin_UpdateUser1.load();
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
@@ -291,6 +294,7 @@ namespace FinalProjectDB.UI
         private void iconButton12_Click(object sender, EventArgs e)
         {
             hideUserControls();
+            admin_AllDepartments1.load();
             admin_AllDepartments1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 201);
             showPanels(panel5);
@@ -320,6 +324,7 @@ namespace FinalProjectDB.UI
         private void iconButton16_Click(object sender, EventArgs e)
         {
             hideUserControls();
+            teach_Announcements1.load();
             teach_Announcements1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 241);
             showPanels(panel6);
@@ -335,12 +340,14 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_UpdateAnnouncement1.Visible = true;
+            admin_UpdateAnnouncement1.load();
         }
 
         private void iconButton13_Click(object sender, EventArgs e)
         {
             hideUserControls();
             admin_DeleteAnnouncement1.Visible = true;
+            admin_DeleteAnnouncement1.load();
         }
 
         //-----------Attendance Btns-------------------//

@@ -122,6 +122,14 @@ namespace FinalProjectDB.UI
                     student.Location = this.Location;
                     student.Show();
                 }
+                else if(UserBL.current_user_role_id == 2)
+                {
+                    this.Visible = false;
+                    Teachers teachers=new Teachers();
+                    teachers.StartPosition= FormStartPosition.Manual;
+                    teachers.Location = this.Location;
+                    teachers.Show();
+                }
                 else if (UserBL.current_user_role_id == 3)
                 {
                     this.Visible = false;
@@ -130,8 +138,6 @@ namespace FinalProjectDB.UI
                     admin.Location = this.Location;
                     admin.Show();
                 }
-
-                //continue to furthure interface using this
             }
         }
 

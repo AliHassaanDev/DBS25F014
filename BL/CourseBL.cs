@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +14,12 @@ namespace FinalProjectDB.BL
         int creditHours;
         int dept_id;
 
+        public int GridViewCourseID { get; set; }
+        public string GridViewcourseName { get; set; }
+        public DateTime GridViewdate { get; set; }
+        public int GridViewcreditHours { get; set; }
+        public int GridViewDept_id { get; set; }
+
         public CourseBL(string courseName, DateTime date, int creditHours, int dept_id)
         {
             this.courseName = courseName;
@@ -24,6 +30,15 @@ namespace FinalProjectDB.BL
         public CourseBL(int id)
         {
             this.courseId=id;
+        }
+
+        public CourseBL(int GridViewCourseID, string GridViewcourseName,DateTime GridViewdate,int GridViewcreditHours,int GridViewDept_id)
+        {
+            this.GridViewCourseID = GridViewCourseID;
+            this.GridViewcourseName = GridViewcourseName;
+            this.GridViewdate = GridViewdate;
+            this.GridViewcreditHours = GridViewcreditHours;
+            this.GridViewDept_id = GridViewDept_id;
         }
 
         public int getCourseId() { return  this.courseId; }
