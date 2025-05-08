@@ -4,9 +4,12 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_ProfileComplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Stashed changes
@@ -21,9 +24,12 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Stashed changes
@@ -42,9 +48,12 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 >>>>>>> Stashed changes
@@ -150,7 +159,11 @@
               "ViewState": "AgIAALQAAAAAAAAAAAAYwMEAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:21.329Z"
+=======
+              "WhenOpened": "2025-05-07T17:57:21.856Z"
+>>>>>>> Stashed changes
 =======
               "WhenOpened": "2025-05-07T17:57:21.856Z"
 >>>>>>> Stashed changes
@@ -166,8 +179,12 @@
               "ViewState": "AgIAAC4AAAAAAAAAAAAEwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:21.483Z",
               "EditorCaption": ""
+=======
+              "WhenOpened": "2025-05-07T13:12:40.23Z"
+>>>>>>> Stashed changes
 =======
               "WhenOpened": "2025-05-07T13:12:40.23Z"
 >>>>>>> Stashed changes
@@ -199,6 +216,9 @@
 =======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T14:23:45.273Z"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             },
             {
@@ -215,6 +235,9 @@
 =======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T13:12:32.995Z"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             },
             {
@@ -228,7 +251,11 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAcwBIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.804Z"
+=======
+              "WhenOpened": "2025-05-07T12:53:43.507Z"
+>>>>>>> Stashed changes
 =======
               "WhenOpened": "2025-05-07T12:53:43.507Z"
 >>>>>>> Stashed changes
@@ -244,7 +271,11 @@
               "ViewState": "AgIAACYAAAAAAAAAAAA0wDUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.806Z"
+=======
+              "WhenOpened": "2025-05-07T13:26:37.659Z"
+>>>>>>> Stashed changes
 =======
               "WhenOpened": "2025-05-07T13:26:37.659Z"
 >>>>>>> Stashed changes
@@ -260,7 +291,11 @@
               "ViewState": "AgIAAAQAAAAAAAAAAAArwCIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.807Z"
+=======
+              "WhenOpened": "2025-05-07T14:46:55.688Z"
+>>>>>>> Stashed changes
 =======
               "WhenOpened": "2025-05-07T14:46:55.688Z"
 >>>>>>> Stashed changes
