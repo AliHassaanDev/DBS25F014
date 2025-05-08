@@ -10,29 +10,8 @@
 =======
 =======
 >>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< Updated upstream
 >>>>>>> Stashed changes
     },
     {
@@ -40,21 +19,24 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_CourseRegister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+=======
+>>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,8 +48,15 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+=======
+>>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -76,30 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BL\\StudentsBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-=======
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\studentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\studentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\bl\\studentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\studentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -185,15 +150,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 3,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 3,
->>>>>>> Stashed changes
               "Title": "Stu_CourseRegister.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
@@ -205,12 +162,10 @@
 <<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:21.329Z"
 =======
-              "WhenOpened": "2025-05-07T17:57:21.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:57:21.856Z"
 >>>>>>> Stashed changes
 =======
-              "WhenOpened": "2025-05-07T17:57:21.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T17:57:21.856Z"
 >>>>>>> Stashed changes
             },
             {
@@ -224,14 +179,15 @@
               "ViewState": "AgIAAC4AAAAAAAAAAAAEwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
 <<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:21.483Z",
-=======
-              "WhenOpened": "2025-05-07T13:12:40.23Z",
 <<<<<<< Updated upstream
+              "WhenOpened": "2025-05-08T06:38:21.483Z",
+              "EditorCaption": ""
+=======
+              "WhenOpened": "2025-05-07T13:12:40.23Z"
 >>>>>>> Stashed changes
 =======
+              "WhenOpened": "2025-05-07T13:12:40.23Z"
 >>>>>>> Stashed changes
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -241,52 +197,28 @@
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T06:38:21.485Z",
-=======
-              "ViewState": "AgIAAIkAAAAAAAAAAAASwJIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:24:00.115Z",
->>>>>>> Stashed changes
-=======
-              "ViewState": "AgIAAIkAAAAAAAAAAAASwJIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:24:00.115Z",
->>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "DocumentIndex": 3,
-=======
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
               "Title": "Stu_ProfileComplete.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
               "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
               "WhenOpened": "2025-05-08T06:38:22.787Z"
 =======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:23:45.273Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-07T14:23:45.273Z"
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:23:45.273Z",
-              "EditorCaption": " [Design]"
 >>>>>>> Stashed changes
             },
             {
@@ -297,8 +229,16 @@
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
               "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
+<<<<<<< Updated upstream
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
               "WhenOpened": "2025-05-08T06:38:22.803Z"
+=======
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:12:32.995Z"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -313,23 +253,16 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.804Z"
+=======
+              "WhenOpened": "2025-05-07T12:53:43.507Z"
+>>>>>>> Stashed changes
+=======
+              "WhenOpened": "2025-05-07T12:53:43.507Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-=======
-=======
->>>>>>> Stashed changes
-              "WhenOpened": "2025-05-07T12:53:43.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
               "Title": "CourseDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs",
               "RelativeDocumentMoniker": "DL\\CourseDL.cs",
@@ -337,19 +270,19 @@
               "RelativeToolTip": "DL\\CourseDL.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAA0wDUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.806Z"
+=======
+              "WhenOpened": "2025-05-07T13:26:37.659Z"
+>>>>>>> Stashed changes
+=======
+              "WhenOpened": "2025-05-07T13:26:37.659Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "DocumentIndex": 7,
-=======
-              "DocumentIndex": 6,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 6,
->>>>>>> Stashed changes
               "Title": "StudentsDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs",
               "RelativeDocumentMoniker": "DL\\StudentsDL.cs",
@@ -361,12 +294,10 @@
 <<<<<<< Updated upstream
               "WhenOpened": "2025-05-08T06:38:22.807Z"
 =======
-              "WhenOpened": "2025-05-07T14:46:55.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:46:55.688Z"
 >>>>>>> Stashed changes
 =======
-              "WhenOpened": "2025-05-07T14:46:55.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T14:46:55.688Z"
 >>>>>>> Stashed changes
             },
             {
@@ -395,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
               "RelativeDocumentMoniker": "UI\\Login.cs",
@@ -408,15 +339,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "DocumentIndex": 11,
-=======
-              "DocumentIndex": 10,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 10,
->>>>>>> Stashed changes
               "Title": "UserDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs",
               "RelativeDocumentMoniker": "DL\\UserDL.cs",
@@ -522,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
@@ -535,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
@@ -546,15 +469,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
               "DocumentIndex": 22,
-=======
-              "DocumentIndex": 20,
->>>>>>> Stashed changes
-=======
-              "DocumentIndex": 20,
->>>>>>> Stashed changes
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
               "RelativeDocumentMoniker": "UI\\Student.cs",
