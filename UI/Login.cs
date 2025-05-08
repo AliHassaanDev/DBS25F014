@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +15,8 @@ namespace FinalProjectDB.UI
 {
     public partial class Login : KryptonForm
     {
+        public static string user;
+        
         public Login()
         {
             InitializeComponent();
@@ -110,12 +112,13 @@ namespace FinalProjectDB.UI
                     MessageBox.Show("Invalid username or password!");
                     UserBL.current_user_role_id = 0;
                 }
-
+                Login.user = username;
                 kryptonTextBox1.Clear();
                 kryptonTextBox2.Clear();
 
                 if (UserBL.current_user_role_id == 1)
                 {
+
                     this.Visible = false;
                     Student student = new Student();
                     student.StartPosition = FormStartPosition.Manual;
@@ -138,6 +141,16 @@ namespace FinalProjectDB.UI
                     admin.Location = this.Location;
                     admin.Show();
                 }
+                else if (UserBL.current_user_role_id == 2)
+                {
+                    this.Visible = false;
+                    Teachers teach = new Teachers();
+                    teach.StartPosition = FormStartPosition.Manual;
+                    teach.Location = this.Location;
+                    teach.Show();
+                }
+
+                //continue to furthure interface using this
             }
         }
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.DL;
 using FinalProjectDB.BL;
 
 namespace FinalProjectDB.UI.UserControls
@@ -16,6 +17,8 @@ namespace FinalProjectDB.UI.UserControls
         public Profile()
         {
             InitializeComponent();
+            label1.Text = Login.user;
+            label3.Text = UserDL.getEmail();
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)
@@ -47,6 +50,11 @@ namespace FinalProjectDB.UI.UserControls
         {
             label1.Text = UserBL.current_user;
             label3.Text= UserBL.current_user_email;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

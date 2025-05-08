@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +26,9 @@ namespace FinalProjectDB.BL
 
 
         public UserBL() { }
+        int user_id;
+        public void setUserId(int id) { this.user_id = id; }
+        public int getUserId() { return this.user_id; }
         public UserBL(string email, string username, string password)
         {
             this.email = email;

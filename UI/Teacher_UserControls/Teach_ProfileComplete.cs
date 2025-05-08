@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -23,63 +26,74 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_nametxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Your Name")
+            if (TeacherName.Text == "Enter Your Name")
             {
-                kryptonTextBox1.Text ="";
+                TeacherName.Text ="";
             }
         }
 
         private void leave_event_nametxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (TeacherName.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Your Name";
+                TeacherName.Text ="Enter Your Name";
             }
         }
         private void enter_event_experiencetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter Experience in Years")
+            if (TeacherJobExperience.Text == "Enter Experience in Years")
             {
-                kryptonTextBox2.Text ="";
+                TeacherJobExperience.Text ="";
             }
         }
 
         private void leave_event_experiencetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (TeacherJobExperience.Text == "")
             {
-                kryptonTextBox2.Text ="Enter Experience in Years";
+                TeacherJobExperience.Text ="Enter Experience in Years";
             }
         }
         private void enter_event_studytxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox3.Text == "Enter Your Studies")
+            if (TeacherStudies.Text == "Enter Your Studies")
             {
-                kryptonTextBox3.Text ="";
+                TeacherStudies.Text ="";
             }
         }
 
         private void leave_event_studytxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox3.Text == "")
+            if (TeacherStudies.Text == "")
             {
-                kryptonTextBox3.Text ="Enter Your Studies";
+                TeacherStudies.Text ="Enter Your Studies";
             }
         }
         private void enter_event_subjecttxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox4.Text == "Enter Your Subject")
+            if (TeacherSubjects.Text == "Enter Your Subject")
             {
-                kryptonTextBox4.Text ="";
+                TeacherSubjects.Text ="";
             }
         }
 
         private void leave_event_subjecttxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox3.Text == "")
+            if (TeacherStudies.Text == "")
             {
-                kryptonTextBox3.Text ="Enter Your Subject";
+                TeacherStudies.Text ="Enter Your Subject";
             }
         }
+
+        public void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            String name = TeacherName.Text;
+            int exp = Convert.ToInt32(TeacherJobExperience.Text);
+            String studies = TeacherStudies.Text;
+            String subjects = TeacherSubjects.Text;
+            TeacherProfile t1 = new TeacherProfile(name, exp, studies, subjects);
+            TeacherProfileDL.AddTeacherData(t1);
+        }
+        
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using FinalProjectDB.DL;
 namespace FinalProjectDB.UI.UserControls
 {
     public partial class Teach_YourCourses : UserControl
@@ -15,9 +15,15 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_YourCourses()
         {
             InitializeComponent();
+            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
         }
 
         private void Teach_YourCourses_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

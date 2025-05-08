@@ -20,6 +20,7 @@ namespace FinalProjectDB.BL
         public int GridViewcreditHours { get; set; }
         public int GridViewDept_id { get; set; }
 
+        public CourseBL() { }
         public CourseBL(string courseName, DateTime date, int creditHours, int dept_id)
         {
             this.courseName = courseName;

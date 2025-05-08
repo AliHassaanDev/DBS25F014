@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.DL;
+using FinalProjectDB.BL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -15,6 +17,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_CreateLecture()
         {
             InitializeComponent();
+            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,48 +26,48 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Lecture Course")
+            if (LectureCourseName.Text == "Enter Lecture Course")
             {
-                kryptonTextBox1.Text ="";
+                LectureCourseName.Text ="";
             }
         }
 
         private void leave_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (LectureCourseName.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Lecture Course";
+                LectureCourseName.Text ="Enter Lecture Course";
             }
         }
 
         private void enter_event_topictxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter Lecture Topic")
+            if (LectureTopic.Text == "Enter Lecture Topic")
             {
-                kryptonTextBox2.Text ="";
+                LectureTopic.Text ="";
             }
         }
 
         private void leave_event_topictxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (LectureTopic.Text == "")
             {
-                kryptonTextBox2.Text ="Enter Lecture Topic";
+                LectureTopic.Text ="Enter Lecture Topic";
             }
         }
 
         private void enter_event_durationtxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox4.Text == "Enter Lecture Duration in Hours")
+            if (LectureDuration.Text == "Enter Lecture Duration in Hours")
             {
-                kryptonTextBox4.Text ="";
+                LectureDuration.Text ="";
             }
         }
         private void leave_event_durationtxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox4.Text == "")
+            if (LectureDuration.Text == "")
             {
-                kryptonTextBox4.Text ="Enter Lecture Duration in Hours";
+                LectureDuration.Text ="Enter Lecture Duration in Hours";
             }
         }
 
@@ -74,6 +77,26 @@ namespace FinalProjectDB.UI.UserControls
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            String lectureCourse = LectureCourseName.Text;
+            LecturesDL.validCourse(lectureCourse);
+            String lectureTopic = LectureTopic.Text;
+            int lectureDuration = Convert.ToInt32(LectureDuration.Text);
+            DateTime lectureDate =LectureTime.Value;
+            int courseID = CourseDL.getIDFromCourse(lectureCourse);
+            LecturesBL lecture = new LecturesBL(TeacherProfileDL.getTeacherId(Login.user),courseID , lectureTopic,lectureDate,lectureDuration);
+            LecturesDL.AddLecture(lecture);
+
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
