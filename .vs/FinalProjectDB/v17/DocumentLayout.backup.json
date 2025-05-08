@@ -3,124 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\DBS25F014\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_ProfileComplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-=======
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:UI\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student_UserControl\\Stu_CourseRegister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\bl\\lecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\lecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-=======
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\teacher_usercontrols\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\user\\downloads\\dbs25f014\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BL\\DatabaseHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\CourseDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student_usercontrol\\stu_courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\StudentsDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-=======
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BL\\CourseBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:UI\\SignUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BL\\StudentsBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\UserBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:BL\\UserBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\DepartmentDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:DL\\DepartmentDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\UserDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:UI\\Admin_UserControl\\Admin_CreateDepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\SignUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:UI\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\BL\\UserBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BL\\UserBL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\DL\\DepartmentDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DL\\DepartmentDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:UI\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Admin_UserControl\\Admin_CreateDepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\admin_usercontrol\\admin_createdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UI\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\User\\Downloads\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,8 +82,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "BL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs*",
+              "RelativeToolTip": "BL\\DatabaseHelper.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T08:03:07.818Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -149,220 +114,93 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Stu_CourseRegister.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
-              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
-              "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.Designer.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAYwMEAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:21.329Z"
-=======
-              "WhenOpened": "2025-05-07T17:57:21.856Z"
->>>>>>> Stashed changes
-=======
-              "WhenOpened": "2025-05-07T17:57:21.856Z"
->>>>>>> Stashed changes
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Stu_CourseRegister.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
-              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
-              "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAEwDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:21.483Z",
-              "EditorCaption": ""
-=======
-              "WhenOpened": "2025-05-07T13:12:40.23Z"
->>>>>>> Stashed changes
-=======
-              "WhenOpened": "2025-05-07T13:12:40.23Z"
->>>>>>> Stashed changes
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Stu_ProfileComplete.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:21.485Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teacher_UserControls\\Profile.cs",
+              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Profile.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teacher_UserControls\\Profile.cs",
+              "RelativeToolTip": "UI\\Teacher_UserControls\\Profile.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAADYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T08:01:31.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Stu_ProfileComplete.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_ProfileComplete.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
               "RelativeToolTip": "UI\\Student_UserControl\\Stu_ProfileComplete.cs [Design]",
-<<<<<<< Updated upstream
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2025-05-08T06:38:22.787Z"
-=======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T14:23:45.273Z"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+              "WhenOpened": "2025-05-08T06:38:22.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Stu_CourseRegister.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs",
               "RelativeDocumentMoniker": "UI\\Student_UserControl\\Stu_CourseRegister.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
               "RelativeToolTip": "UI\\Student_UserControl\\Stu_CourseRegister.cs [Design]",
-<<<<<<< Updated upstream
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T06:38:22.803Z"
-=======
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:12:32.995Z"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "BL\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\DatabaseHelper.cs",
-              "RelativeToolTip": "BL\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBIAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:22.804Z"
-=======
-              "WhenOpened": "2025-05-07T12:53:43.507Z"
->>>>>>> Stashed changes
-=======
-              "WhenOpened": "2025-05-07T12:53:43.507Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CourseDL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs",
-              "RelativeDocumentMoniker": "DL\\CourseDL.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\CourseDL.cs",
-              "RelativeToolTip": "DL\\CourseDL.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAA0wDUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:22.806Z"
-=======
-              "WhenOpened": "2025-05-07T13:26:37.659Z"
->>>>>>> Stashed changes
-=======
-              "WhenOpened": "2025-05-07T13:26:37.659Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentsDL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs",
-              "RelativeDocumentMoniker": "DL\\StudentsDL.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\StudentsDL.cs",
-              "RelativeToolTip": "DL\\StudentsDL.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAArwCIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-              "WhenOpened": "2025-05-08T06:38:22.807Z"
-=======
-              "WhenOpened": "2025-05-07T14:46:55.688Z"
->>>>>>> Stashed changes
-=======
-              "WhenOpened": "2025-05-07T14:46:55.688Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CourseBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs",
-              "RelativeDocumentMoniker": "BL\\CourseBL.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\CourseBL.cs",
-              "RelativeToolTip": "BL\\CourseBL.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StudentsBL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs",
-              "RelativeDocumentMoniker": "BL\\StudentsBL.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\StudentsBL.cs",
-              "RelativeToolTip": "BL\\StudentsBL.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
               "RelativeDocumentMoniker": "UI\\Login.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
               "RelativeToolTip": "UI\\Login.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAD4v2gAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAD4v2kAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T06:38:22.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserDL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs",
-              "RelativeDocumentMoniker": "DL\\UserDL.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\UserDL.cs",
-              "RelativeToolTip": "DL\\UserDL.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAA7wBIAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LecturesBL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\LecturesBL.cs",
+              "RelativeDocumentMoniker": "BL\\LecturesBL.cs",
+              "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\LecturesBL.cs",
+              "RelativeToolTip": "BL\\LecturesBL.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.814Z"
+              "WhenOpened": "2025-05-08T08:01:59.434Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs",
               "RelativeDocumentMoniker": "UI\\Login.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Login.cs [Design]",
               "RelativeToolTip": "UI\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.825Z"
+              "WhenOpened": "2025-05-08T06:38:22.825Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "SignUp.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs",
               "RelativeDocumentMoniker": "UI\\SignUp.cs",
@@ -375,18 +213,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 4,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs",
               "RelativeDocumentMoniker": "UI\\SignUp.cs",
               "ToolTip": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\SignUp.cs [Design]",
               "RelativeToolTip": "UI\\SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.834Z"
+              "WhenOpened": "2025-05-08T06:38:22.834Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "UserBL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\BL\\UserBL.cs",
               "RelativeDocumentMoniker": "BL\\UserBL.cs",
@@ -398,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "DepartmentDL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\DL\\DepartmentDL.cs",
               "RelativeDocumentMoniker": "DL\\DepartmentDL.cs",
@@ -410,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "Admin_CreateDepartment.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
@@ -418,12 +257,11 @@
               "RelativeToolTip": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
               "ViewState": "AgIAACgAAAAAAAAAAIAzwC4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T06:38:22.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "Admin_CreateDepartment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_CreateDepartment.cs",
@@ -434,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 13,
               "Title": "Student.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
               "RelativeDocumentMoniker": "UI\\Student.cs",
@@ -445,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 14,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
@@ -453,12 +291,11 @@
               "RelativeToolTip": "UI\\Admin.cs",
               "ViewState": "AgIAAN4AAAAAAAAAAAAMwOgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:38:22.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T06:38:22.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Admin.cs",
               "RelativeDocumentMoniker": "UI\\Admin.cs",
@@ -469,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 16,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Student.cs",
               "RelativeDocumentMoniker": "UI\\Student.cs",
@@ -481,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 17,
               "Title": "Teachers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Downloads\\DBS25F014\\UI\\Teachers.cs",
               "RelativeDocumentMoniker": "UI\\Teachers.cs",

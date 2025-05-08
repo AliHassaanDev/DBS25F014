@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\UI"
   ],
-  "SelectedNode": "\\FinalProjectDB.sln",
+  "SelectedNode": "\\UI\\SignUp.cs",
   "PreviewInSolutionExplorer": false
 }

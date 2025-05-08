@@ -52,9 +52,6 @@ namespace FinalProjectDB.UI.UserControls
             label3.Text= UserBL.current_user_email;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }
