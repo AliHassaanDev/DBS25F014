@@ -9,6 +9,7 @@ namespace FinalProjectDB.DL
 {
     internal class DepartmentDL
     {
+        public static List<DepartmentBL> list = new List<DepartmentBL>();
         public static List<string> department_list = new List<string>();
         public static void loadDepartmentsList()
         {
@@ -18,6 +19,16 @@ namespace FinalProjectDB.DL
             while(reader.Read())
             {
                 department_list.Add(Convert.ToString(reader["dept_name"]));
+            }
+        }
+        public static void GridViewloadDepartmentsList()
+        {
+            list.Clear();
+            string query = $"SELECT * FROM final_project.departments";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                list.Add(new DepartmentBL(Convert.ToInt32(reader["department_id"]),Convert.ToString(reader["dept_name"])));
             }
         }
         public static int getIDFromDept(string dept)

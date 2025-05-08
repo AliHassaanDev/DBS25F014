@@ -9,19 +9,36 @@ namespace FinalProjectDB.BL
 {
     internal class UserBL
     {
+        public static string current_user_email;
         public static string current_user;
         public static int current_user_id;
         public static int current_user_role_id;
 
-        string email;
-        string username;
-        string password;
-        int role;
+        protected string email;
+        protected string username;
+        protected string password;
+        protected int role;
+
+        public int GridViewUserID { get; set; }
+        public string GridViewUsername { get; set; }
+        public string GridViewEmail { get; set; }
+        public string GridViewPassword { get; set; }
+
+
+        public UserBL() { }
         public UserBL(string email, string username, string password)
         {
             this.email = email;
             this.username = username;
             this.password = password;
+        }
+
+        public UserBL(int gridViewUserID, string gridViewEmail, string gridViewUsername, string gridViewPassword)
+        {
+            GridViewUserID = gridViewUserID;
+            GridViewUsername = gridViewUsername;
+            GridViewEmail = gridViewEmail;
+            GridViewPassword = gridViewPassword;
         }
 
         public UserBL(string email, string username, string password,int role)

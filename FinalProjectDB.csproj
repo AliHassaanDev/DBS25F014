@@ -123,12 +123,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\AnnouncementBL.cs" />
     <Compile Include="BL\CourseBL.cs" />
     <Compile Include="BL\DatabaseHelper.cs" />
     <Compile Include="BL\DepartmentBL.cs" />
+    <Compile Include="BL\TeacherBL.cs" />
     <Compile Include="BL\UserBL.cs" />
+    <Compile Include="DL\AnnouncementDL.cs" />
     <Compile Include="DL\CourseDL.cs" />
     <Compile Include="DL\DepartmentDL.cs" />
+    <Compile Include="DL\TeacherDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="UI\Admin.cs">
       <SubType>Form</SubType>
@@ -692,6 +696,7 @@
       <DependentUpon>Teach_YourLectures.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\FinalProjectDB.BL.CourseBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
