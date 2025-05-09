@@ -19,11 +19,6 @@ namespace FinalProjectDB.UI.Admin_UserControl
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Admin_AllCourses_Load(object sender, EventArgs e)
         {
             load();
@@ -37,6 +32,16 @@ namespace FinalProjectDB.UI.Admin_UserControl
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void courseBLBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }

@@ -24,58 +24,29 @@ namespace FinalProjectDB
            
         }
 
-        private void kryptonButton2_Click(object sender, EventArgs e)
+        private void kryptonButton2_Click_1(object sender, EventArgs e)
         {
             this.Visible = false;
             SignUp sign = new SignUp();
             sign.StartPosition = FormStartPosition.Manual;
             sign.Location = this.Location;
+            sign.Size = this.Size;
             sign.Show();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        private void kryptonButton1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             Login sign = new Login();
             sign.StartPosition = FormStartPosition.Manual;
             sign.Location = this.Location;
+            sign.Size = this.Size;
             sign.Show();
         }
 
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void EDUMS_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

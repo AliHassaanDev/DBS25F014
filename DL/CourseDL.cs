@@ -27,7 +27,7 @@ namespace FinalProjectDB.DL
         public static void loadCoursesList()
         {
             courses.Clear();
-            string query = $"SELECT * FROM finalproject.courses";
+            string query = $"SELECT * FROM courses";
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {
@@ -36,7 +36,7 @@ namespace FinalProjectDB.DL
         }
         public static int getIDFromCourse(string course)
         {
-            string query = $"SELECT course_id FROM finalproject.courses WHERE course_title='{course}'";
+            string query = $"SELECT course_id FROM courses WHERE course_title='{course}'";
             var reader = DatabaseHelper.Instance.getData(query);
             reader.Read();
             return Convert.ToInt32(reader["course_id"]);
@@ -51,7 +51,7 @@ namespace FinalProjectDB.DL
 
         public static void updateCourse(int course_id,CourseBL course)
         {
-            string query = $"UPDATE `finalproject`.`courses` SET `course_title` = '{course.getCourseName()}', `end_date` = '{course.getDate().ToString("yyyy-MM-dd")}', `credit_hours` = '{course.getCreditHours()}', `department_id` = '{course.getDept_id()}' WHERE (`course_id` = '{course_id}')";
+            string query = $"UPDATE courses SET `course_title` = '{course.getCourseName()}', `end_date` = '{course.getDate().ToString("yyyy-MM-dd")}', `credit_hours` = '{course.getCreditHours()}', `department_id` = '{course.getDept_id()}' WHERE (`course_id` = '{course_id}')";
             DatabaseHelper.Instance.Update(query);
         }
         public static void deleteCourse(int course_id)

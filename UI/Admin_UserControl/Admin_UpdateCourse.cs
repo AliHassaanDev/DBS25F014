@@ -107,20 +107,5 @@ namespace FinalProjectDB.UI.Admin_UserControl
                 }
             }catch(Exception ex) { MessageBox.Show(ToString(), ex.Message); }
         }
-
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

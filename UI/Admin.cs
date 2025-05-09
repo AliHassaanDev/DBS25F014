@@ -25,15 +25,17 @@ namespace FinalProjectDB.UI
             customizePanel();
             customizeUserControl();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 40);
+            leftBorderBtn.Size = new Size(7, 62);
             panel1.Controls.Add(leftBorderBtn);
             dashboard1.Visible = true;
         }
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            activateBtn(iconButton1, System.Drawing.Color.Black, 81);
+            activateBtn(iconButton1, System.Drawing.Color.Black, 125);
         }
+        private void Admin_EventHandler() { }
+
         private void activateBtn(object sender, System.Drawing.Color color, int l)
         {
             if (sender != null)
@@ -55,6 +57,7 @@ namespace FinalProjectDB.UI
                 label2.Text = currentBtn.Text;
             }
         }
+
         private void disableBtn()
         {
             if (currentBtn != null)
@@ -68,6 +71,7 @@ namespace FinalProjectDB.UI
 
             }
         }
+
         private void customizePanel()
         {
             panel3.Visible = false;
@@ -80,6 +84,7 @@ namespace FinalProjectDB.UI
             panel11.Visible = false;
             panel12.Visible = false;
         }
+
         private void hidePanel()
         {
             if (panel3.Visible) { panel3.Visible = false; }
@@ -92,6 +97,20 @@ namespace FinalProjectDB.UI
             if (panel11.Visible) { panel11.Visible = false; }
             if (panel12.Visible) { panel12.Visible = false; }
         }
+
+        private void showPanels(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hidePanel();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
         private void customizeUserControl()
         {
             dashboard1.Visible = false;
@@ -160,51 +179,25 @@ namespace FinalProjectDB.UI
             if (admin_AssignedTeachers1.Visible) { admin_AssignedTeachers1.Visible = false; }
         
         }
-        private void showPanels(Panel subMenu)
+
+        private void Admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (subMenu.Visible == false)
-            {
-                hidePanel();
-                subMenu.Visible = true;
-            }
-            else
-            {
-                subMenu.Visible = false;
-            }
+            Application.Exit();
         }
-
-        private void kryptonPalette1_PalettePaint(object sender, PaletteLayoutEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //----------------Profile------------------------//
         private void iconButton30_Click(object sender, EventArgs e)
         {
             hideUserControls();
             profile1.Visible=true;
         }
-
+        //-----------------Log Out Btn-------------------//
         private void iconButton31_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Login login = new Login();
+            EDUMS login = new EDUMS();
             login.StartPosition = FormStartPosition.Manual;
             login.Location = this.Location;
+            login.Size = this.Size;
             login.Show();
         }
 
@@ -212,7 +205,7 @@ namespace FinalProjectDB.UI
         private void iconButton1_Click(object sender, EventArgs e)
         {
             hidePanel();
-            activateBtn(sender, System.Drawing.Color.Black, 81);
+            activateBtn(sender, System.Drawing.Color.Black, 125);
             hideUserControls();
             dashboard1.Visible = true;
         }
@@ -223,7 +216,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             admin_AllCourses1.load();
             admin_AllCourses1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 121);
+            activateBtn(sender, System.Drawing.Color.Black, 187);
             showPanels(panel3);
         }
 
@@ -424,11 +417,6 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_AssignedTeachers1.Visible = true;
-        }
-
-        private void admin_AssignedTeachers1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -24,59 +24,6 @@ namespace FinalProjectDB.UI
         {
 
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
@@ -84,8 +31,36 @@ namespace FinalProjectDB.UI
             EDUMS eDUMS = new EDUMS();
             eDUMS.StartPosition = FormStartPosition.Manual;
             eDUMS.Location = this.Location;
+            eDUMS.Size = this.Size;
             eDUMS.Show();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonTextBox3.Text != "" &&
+                    kryptonTextBox1.Text != "Enter Username" && kryptonTextBox3.Text != "Enter Email" && kryptonTextBox2.Text != "Enter Password")
+                {
+                    string username = kryptonTextBox1.Text;
+                    string email = kryptonTextBox3.Text;
+                    string password = kryptonTextBox2.Text;
+
+                    password = BCrypt.Net.BCrypt.HashPassword(password);
+
+                    UserBL student = new UserBL(email, username, password);
+                    UserDL.AddStudent(student);
+                    MessageBox.Show("Account created successfully!");
+
+                    kryptonTextBox1.Text = "Enter Username";
+                    kryptonTextBox3.Text = "Enter Email";
+                    kryptonTextBox2.PasswordChar = '\0';
+                    kryptonTextBox2.Text = "Enter Password";
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
         private void enter_event_usernametxt(object sender, EventArgs e)
         {
             if (kryptonTextBox1.Text == "Enter Username")
@@ -93,6 +68,7 @@ namespace FinalProjectDB.UI
                 kryptonTextBox1.Text ="";
             }
         }
+
         private void leave_event_usernametxt(object sender, EventArgs e)
         {
             if (kryptonTextBox1.Text == "")
@@ -100,6 +76,7 @@ namespace FinalProjectDB.UI
                 kryptonTextBox1.Text ="Enter Username";
             }
         }
+
         private void enter_event_emailtxt(object sender, EventArgs e)
         {
             if (kryptonTextBox3.Text == "Enter Email")
@@ -107,6 +84,7 @@ namespace FinalProjectDB.UI
                 kryptonTextBox3.Text ="";
             }
         }
+
         private void leave_event_emailtxt(object sender, EventArgs e)
         {
             if (kryptonTextBox3.Text == "")
@@ -123,6 +101,7 @@ namespace FinalProjectDB.UI
                 kryptonTextBox2.PasswordChar = '*';
             }
         }
+
         private void leave_event_passwordtxt(object sender, EventArgs e)
         {
             if (kryptonTextBox2.Text == "")
@@ -132,33 +111,9 @@ namespace FinalProjectDB.UI
             }
         }
 
-        private void kryptonButton2_Click(object sender, EventArgs e)
+        private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
         {
-            try
-            {
-                if (kryptonTextBox1.Text != "" && kryptonTextBox2.Text != "" && kryptonTextBox3.Text != "")
-                {
-                    string username = kryptonTextBox1.Text;
-                    string email = kryptonTextBox3.Text;
-                    string password = kryptonTextBox2.Text;
-
-                    password = BCrypt.Net.BCrypt.HashPassword(password);
-
-                    UserBL student = new UserBL(email, username, password);
-                    UserDL.AddStudent(student);
-                    MessageBox.Show("Account created successfully!");
-
-                    kryptonTextBox1.Clear();
-                    kryptonTextBox2.Clear();
-                    kryptonTextBox3.Clear();
-                }
-            }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
-        }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
       <HintPath>packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
@@ -122,33 +125,31 @@
       <HintPath>packages\ZstdSharp.Port.0.8.5\lib\net462\ZstdSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
-	<ItemGroup>
-		<Compile Include="BL\AnnouncementBL.cs" />
-		<Compile Include="BL\ComplaintsBL.cs" />
-		<Compile Include="BL\CourseBL.cs" />
-		<Compile Include="BL\DatabaseHelper.cs" />
-		<Compile Include="BL\DepartmentBL.cs" />
-		<Compile Include="BL\LecturesBL.cs" />
-		<Compile Include="BL\StudentsBL.cs" />
-		<Compile Include="BL\TeacherBL.cs" />
-		<Compile Include="BL\TeacherCoursesBL.cs" />
-		<Compile Include="BL\TeacherProfile.cs" />
-		<Compile Include="BL\UserBL.cs" />
-
-		<Compile Include="DL\AnnouncementDL.cs" />
-		<Compile Include="DL\ComplaintsDL.cs" />
-		<Compile Include="DL\CourseDL.cs" />
-		<Compile Include="DL\DepartmentDL.cs" />
-		<Compile Include="DL\LecturesDL.cs" />
-		<Compile Include="DL\StudentsDL.cs" />
-		<Compile Include="DL\TeacherDL.cs" />
-		<Compile Include="DL\TeacherProfileDL.cs" />
-		<Compile Include="DL\UserDL.cs" />
-
-		<Compile Include="UI\Admin.cs">
-			<SubType>Form</SubType>
-		</Compile>
-	<Compile Include="UI\Admin.Designer.cs">
+  <ItemGroup>
+    <Compile Include="BL\AnnouncementBL.cs" />
+    <Compile Include="BL\ComplaintsBL.cs" />
+    <Compile Include="BL\CourseBL.cs" />
+    <Compile Include="BL\DatabaseHelper.cs" />
+    <Compile Include="BL\DepartmentBL.cs" />
+    <Compile Include="BL\LecturesBL.cs" />
+    <Compile Include="BL\StudentsBL.cs" />
+    <Compile Include="BL\TeacherBL.cs" />
+    <Compile Include="BL\TeacherCoursesBL.cs" />
+    <Compile Include="BL\TeacherProfile.cs" />
+    <Compile Include="BL\UserBL.cs" />
+    <Compile Include="DL\AnnouncementDL.cs" />
+    <Compile Include="DL\ComplaintsDL.cs" />
+    <Compile Include="DL\CourseDL.cs" />
+    <Compile Include="DL\DepartmentDL.cs" />
+    <Compile Include="DL\LecturesDL.cs" />
+    <Compile Include="DL\StudentsDL.cs" />
+    <Compile Include="DL\TeacherDL.cs" />
+    <Compile Include="DL\TeacherProfileDL.cs" />
+    <Compile Include="DL\UserDL.cs" />
+    <Compile Include="UI\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Admin_UserControl\Admin_AddUser.cs">
@@ -706,6 +707,7 @@
     <EmbeddedResource Include="UI\Teacher_UserControls\Teach_YourLectures.resx">
       <DependentUpon>Teach_YourLectures.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\FinalProjectDB.BL.CourseBL.datasource" />
     <None Include="Properties\Settings.settings">

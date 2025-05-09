@@ -84,11 +84,6 @@ C:\Users\User\Downloads\DBS25F014\bin\Debug\FinalProjectDB.exe.config
 C:\Users\User\Downloads\DBS25F014\bin\Debug\FinalProjectDB.exe
 C:\Users\User\Downloads\DBS25F014\bin\Debug\FinalProjectDB.pdb
 C:\Users\User\Downloads\DBS25F014\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\User\Downloads\DBS25F014\bin\Debug\ComponentFactory.Krypton.Docking.pdb
-C:\Users\User\Downloads\DBS25F014\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
-C:\Users\User\Downloads\DBS25F014\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
-C:\Users\User\Downloads\DBS25F014\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
-C:\Users\User\Downloads\DBS25F014\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 C:\Users\User\Downloads\DBS25F014\obj\Debug\FinalProjectDB.csproj.AssemblyReference.cache
 C:\Users\User\Downloads\DBS25F014\obj\Debug\FinalProjectDB.UI.Admin.resources
 C:\Users\User\Downloads\DBS25F014\obj\Debug\FinalProjectDB.UI.Admin_UserControl.Admin_AddUser.resources
