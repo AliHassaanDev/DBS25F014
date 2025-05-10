@@ -34,13 +34,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.updateAssesmentId = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.updateEndTime = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.updateStartTime = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.updateDescription = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -157,18 +157,6 @@
             this.updateEndTime.StateCommon.Border.Rounding = 20;
             this.updateEndTime.StateCommon.Border.Width = 1;
             this.updateEndTime.TabIndex = 31;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 30);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Update Assessment";
             // 
             // label2
             // 
@@ -301,6 +289,18 @@
             this.updateDescription.TabIndex = 27;
             this.updateDescription.Text = "Enter New Assessment Description";
             this.updateDescription.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(285, 30);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Update Assessment";
             // 
             // tableLayoutPanel3
             // 

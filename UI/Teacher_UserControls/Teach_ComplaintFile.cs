@@ -81,6 +81,8 @@ namespace FinalProjectDB.UI.UserControls
             int userID = Convert.ToInt32(FileUserID.Text);
             String description = FileDescription.Text;
             TeacherProfileDL.fileComplaint(userID, description);
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)

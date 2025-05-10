@@ -115,6 +115,8 @@ namespace FinalProjectDB.UI.UserControls
             DateTime startTime = updateStartTime.Value;
             DateTime dueTime = updateEndTime.Value;
             TeacherAssesmentsDL.updateAssesment(description, startTime, dueTime, assessmentID);
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
 
         }
 

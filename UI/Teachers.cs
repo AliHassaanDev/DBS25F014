@@ -333,5 +333,9 @@ namespace FinalProjectDB.UI
             teach_ProfileComplete1.Visible=true;
            
         }
+
+        private void iconButton31_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

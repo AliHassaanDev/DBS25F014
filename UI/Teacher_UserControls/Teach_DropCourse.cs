@@ -66,6 +66,8 @@ namespace FinalProjectDB.UI.UserControls
         {
             String DropCourse = DropCourseName.Text;
             CourseDL.dropTeacherCourse(DropCourse,TeacherProfileDL.getTeacherId(Login.user));
+            dataGridView1.Rows.Clear();
+            LoadTeacherCoursesIntoGridView();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

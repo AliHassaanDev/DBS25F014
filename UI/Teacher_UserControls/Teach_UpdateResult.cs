@@ -100,6 +100,8 @@ namespace FinalProjectDB.UI.UserControls
             decimal obtainedMarks = Convert.ToDecimal(updateObtainedMarks.Text);
             int assessmentID = Convert.ToInt32(updateAssessment.Text);
             TeacherResultDL.UpdateResult(studentID, assessmentID, obtainedMarks);
+            dataGridView1.Rows.Clear();
+            LoadEnrollmentIntoGridView();
 
         }
     }

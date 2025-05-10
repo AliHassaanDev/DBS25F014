@@ -72,6 +72,8 @@ namespace FinalProjectDB.UI.UserControls
         {
             String LectureTopic = LectureTopicDelete.Text;
             TeacherLecturesDL.deleteLecture(LectureTopic);
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
         }
     }
 }

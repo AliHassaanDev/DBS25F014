@@ -68,6 +68,7 @@ namespace FinalProjectDB.UI.UserControls
         {
             ConfigureDataGridView();
             LoadLectureIntoGridView();
+
         }
     }
 }

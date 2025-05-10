@@ -730,6 +730,7 @@
             this.iconButton31.Text = "Log Out";
             this.iconButton31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton31.UseVisualStyleBackColor = false;
+            this.iconButton31.Click += new System.EventHandler(this.iconButton31_Click);
             // 
             // iconButton30
             // 

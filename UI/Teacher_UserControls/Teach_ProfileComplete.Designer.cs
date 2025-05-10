@@ -36,11 +36,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.teacherUserName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TeacherJobExperience = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TeacherSubjects = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TeacherStudies = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TeacherName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherStudies = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherSubjects = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TeacherJobExperience = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.teacherUserName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,72 +205,28 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // teacherUserName
+            // TeacherName
             // 
-            this.teacherUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TeacherName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.teacherUserName.Location = new System.Drawing.Point(95, 287);
-            this.teacherUserName.Name = "teacherUserName";
-            this.teacherUserName.Size = new System.Drawing.Size(444, 32);
-            this.teacherUserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.teacherUserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.teacherUserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.teacherUserName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherName.Location = new System.Drawing.Point(95, 61);
+            this.TeacherName.Name = "TeacherName";
+            this.TeacherName.Size = new System.Drawing.Size(444, 32);
+            this.TeacherName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.teacherUserName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.teacherUserName.StateCommon.Border.Rounding = 20;
-            this.teacherUserName.StateCommon.Border.Width = 1;
-            this.teacherUserName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.teacherUserName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teacherUserName.TabIndex = 31;
-            this.teacherUserName.Text = "Enter Your User Name";
-            // 
-            // TeacherJobExperience
-            // 
-            this.TeacherJobExperience.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherJobExperience.Location = new System.Drawing.Point(95, 119);
-            this.TeacherJobExperience.Name = "TeacherJobExperience";
-            this.TeacherJobExperience.Size = new System.Drawing.Size(444, 32);
-            this.TeacherJobExperience.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.TeacherJobExperience.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherJobExperience.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherJobExperience.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TeacherJobExperience.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.TeacherJobExperience.StateCommon.Border.Rounding = 20;
-            this.TeacherJobExperience.StateCommon.Border.Width = 1;
-            this.TeacherJobExperience.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.TeacherJobExperience.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeacherJobExperience.TabIndex = 28;
-            this.TeacherJobExperience.Text = "Enter Experience in Years";
-            this.TeacherJobExperience.Enter += new System.EventHandler(this.enter_event_experiencetxt);
-            this.TeacherJobExperience.Leave += new System.EventHandler(this.leave_event_experiencetxt);
-            // 
-            // TeacherSubjects
-            // 
-            this.TeacherSubjects.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherSubjects.Location = new System.Drawing.Point(95, 227);
-            this.TeacherSubjects.Name = "TeacherSubjects";
-            this.TeacherSubjects.Size = new System.Drawing.Size(444, 32);
-            this.TeacherSubjects.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.TeacherSubjects.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherSubjects.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherSubjects.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TeacherSubjects.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.TeacherSubjects.StateCommon.Border.Rounding = 20;
-            this.TeacherSubjects.StateCommon.Border.Width = 1;
-            this.TeacherSubjects.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.TeacherSubjects.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeacherSubjects.TabIndex = 30;
-            this.TeacherSubjects.Text = "Enter Your Subject";
-            this.TeacherSubjects.Enter += new System.EventHandler(this.enter_event_subjecttxt);
-            this.TeacherSubjects.Leave += new System.EventHandler(this.leave_event_subjecttxt);
+            this.TeacherName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherName.StateCommon.Border.Rounding = 20;
+            this.TeacherName.StateCommon.Border.Width = 1;
+            this.TeacherName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherName.TabIndex = 27;
+            this.TeacherName.Text = "Enter Your Name";
+            this.TeacherName.Enter += new System.EventHandler(this.enter_event_nametxt);
+            this.TeacherName.Leave += new System.EventHandler(this.leave_event_nametxt);
             // 
             // TeacherStudies
             // 
@@ -296,28 +252,72 @@
             this.TeacherStudies.Enter += new System.EventHandler(this.enter_event_studytxt);
             this.TeacherStudies.Leave += new System.EventHandler(this.leave_event_studytxt);
             // 
-            // TeacherName
+            // TeacherSubjects
             // 
-            this.TeacherName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TeacherSubjects.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherName.Location = new System.Drawing.Point(95, 61);
-            this.TeacherName.Name = "TeacherName";
-            this.TeacherName.Size = new System.Drawing.Size(444, 32);
-            this.TeacherName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.TeacherName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.TeacherName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.TeacherSubjects.Location = new System.Drawing.Point(95, 227);
+            this.TeacherSubjects.Name = "TeacherSubjects";
+            this.TeacherSubjects.Size = new System.Drawing.Size(444, 32);
+            this.TeacherSubjects.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherSubjects.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherSubjects.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherSubjects.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.TeacherName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.TeacherName.StateCommon.Border.Rounding = 20;
-            this.TeacherName.StateCommon.Border.Width = 1;
-            this.TeacherName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.TeacherName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TeacherName.TabIndex = 27;
-            this.TeacherName.Text = "Enter Your Name";
-            this.TeacherName.Enter += new System.EventHandler(this.enter_event_nametxt);
-            this.TeacherName.Leave += new System.EventHandler(this.leave_event_nametxt);
+            this.TeacherSubjects.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherSubjects.StateCommon.Border.Rounding = 20;
+            this.TeacherSubjects.StateCommon.Border.Width = 1;
+            this.TeacherSubjects.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherSubjects.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherSubjects.TabIndex = 30;
+            this.TeacherSubjects.Text = "Enter Your Subject";
+            this.TeacherSubjects.Enter += new System.EventHandler(this.enter_event_subjecttxt);
+            this.TeacherSubjects.Leave += new System.EventHandler(this.leave_event_subjecttxt);
+            // 
+            // TeacherJobExperience
+            // 
+            this.TeacherJobExperience.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TeacherJobExperience.Location = new System.Drawing.Point(95, 119);
+            this.TeacherJobExperience.Name = "TeacherJobExperience";
+            this.TeacherJobExperience.Size = new System.Drawing.Size(444, 32);
+            this.TeacherJobExperience.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.TeacherJobExperience.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherJobExperience.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TeacherJobExperience.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.TeacherJobExperience.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.TeacherJobExperience.StateCommon.Border.Rounding = 20;
+            this.TeacherJobExperience.StateCommon.Border.Width = 1;
+            this.TeacherJobExperience.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.TeacherJobExperience.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeacherJobExperience.TabIndex = 28;
+            this.TeacherJobExperience.Text = "Enter Experience in Years";
+            this.TeacherJobExperience.Enter += new System.EventHandler(this.enter_event_experiencetxt);
+            this.TeacherJobExperience.Leave += new System.EventHandler(this.leave_event_experiencetxt);
+            // 
+            // teacherUserName
+            // 
+            this.teacherUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.teacherUserName.Location = new System.Drawing.Point(95, 287);
+            this.teacherUserName.Name = "teacherUserName";
+            this.teacherUserName.Size = new System.Drawing.Size(444, 32);
+            this.teacherUserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.teacherUserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.teacherUserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.teacherUserName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.teacherUserName.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.teacherUserName.StateCommon.Border.Rounding = 20;
+            this.teacherUserName.StateCommon.Border.Width = 1;
+            this.teacherUserName.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.teacherUserName.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherUserName.TabIndex = 31;
+            this.teacherUserName.Text = "Enter Your User Name";
             // 
             // Teach_ProfileComplete
             // 

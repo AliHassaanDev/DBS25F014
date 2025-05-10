@@ -88,6 +88,9 @@ namespace FinalProjectDB.UI.UserControls
             int assessmentid=Convert.ToInt32(deleteAssignment.Text);
             int resultID=Convert.ToInt32(deleteResult.Text);
             TeacherResultDL.DeleteResult(assessmentid,resultID);
+            dataGridView1.Rows.Clear();
+            LoadEnrollmentIntoGridView();
+
         }
     }
 }
