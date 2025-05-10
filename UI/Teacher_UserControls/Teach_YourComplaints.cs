@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProjectDB.BL;
 using FinalProjectDB.DL;
+using FinalProjectDB.Interfaces;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -32,6 +33,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void LoadLectureIntoGridView1()
         {
+            IComplain ComplaintsDL= new ComplaintsDL();
             List<ComplaintsBL> complaints = ComplaintsDL.complaintsAgainstYou();
             foreach (var complaint in complaints)
             {
@@ -51,6 +53,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void LoadLectureIntoGridView2()
         {
+            IComplain ComplaintsDL = new ComplaintsDL();
             List<ComplaintsBL> complaints = ComplaintsDL.complaintsByYou();
             foreach (var complaint in complaints)
             {

@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using FinalProjectDB.BL;
+using FinalProjectDB.Interfaces;
 using FinalProjectDB.UI;
 using MySql.Data.MySqlClient;
 using static Google.Protobuf.Compiler.CodeGeneratorResponse.Types;
 
 namespace FinalProjectDB.DL
 {
-    internal class LecturesDL
+    internal class TeacherLecturesDL:ILecture
     {
         public static void validCourse(String courseName)
         {
@@ -28,22 +29,30 @@ namespace FinalProjectDB.DL
                 }
             }
         }
-        public static void AddLecture(LecturesBL lecture)
+        public void AddLecture(TeachersLecturesBL lecture)
         {
-            string query = @"INSERT INTO finalproject.lecture 
-                     (course_id, teacher_id, topic, start_time, duration) 
-                     VALUES (@courseId, @teacherId, @topic, @startTime, @duration)";
-
-            using (var conn = DatabaseHelper.Instance.getConnection())
-            using (var cmd = new MySqlCommand(query, conn))
+            try
             {
-                cmd.Parameters.AddWithValue("@courseId", lecture.getCourseId());
-                cmd.Parameters.AddWithValue("@teacherId", lecture.getTeacherId());
-                cmd.Parameters.AddWithValue("@topic", lecture.getTopic());
-                cmd.Parameters.AddWithValue("@startTime", lecture.getStartTime());
-                cmd.Parameters.AddWithValue("@duration", lecture.getDuration());
+                using (var conn = DatabaseHelper.Instance.getConnection())
+                {
+                    string query = @"INSERT INTO lecture 
+                (course_id, teacher_id, topic, start_time, duration) 
+                VALUES (@courseId, @teacherId, @topic, @startTime, @duration)";
 
-                cmd.ExecuteNonQuery();
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@courseId", lecture.getCourseId());
+                        cmd.Parameters.AddWithValue("@teacherId", lecture.getTeacherId());
+                        cmd.Parameters.AddWithValue("@topic", lecture.getTopic());
+                        cmd.Parameters.AddWithValue("@startTime", lecture.getStartTime());
+                        cmd.Parameters.AddWithValue("@duration", lecture.getDuration());
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Failed to add a lecture: " + e.Message);
             }
         }
         public static void updateLecture(int lectureId, string topic, DateTime startTime, int duration)
@@ -93,9 +102,9 @@ namespace FinalProjectDB.DL
             return lectureId;
 
         }
-        public static List<LecturesBL> teacherLectures()
+        public static List<TeachersLecturesBL> teacherLectures()
         {
-            List<LecturesBL> lectures = new List<LecturesBL>();
+            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
             String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
                 $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
                 $"JOIN courses ON courses.course_id" +
@@ -103,7 +112,7 @@ namespace FinalProjectDB.DL
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {
-                LecturesBL lecture = new LecturesBL();
+                TeachersLecturesBL lecture = new TeachersLecturesBL();
                 lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
                 lecture.setCourseName(Convert.ToString(reader["course_title"]));
                 lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
@@ -119,9 +128,9 @@ namespace FinalProjectDB.DL
             string query = $"DELETE FROM lecture WHERE topic='{topic}'";
             DatabaseHelper.Instance.Update(query);
         }
-        public static List<LecturesBL> teacherLecturesByCourses(String selectedCourse)
+        public static List<TeachersLecturesBL> teacherLecturesByCourses(String selectedCourse)
         {
-            List<LecturesBL> lectures = new List<LecturesBL>();
+            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
             String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
                 $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
                 $"JOIN courses ON courses.course_id" +
@@ -129,7 +138,7 @@ namespace FinalProjectDB.DL
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {
-                LecturesBL lecture = new LecturesBL();
+                TeachersLecturesBL lecture = new TeachersLecturesBL();
                 lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
                 lecture.setCourseName(Convert.ToString(reader["course_title"]));
                 lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
@@ -163,9 +172,9 @@ namespace FinalProjectDB.DL
 
             return MyCourses;
         }
-        public static List<LecturesBL> individualTeacherLectureNameONly(String selectedCourse)
+        public static List<TeachersLecturesBL> individualTeacherLectureNameONly(String selectedCourse)
         {
-            List<LecturesBL> lectures = new List<LecturesBL>();
+            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
             string query = $"SELECT lecture.topic " +
                            $"FROM lecture " +
                            $"JOIN courses ON courses.course_id = lecture.course_id " +
@@ -175,7 +184,7 @@ namespace FinalProjectDB.DL
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {
-                LecturesBL lecture = new LecturesBL();
+                TeachersLecturesBL lecture = new TeachersLecturesBL();
                 {
                     lecture.setTopic(Convert.ToString(reader["topic"]));
                 }

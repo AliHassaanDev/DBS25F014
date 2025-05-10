@@ -13,7 +13,7 @@ namespace FinalProjectDB.BL
         public static int current_user_id;
         public static int current_user_role_id;
         string email;
-        string username;
+        protected string username;
         string password;
         int role;
         int user_id;
@@ -27,6 +27,10 @@ namespace FinalProjectDB.BL
             this.email = email;
             this.username = username;
             this.password = password;
+        }
+        public UserBL(String username)
+        {
+            this.username = username;
         }
 
         public UserBL(string email, string username, string password,int role)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProjectDB.BL
 {
-    internal class LecturesBL: CourseBL
+    internal class TeachersLecturesBL: CourseBL
     {
         int lectureId;
         int teacherId;
@@ -14,8 +14,8 @@ namespace FinalProjectDB.BL
         String topic;
         DateTime startTime;
         int duration;
-        public LecturesBL() { }
-        public LecturesBL(int teacherId, int courseId, String topic, DateTime startTime, int duration)
+        public TeachersLecturesBL() { }
+        public TeachersLecturesBL(int teacherId, int courseId, String topic, DateTime startTime, int duration)
         {
             this.teacherId = teacherId;
             this.courseId = courseId;

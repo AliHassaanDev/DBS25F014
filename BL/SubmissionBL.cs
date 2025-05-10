@@ -9,6 +9,6 @@ namespace FinalProjectDB.BL
     internal class SubmissionBL
     {
         int submissionId;
-
+        public SubmissionBL() { }
     }
 }

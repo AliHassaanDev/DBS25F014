@@ -18,7 +18,7 @@ namespace FinalProjectDB.UI.UserControls
         {
             InitializeComponent();
 
-            var courses = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            var courses = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             course.DataSource = courses;
             course.DisplayMember = "CourseName";
             if (courses.Any())

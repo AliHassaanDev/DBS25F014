@@ -13,26 +13,42 @@ namespace FinalProjectDB.DL
     {
         public static void AddTeacherData(TeacherProfile teacher)
         {
-            int userId = -1;
-            String query1 = $"SELECT user_id FROM users WHERE users.username='{teacher.getTeacherName()}'";
-
-            using (var reader = DatabaseHelper.Instance.getData(query1))
+            try
             {
-                if (reader.Read())
-                {
-                    userId = reader.GetInt32("user_id");
-                }
-            }
+                int userId = -1;
+                string query1 = $"SELECT user_id FROM users WHERE users.username='{teacher.getUsername()}'";
 
-            String query = $"INSERT INTO teachers VALUES ('{userId}','{teacher.getTeacherName()}'," +
-                $"'{teacher.getTeacherExperience()}','{teacher.getTeacherStudies()}'," +
-                $"'{teacher.getTeacherSubjects()}')";
-            DatabaseHelper.Instance.Update(query);
+                using (var reader = DatabaseHelper.Instance.getData(query1))
+                {
+                    if (reader.Read())
+                    {
+                        userId = reader.GetInt32("user_id");
+                    }
+                }
+
+                if (userId == -1)
+                {
+                    throw new Exception("User not found.");
+                }
+
+                string query = $"INSERT INTO teachers VALUES ('{userId}','{teacher.getTeacherName()}'," +
+                    $"'{teacher.getTeacherExperience()}','{teacher.getTeacherStudies()}'," +
+                    $"'{teacher.getTeacherSubjects()}','{teacher.getUsername()}')";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Database error: " + e.Message);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error adding teacher: " + e.Message);
+            }
         }
         public static int getTeacherId(String name)
         {
             int teacherId = -1;
-            String query1 = $"SELECT teacher_id FROM teachers WHERE teachers.teacher_name='{name}'";
+            String query1 = $"SELECT teacher_id FROM teachers WHERE teachers.user_name='{name}'";
             using (var reader = DatabaseHelper.Instance.getData(query1))
             {
                 if (reader.Read())

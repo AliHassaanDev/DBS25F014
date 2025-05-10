@@ -90,5 +90,10 @@ namespace FinalProjectDB.UI.UserControls
             int assessmentID = Convert.ToInt32(deleteAssessmentID.Text);
             TeacherAssesmentsDL.deleteAssesment(assessmentID);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

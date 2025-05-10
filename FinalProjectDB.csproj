@@ -128,7 +128,7 @@
     <Compile Include="BL\CourseBL.cs" />
     <Compile Include="BL\DatabaseHelper.cs" />
     <Compile Include="BL\DepartmentBL.cs" />
-    <Compile Include="BL\LecturesBL.cs" />
+    <Compile Include="BL\TeachersLecturesBL.cs" />
     <Compile Include="BL\EnrollmentsBL.cs" />
     <Compile Include="BL\SubmissionBL.cs" />
     <Compile Include="BL\TeacherAssesmentsBL.cs" />
@@ -140,13 +140,15 @@
     <Compile Include="DL\CourseDL.cs" />
     <Compile Include="DL\DepartmentDL.cs" />
     <Compile Include="BL\TeacherCoursesBL.cs" />
-    <Compile Include="DL\LecturesDL.cs" />
+    <Compile Include="DL\TeacherLecturesDL.cs" />
     <Compile Include="DL\EnrollmentsDL.cs" />
     <Compile Include="DL\SubmissionDL.cs" />
     <Compile Include="DL\TeacherAssesmentsDL.cs" />
     <Compile Include="DL\TeacherProfileDL.cs" />
     <Compile Include="DL\TeacherResultDL.cs" />
     <Compile Include="DL\UserDL.cs" />
+    <Compile Include="Interfaces\IComplain.cs" />
+    <Compile Include="Interfaces\ILecture.cs" />
     <Compile Include="UI\Admin.cs">
       <SubType>Form</SubType>
     </Compile>

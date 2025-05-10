@@ -17,17 +17,17 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_AttendanceByLecture()
         {
             InitializeComponent();
-            attendanceCourse.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            attendanceCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             attendanceCourse.DisplayMember = "CourseName";
             attendanceCourse.SelectedIndexChanged += attendanceCourse_SelectedIndexChanged;
-            attendanceLecture.DataSource = LecturesDL.individualTeacherLectureNameONly(attendanceCourse.Text);
+            attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(attendanceCourse.Text);
         }
         private void attendanceCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (attendanceCourse.SelectedItem is TeacherCoursesBL selectedCourse)
             {
                 String CourseName = selectedCourse.getCourseName();
-                attendanceLecture.DataSource = LecturesDL.individualTeacherLectureNameONly(CourseName);
+                attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(CourseName);
                 attendanceLecture.DisplayMember = "Topic";
             }
         }

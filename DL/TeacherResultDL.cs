@@ -5,16 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using FinalProjectDB.BL;
 using FinalProjectDB.UI;
+using MySql.Data.MySqlClient;
 
 namespace FinalProjectDB.DL
 {
     internal class TeacherResultDL
     {
-        public static void InsertResult(int studentID, int assessmentID,decimal obtainedMarks, decimal totalMarks)
+        public static void InsertResult(int studentID, int assessmentID, decimal obtainedMarks, decimal totalMarks)
         {
-            String query=$"INSERT INTO results(student_id,assessment_id,obtained_marks,total_marks)" +
-                $" VALUES ('{studentID}', '{assessmentID}','{obtainedMarks}', '{totalMarks}')";
-            DatabaseHelper.Instance.Update(query);
+            try
+            {
+                string query = $"INSERT INTO results(student_id, assessment_id, obtained_marks, total_marks) " +
+                    $"VALUES ('{studentID}', '{assessmentID}', '{obtainedMarks}', '{totalMarks}')";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Failed to insert the result in database: " + e.Message);
+            }
         }
         public static List<TeacherResultBL> resultEnrollmentList(String courseName)
         {
@@ -97,6 +105,7 @@ namespace FinalProjectDB.DL
 
             using (var reader = DatabaseHelper.Instance.getData(query))
             {
+
                 while (reader.Read())
                 {
                     TeacherResultBL result = new TeacherResultBL();

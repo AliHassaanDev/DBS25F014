@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProjectDB.BL
 {
-    internal class TeacherResultBL
+    internal class TeacherResultBL:CourseBL
     {
         int resultID;
         int studentID;
@@ -15,7 +15,6 @@ namespace FinalProjectDB.BL
         int assessmentID;
         decimal obtainedMarks;
         decimal totalMarks;
-        String courseName;
         public TeacherResultBL() { }
         public TeacherResultBL(int resultID, int studentID, String studentName, String type, int assessmentID, decimal obtainedMarks, decimal totalMarks)
         {
@@ -29,8 +28,6 @@ namespace FinalProjectDB.BL
         }
         public int getResultID() { return resultID; }
         public void setResultID(int resultID) { this.resultID = resultID; }
-        public String getCourseName() { return courseName; }
-        public void setCourseName(String courseName) { this.courseName = courseName; }
         public String getStudentName() { return studentName; }
         public void setStudentName(String studentName) { this.studentName = studentName; }
         public String getType() { return type; }

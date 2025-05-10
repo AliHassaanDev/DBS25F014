@@ -72,6 +72,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.admin_AssignedTeachers1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AssignedTeachers();
+            this.admin_AllTeachers1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AllTeachers();
+            this.admin_EnrolledStudents1 = new FinalProjectDB.UI.Admin_UserControl.Admin_EnrolledStudents();
             this.admin_AllStudents1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AllStudents();
             this.admin_ResultByStudent1 = new FinalProjectDB.UI.Admin_UserControl.Admin_ResultByStudent();
             this.teach_ResutsByAssesment1 = new FinalProjectDB.UI.UserControls.Teach_ResutsByAssesment();
@@ -99,9 +102,6 @@
             this.admin_AllCourses1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AllCourses();
             this.profile1 = new FinalProjectDB.UI.UserControls.Profile();
             this.dashboard1 = new FinalProjectDB.UI.UserControls.Dashboard();
-            this.admin_EnrolledStudents1 = new FinalProjectDB.UI.Admin_UserControl.Admin_EnrolledStudents();
-            this.admin_AllTeachers1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AllTeachers();
-            this.admin_AssignedTeachers1 = new FinalProjectDB.UI.Admin_UserControl.Admin_AssignedTeachers();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -1017,6 +1017,30 @@
             this.panel10.Size = new System.Drawing.Size(634, 399);
             this.panel10.TabIndex = 2;
             // 
+            // admin_AssignedTeachers1
+            // 
+            this.admin_AssignedTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_AssignedTeachers1.Location = new System.Drawing.Point(0, 0);
+            this.admin_AssignedTeachers1.Name = "admin_AssignedTeachers1";
+            this.admin_AssignedTeachers1.Size = new System.Drawing.Size(634, 399);
+            this.admin_AssignedTeachers1.TabIndex = 59;
+            // 
+            // admin_AllTeachers1
+            // 
+            this.admin_AllTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_AllTeachers1.Location = new System.Drawing.Point(0, 0);
+            this.admin_AllTeachers1.Name = "admin_AllTeachers1";
+            this.admin_AllTeachers1.Size = new System.Drawing.Size(634, 399);
+            this.admin_AllTeachers1.TabIndex = 58;
+            // 
+            // admin_EnrolledStudents1
+            // 
+            this.admin_EnrolledStudents1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_EnrolledStudents1.Location = new System.Drawing.Point(0, 0);
+            this.admin_EnrolledStudents1.Name = "admin_EnrolledStudents1";
+            this.admin_EnrolledStudents1.Size = new System.Drawing.Size(634, 399);
+            this.admin_EnrolledStudents1.TabIndex = 57;
+            // 
             // admin_AllStudents1
             // 
             this.admin_AllStudents1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1232,30 +1256,6 @@
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Size = new System.Drawing.Size(634, 399);
             this.dashboard1.TabIndex = 30;
-            // 
-            // admin_EnrolledStudents1
-            // 
-            this.admin_EnrolledStudents1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.admin_EnrolledStudents1.Location = new System.Drawing.Point(0, 0);
-            this.admin_EnrolledStudents1.Name = "admin_EnrolledStudents1";
-            this.admin_EnrolledStudents1.Size = new System.Drawing.Size(634, 399);
-            this.admin_EnrolledStudents1.TabIndex = 57;
-            // 
-            // admin_AllTeachers1
-            // 
-            this.admin_AllTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.admin_AllTeachers1.Location = new System.Drawing.Point(0, 0);
-            this.admin_AllTeachers1.Name = "admin_AllTeachers1";
-            this.admin_AllTeachers1.Size = new System.Drawing.Size(634, 399);
-            this.admin_AllTeachers1.TabIndex = 58;
-            // 
-            // admin_AssignedTeachers1
-            // 
-            this.admin_AssignedTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.admin_AssignedTeachers1.Location = new System.Drawing.Point(0, 0);
-            this.admin_AssignedTeachers1.Name = "admin_AssignedTeachers1";
-            this.admin_AssignedTeachers1.Size = new System.Drawing.Size(634, 399);
-            this.admin_AssignedTeachers1.TabIndex = 59;
             // 
             // Admin
             // 

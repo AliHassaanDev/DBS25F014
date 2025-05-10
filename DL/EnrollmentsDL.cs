@@ -13,31 +13,34 @@ namespace FinalProjectDB.DL
     {
         public static List<EnrollmentsBL> enrolledStudentsList()
         {
-            string query = $"SELECT student.student_id, student.student_name, courses.course_title, enrollments.enrolled_date " +
-               $"FROM enrollments " +
-               $"INNER JOIN student ON student.student_id = enrollments.student_id " +
-               $"INNER JOIN courses ON courses.course_id = enrollments.course_id " +
-               $"INNER JOIN teachercourses ON teachercourses.course_id = enrollments.course_id " +
-               $"WHERE teachercourses.teacher_id = '{TeacherProfileDL.getTeacherId(Login.user)}'";
-
             List<EnrollmentsBL> list = new List<EnrollmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
+                string query = $"SELECT student.student_id, student.student_name, courses.course_title, enrollments.enrolled_date " +
+                    $"FROM enrollments " +
+                    $"INNER JOIN student ON student.student_id = enrollments.student_id " +
+                    $"INNER JOIN courses ON courses.course_id = enrollments.course_id " +
+                    $"INNER JOIN teachercourses ON teachercourses.course_id = enrollments.course_id " +
+                    $"WHERE teachercourses.teacher_id = '{TeacherProfileDL.getTeacherId(Login.user)}'";
+
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 using (var cmd = new MySqlCommand(query, conn))
+                using (var reader = cmd.ExecuteReader())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    while (reader.Read())
                     {
                         EnrollmentsBL enrollment = new EnrollmentsBL();
-                        while (reader.Read())
-                        {
-                            enrollment.setStudentID(reader.GetInt32(0));
-                            enrollment.setStudentName(reader.GetString(1));
-                            enrollment.setCourseTitle(reader.GetString(2));
-                            enrollment.setEnrollmentDate(reader.GetDateTime(3));
-                            list.Add(enrollment);
-                        }
+                        enrollment.setStudentID(reader.GetInt32(0));
+                        enrollment.setStudentName(reader.GetString(1));
+                        enrollment.setCourseTitle(reader.GetString(2));
+                        enrollment.setEnrollmentDate(reader.GetDateTime(3));
+                        list.Add(enrollment);
                     }
                 }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("There was an error in loading the enrollments: " + e.Message);
             }
             return list;
         }

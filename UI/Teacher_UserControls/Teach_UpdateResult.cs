@@ -18,7 +18,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_UpdateResult()
         {
             InitializeComponent();
-            updateCourse.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            updateCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             updateCourse.DisplayMember = "CourseName";
         }
         private void ConfigureDataGridView()

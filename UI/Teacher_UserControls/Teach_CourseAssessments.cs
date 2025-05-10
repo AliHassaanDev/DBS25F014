@@ -20,7 +20,7 @@ namespace FinalProjectDB.UI.UserControls
             assessmentType.Items.Add("quiz");
             assessmentType.Items.Add("assignment");
             assessmentType.Items.Add("exam");
-            ComboBox1.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            ComboBox1.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             ComboBox1.DisplayMember = "CourseName";
         }
         private void ConfigureDataGridView()

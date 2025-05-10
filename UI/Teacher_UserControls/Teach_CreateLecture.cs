@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProjectDB.DL;
 using FinalProjectDB.BL;
+using FinalProjectDB.Interfaces;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -17,9 +18,27 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_CreateLecture()
         {
             InitializeComponent();
-            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            ConfigureDataGridView();
+            LoadTeacherCoursesIntoGridView();
         }
-
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("TeacherId", "Teacher ID");
+            dataGridView1.Columns.Add("CourseTitle", "Course Title");
+        }
+        private void LoadTeacherCoursesIntoGridView()
+        {
+            List<TeacherCoursesBL> courses = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            foreach (var course in courses)
+            {
+                dataGridView1.Rows.Add(
+                    course.getTeacherId(),
+                    course.getCourseName()
+                );
+            }
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -84,13 +103,14 @@ namespace FinalProjectDB.UI.UserControls
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             String lectureCourse = LectureCourseName.Text;
-            LecturesDL.validCourse(lectureCourse);
+            TeacherLecturesDL.validCourse(lectureCourse);
             String lectureTopic = LectureTopic.Text;
             int lectureDuration = Convert.ToInt32(LectureDuration.Text);
             DateTime lectureDate =LectureTime.Value;
             int courseID = CourseDL.getIDFromCourse(lectureCourse);
-            LecturesBL lecture = new LecturesBL(TeacherProfileDL.getTeacherId(Login.user),courseID , lectureTopic,lectureDate,lectureDuration);
-            LecturesDL.AddLecture(lecture);
+            TeachersLecturesBL lecture = new TeachersLecturesBL(TeacherProfileDL.getTeacherId(Login.user),courseID , lectureTopic,lectureDate,lectureDuration);
+            ILecture teacherLecturesDL = new TeacherLecturesDL();
+            teacherLecturesDL.AddLecture(lecture);
 
 
 

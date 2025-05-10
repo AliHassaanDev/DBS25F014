@@ -17,7 +17,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_DeleteResult()
         {
             InitializeComponent();
-            deleteCourse.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            deleteCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             deleteCourse.DisplayMember = "CourseName";
         }
         private void ConfigureDataGridView()

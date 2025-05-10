@@ -17,7 +17,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_CreateResult()
         {
             InitializeComponent();
-            resultCourse.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            resultCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             resultCourse.DisplayMember = "CourseName";
             
         }

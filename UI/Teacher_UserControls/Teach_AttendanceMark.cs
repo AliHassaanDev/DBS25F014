@@ -20,17 +20,17 @@ namespace FinalProjectDB.UI.UserControls
             InitializeComponent();
             ConfigureDataGridView();
             LoadLectureIntoGridView();
-            attendanceCourse.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            attendanceCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             attendanceCourse.DisplayMember = "CourseName";
             attendanceCourse.SelectedIndexChanged += attendanceCourse_SelectedIndexChanged;
-            attendanceLecture.DataSource = LecturesDL.individualTeacherLectureNameONly(attendanceCourse.Text);
+            attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(attendanceCourse.Text);
         }
         private void attendanceCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (attendanceCourse.SelectedItem is TeacherCoursesBL selectedCourse)
             {
                 String CourseName = selectedCourse.getCourseName();
-                attendanceLecture.DataSource = LecturesDL.individualTeacherLectureNameONly(CourseName);
+                attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(CourseName);
                 attendanceLecture.DisplayMember = "Topic";
             }
         }
@@ -88,7 +88,7 @@ namespace FinalProjectDB.UI.UserControls
             String courseName = attendanceCourse.Text;
             String lectureName = attendanceLecture.Text;
             String attendancestatus = attendanceStatus.Text;
-            int lectureID = LecturesDL.getLectureId(lectureName);
+            int lectureID = TeacherLecturesDL.getLectureId(lectureName);
             EnrollmentsDL.insertAttendance(studentId,lectureID,attendancestatus);
         }
     }

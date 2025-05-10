@@ -38,7 +38,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void LoadLectureIntoGridView()
         {
-            List<LecturesBL> lectures = LecturesDL.teacherLectures();
+            List<TeachersLecturesBL> lectures = TeacherLecturesDL.teacherLectures();
             foreach (var lecture in lectures)
             {
                 dataGridView1.Rows.Add(
@@ -116,7 +116,7 @@ namespace FinalProjectDB.UI.UserControls
             String LectureTopic = LectureTopicUpdate.Text;
             int LectureDuration =Convert.ToInt32(LectureDurationUpdate.Text);
             DateTime LectureTime = LectureTimeUpdate.Value;
-            LecturesDL.updateLecture(LectureID, LectureTopic, LectureTime, LectureDuration);
+            TeacherLecturesDL.updateLecture(LectureID, LectureTopic, LectureTime, LectureDuration);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

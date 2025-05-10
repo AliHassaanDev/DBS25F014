@@ -13,22 +13,30 @@ namespace FinalProjectDB.DL
     {
         public static void insertAssesment(TeacherAssesmentsBL teacher)
         {
-            string query = "INSERT INTO assessments (course_id, type, description, start_time, due_time,teacher_id) " +
-                           "VALUES (@courseId, @type, @description, @startTime, @dueTime,@teacherId)";
-
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    cmd.Parameters.AddWithValue("@courseId", teacher.getCourseId());
-                    cmd.Parameters.AddWithValue("@type", teacher.getType());
-                    cmd.Parameters.AddWithValue("@description", teacher.getDescription());
-                    cmd.Parameters.AddWithValue("@startTime", teacher.getStartTime());
-                    cmd.Parameters.AddWithValue("@dueTime", teacher.getdueTime());
-                    cmd.Parameters.AddWithValue("@teacherId", TeacherProfileDL.getTeacherId(Login.user));
+                    string query = @"INSERT INTO assessments 
+                (course_id, type, description, start_time, due_time, teacher_id) 
+                VALUES (@courseId, @type, @description, @startTime, @dueTime, @teacherId)";
 
-                    cmd.ExecuteNonQuery();
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@courseId", teacher.getCourseId());
+                        cmd.Parameters.AddWithValue("@type", teacher.getType());
+                        cmd.Parameters.AddWithValue("@description", teacher.getDescription());
+                        cmd.Parameters.AddWithValue("@startTime", teacher.getStartTime());
+                        cmd.Parameters.AddWithValue("@dueTime", teacher.getdueTime());
+                        cmd.Parameters.AddWithValue("@teacherId", TeacherProfileDL.getTeacherId(Login.user));
+
+                        cmd.ExecuteNonQuery();
+                    }
                 }
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Failed to insert assessment: " + e.Message);
             }
         }
         public static void updateAssesment(string description, DateTime startTime, DateTime dueTime, int assessmentID)
@@ -64,9 +72,10 @@ namespace FinalProjectDB.DL
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
-                        TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                        
                         while (reader.Read())
                         {
+                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
                             teacherAssesment.setAssessmentId(reader.GetInt32(0));
                             teacherAssesment.setCourseTitle(reader.GetString(1));
                             teacherAssesment.setType(reader.GetString(2));
@@ -148,9 +157,10 @@ namespace FinalProjectDB.DL
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
-                        TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                        
                         while (reader.Read())
                         {
+                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
                             teacherAssesment.setDescription(reader.GetString(0));
                             teacherAssesments.Add(teacherAssesment);
                         }
@@ -172,9 +182,10 @@ namespace FinalProjectDB.DL
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
-                        TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                        
                         while (reader.Read())
                         {
+                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
                             teacherAssesment.setAssessmentId(reader.GetInt32(0));
                             teacherAssesment.setCourseTitle(reader.GetString(1));
                             teacherAssesment.setType(reader.GetString(2));
