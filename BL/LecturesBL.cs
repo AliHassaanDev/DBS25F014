@@ -71,6 +71,10 @@ namespace FinalProjectDB.BL
         {
             this.lectureId = lectureId;
         }
+        public override string ToString()
+        {
+            return topic;
+        }
 
     }
 }

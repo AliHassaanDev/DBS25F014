@@ -93,9 +93,8 @@ namespace FinalProjectDB.DL
             {
                 TeacherCoursesBL course = new TeacherCoursesBL(); 
                 {
-                    course.TeacherId = int.Parse(reader["teacher_id"].ToString());
-                    course.CourseName = reader["course_title"].ToString();
-
+                    course.setTeacherId(int.Parse(reader["teacher_id"].ToString()));
+                    course.setCourseName(reader["course_title"].ToString());
                 };
                 MyCourses.Add(course);
             }

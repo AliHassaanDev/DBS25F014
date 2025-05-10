@@ -30,25 +30,25 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.assesmentType = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.kryptonDateTimePicker2 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.assesmentEndTime = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.assesmentCourse = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.assesmentStartTime = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.assesmentDescription = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assesmentType)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,18 +74,18 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox1, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.assesmentType, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonDateTimePicker2, 0, 10);
+            this.tableLayoutPanel2.Controls.Add(this.assesmentEndTime, 0, 10);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.assesmentCourse, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 11);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonDateTimePicker1, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.assesmentStartTime, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 9);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox2, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.assesmentDescription, 0, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(41, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -106,21 +106,21 @@
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // kryptonComboBox1
+            // assesmentType
             // 
-            this.kryptonComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assesmentType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox1.DropDownWidth = 273;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(3, 134);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assesmentType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.assesmentType.DropDownWidth = 273;
+            this.assesmentType.Location = new System.Drawing.Point(3, 134);
+            this.assesmentType.Name = "assesmentType";
+            this.assesmentType.Size = new System.Drawing.Size(285, 33);
+            this.assesmentType.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox1.TabIndex = 34;
+            this.assesmentType.StateCommon.ComboBox.Border.Rounding = 20;
+            this.assesmentType.StateCommon.ComboBox.Border.Width = 1;
+            this.assesmentType.TabIndex = 34;
             // 
             // label7
             // 
@@ -142,22 +142,23 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Start Time";
             // 
-            // kryptonDateTimePicker2
+            // assesmentEndTime
             // 
-            this.kryptonDateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assesmentEndTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonDateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.kryptonDateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.kryptonDateTimePicker2.Location = new System.Drawing.Point(3, 281);
-            this.kryptonDateTimePicker2.Name = "kryptonDateTimePicker2";
-            this.kryptonDateTimePicker2.ShowUpDown = true;
-            this.kryptonDateTimePicker2.Size = new System.Drawing.Size(285, 29);
-            this.kryptonDateTimePicker2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assesmentEndTime.CalendarTodayDate = new System.DateTime(2025, 5, 8, 0, 0, 0, 0);
+            this.assesmentEndTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.assesmentEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.assesmentEndTime.Location = new System.Drawing.Point(3, 281);
+            this.assesmentEndTime.Name = "assesmentEndTime";
+            this.assesmentEndTime.ShowUpDown = true;
+            this.assesmentEndTime.Size = new System.Drawing.Size(285, 29);
+            this.assesmentEndTime.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDateTimePicker2.StateCommon.Border.Rounding = 20;
-            this.kryptonDateTimePicker2.StateCommon.Border.Width = 1;
-            this.kryptonDateTimePicker2.TabIndex = 31;
+            this.assesmentEndTime.StateCommon.Border.Rounding = 20;
+            this.assesmentEndTime.StateCommon.Border.Width = 1;
+            this.assesmentEndTime.TabIndex = 31;
             // 
             // label1
             // 
@@ -172,28 +173,28 @@
             this.label1.Text = "Create Assessment";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // kryptonTextBox1
+            // assesmentCourse
             // 
-            this.kryptonTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assesmentCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(3, 85);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assesmentCourse.Location = new System.Drawing.Point(3, 85);
+            this.assesmentCourse.Name = "assesmentCourse";
+            this.assesmentCourse.Size = new System.Drawing.Size(285, 32);
+            this.assesmentCourse.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.assesmentCourse.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.assesmentCourse.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.assesmentCourse.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 20;
-            this.kryptonTextBox1.Text = "Enter Assignment Course";
-            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_coursetxt);
-            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_coursetxt);
+            this.assesmentCourse.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.assesmentCourse.StateCommon.Border.Rounding = 20;
+            this.assesmentCourse.StateCommon.Border.Width = 1;
+            this.assesmentCourse.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.assesmentCourse.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assesmentCourse.TabIndex = 20;
+            this.assesmentCourse.Text = "Enter Assignment Course";
+            this.assesmentCourse.Enter += new System.EventHandler(this.enter_event_coursetxt);
+            this.assesmentCourse.Leave += new System.EventHandler(this.leave_event_coursetxt);
             // 
             // label4
             // 
@@ -287,23 +288,25 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 16;
             this.kryptonButton2.Values.Text = "Create";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
-            // kryptonDateTimePicker1
+            // assesmentStartTime
             // 
-            this.kryptonDateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assesmentStartTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonDateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(3, 232);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.ShowUpDown = true;
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(285, 26);
-            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assesmentStartTime.CalendarTodayDate = new System.DateTime(2025, 5, 8, 0, 0, 0, 0);
+            this.assesmentStartTime.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.assesmentStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.assesmentStartTime.Location = new System.Drawing.Point(3, 232);
+            this.assesmentStartTime.Name = "assesmentStartTime";
+            this.assesmentStartTime.ShowUpDown = true;
+            this.assesmentStartTime.Size = new System.Drawing.Size(285, 26);
+            this.assesmentStartTime.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 20;
-            this.kryptonDateTimePicker1.StateCommon.Border.Width = 1;
-            this.kryptonDateTimePicker1.TabIndex = 30;
+            this.assesmentStartTime.StateCommon.Border.Rounding = 20;
+            this.assesmentStartTime.StateCommon.Border.Width = 1;
+            this.assesmentStartTime.TabIndex = 30;
             // 
             // label3
             // 
@@ -315,29 +318,29 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Deadline";
             // 
-            // kryptonTextBox2
+            // assesmentDescription
             // 
-            this.kryptonTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assesmentDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox2.Location = new System.Drawing.Point(3, 183);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assesmentDescription.Location = new System.Drawing.Point(3, 183);
+            this.assesmentDescription.Name = "assesmentDescription";
+            this.assesmentDescription.Size = new System.Drawing.Size(285, 32);
+            this.assesmentDescription.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.assesmentDescription.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.assesmentDescription.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.assesmentDescription.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 27;
-            this.kryptonTextBox2.Text = "Enter Assignment Description";
-            this.kryptonTextBox2.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
-            this.kryptonTextBox2.Enter += new System.EventHandler(this.enter_event_topictxt);
-            this.kryptonTextBox2.Leave += new System.EventHandler(this.leave_event_topictxt);
+            this.assesmentDescription.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.assesmentDescription.StateCommon.Border.Rounding = 20;
+            this.assesmentDescription.StateCommon.Border.Width = 1;
+            this.assesmentDescription.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.assesmentDescription.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assesmentDescription.TabIndex = 27;
+            this.assesmentDescription.Text = "Enter Assignment Description";
+            this.assesmentDescription.TextChanged += new System.EventHandler(this.kryptonTextBox2_TextChanged);
+            this.assesmentDescription.Enter += new System.EventHandler(this.enter_event_topictxt);
+            this.assesmentDescription.Leave += new System.EventHandler(this.leave_event_topictxt);
             // 
             // tableLayoutPanel3
             // 
@@ -366,6 +369,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(227, 308);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -387,7 +391,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assesmentType)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -403,18 +407,18 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox assesmentCourse;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox assesmentDescription;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker assesmentStartTime;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker2;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker assesmentEndTime;
         private System.Windows.Forms.Label label7;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox assesmentType;
     }
 }

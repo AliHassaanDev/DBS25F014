@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectDB.BL;
 using FinalProjectDB.DL;
 namespace FinalProjectDB.UI.UserControls
 {
@@ -15,9 +16,27 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_YourCourses()
         {
             InitializeComponent();
-            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            ConfigureDataGridView();
+            LoadTeacherCoursesIntoGridView();
         }
-
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("TeacherId", "Teacher ID");
+            dataGridView1.Columns.Add("CourseTitle", "Course Title");
+        }
+        private void LoadTeacherCoursesIntoGridView()
+        {
+            List<TeacherCoursesBL> courses = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            foreach (var course in courses)
+            {
+                dataGridView1.Rows.Add(
+                    course.getTeacherId(),
+                    course.getCourseName()
+                );
+            }
+        }
         private void Teach_YourCourses_Load(object sender, EventArgs e)
         {
 

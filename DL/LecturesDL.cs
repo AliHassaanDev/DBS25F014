@@ -79,6 +79,20 @@ namespace FinalProjectDB.DL
             return courseId;
 
         }
+        public static int getLectureId(String lecture)
+        {
+            int lectureId = -1;
+            String query1 = $"SELECT lecture_id FROM lecture WHERE lecture.topic='{lecture}'";
+            using (var reader = DatabaseHelper.Instance.getData(query1))
+            {
+                if (reader.Read())
+                {
+                    lectureId = reader.GetInt32("lecture_id");
+                }
+            }
+            return lectureId;
+
+        }
         public static List<LecturesBL> teacherLectures()
         {
             List<LecturesBL> lectures = new List<LecturesBL>();
@@ -131,8 +145,8 @@ namespace FinalProjectDB.DL
             List<TeacherCoursesBL> MyCourses = new List<TeacherCoursesBL>();
 
             string query = $"SELECT course_title FROM courses " +
-               $"INNER JOIN lecture ON lecture.course_id = courses.course_id " +
-               $"WHERE lecture.teacher_id = '{teacherID}'";
+               $"INNER JOIN teachercourses ON teachercourses.course_id = courses.course_id " +
+               $"WHERE teachercourses.teacher_id = '{teacherID}'";
 
 
             var reader = DatabaseHelper.Instance.getData(query);
@@ -141,13 +155,33 @@ namespace FinalProjectDB.DL
             {
                 TeacherCoursesBL course = new TeacherCoursesBL();
                 {
-                    course.CourseName = reader["course_title"].ToString();
+                    course.setCourseName(reader["course_title"].ToString());
 
                 };
                 MyCourses.Add(course);
             }
 
             return MyCourses;
+        }
+        public static List<LecturesBL> individualTeacherLectureNameONly(String selectedCourse)
+        {
+            List<LecturesBL> lectures = new List<LecturesBL>();
+            string query = $"SELECT lecture.topic " +
+                           $"FROM lecture " +
+                           $"JOIN courses ON courses.course_id = lecture.course_id " +
+                           $"WHERE lecture.teacher_id = {TeacherProfileDL.getTeacherId(Login.user)} " +
+                           $"AND courses.course_title = '{selectedCourse}'";
+
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                LecturesBL lecture = new LecturesBL();
+                {
+                    lecture.setTopic(Convert.ToString(reader["topic"]));
+                }
+                lectures.Add(lecture);
+            }
+            return lectures;
         }
     }
 }
