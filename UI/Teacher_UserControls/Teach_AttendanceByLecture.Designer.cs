@@ -241,7 +241,7 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.942786F));
             this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label6, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.reportViewer1, 1, 1);
+//            this.tableLayoutPanel3.Controls.Add(this.reportViewer1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(507, 5);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

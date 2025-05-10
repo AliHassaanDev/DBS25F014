@@ -95,7 +95,7 @@ namespace FinalProjectDB.UI.UserControls
             // 
             // kryptonComboBox3
             // 
-            this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+      /*      this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox3.DropDownWidth = 273;
@@ -108,7 +108,7 @@ namespace FinalProjectDB.UI.UserControls
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonComboBox3.StateCommon.ComboBox.Border.Rounding = 20;
             this.kryptonComboBox3.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox3.TabIndex = 28;
+            this.kryptonComboBox3.TabIndex = 28;*/
             // 
             // kryptonComboBox2
             // 
@@ -140,14 +140,14 @@ namespace FinalProjectDB.UI.UserControls
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            /*this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(4, 249);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 16);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Select Assessment";
+            this.label2.Text = "Select Assessment";*/
             // 
             // label1
             // 
