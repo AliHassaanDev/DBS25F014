@@ -17,6 +17,7 @@ namespace FinalProjectDB.BL
         private string phoneNo;
         private string address;
 
+        public StudentsBL() { }
         public StudentsBL(int id,string studentName, string fatherName, string cnic, string gender, DateTime dob, string phoneNo, string address)
         {
             this.studentID = id;

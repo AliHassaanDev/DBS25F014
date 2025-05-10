@@ -4,13 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using FinalProjectDB.BL;
+using FinalProjectDB.UI;
 
 namespace FinalProjectDB.DL
 {
     internal class StudentsDL
     {
         public static List<StudentsBL> students = new List<StudentsBL>();
+        public static List<string> student = new List<string>();
         public static void AddStudentInfo(StudentsBL s)
         {
             string formattedDate = s.GetDOB().ToString("yyyy-MM-dd");
@@ -33,6 +36,24 @@ namespace FinalProjectDB.DL
                 return count > 0;
             }
             return false;
+        }
+        public static void StudentsByCourses(string course)
+        {
+            student.Clear();
+            string query = $"SELECT student_name FROM student s JOIN enrollments e ON s.student_id = e.student_id  " +
+                $" WHERE course_id ={CourseDL.getIDFromCourse(course)}";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                student.Add(Convert.ToString(reader["student_name"]));
+            }
+        }
+        public static int getIDFromStudent(string name)
+        {
+            string query = $"SELECT student_id FROM student WHERE student_name='{name}'";
+            var reader = DatabaseHelper.Instance.getData(query);
+            reader.Read();
+            return Convert.ToInt32(reader["student_id"]);
         }
     }
 }

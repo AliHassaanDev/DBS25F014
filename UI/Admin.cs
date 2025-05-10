@@ -259,7 +259,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_AllUsers1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 161);
+            activateBtn(sender, System.Drawing.Color.Black, 249);
             showPanels(panel4);
         }
 
@@ -289,7 +289,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             admin_AllDepartments1.load();
             admin_AllDepartments1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 201);
+            activateBtn(sender, System.Drawing.Color.Black, 311);
             showPanels(panel5);
         }
 
@@ -319,7 +319,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             teach_Announcements1.load();
             teach_Announcements1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 241);
+            activateBtn(sender, System.Drawing.Color.Black, 373);
             showPanels(panel6);
         }
 
@@ -348,14 +348,17 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             teach_AttendanceByLecture1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 281);
+            activateBtn(sender, System.Drawing.Color.Black, 435);
             showPanels(panel8);
+            teach_AttendanceByLecture1.loadCourses();
         }
 
         private void iconButton27_Click(object sender, EventArgs e)
         {
             hideUserControls();
             admin_AttendenceByStudent1.Visible = true;
+            admin_AttendenceByStudent1.loadCourses();
+           
         }
 
 
@@ -364,7 +367,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_AllComplaints1.Visible =true;
-            activateBtn(sender, System.Drawing.Color.Black, 321);
+            activateBtn(sender, System.Drawing.Color.Black, 497);
             showPanels(panel9);
         }
 
@@ -379,7 +382,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             teach_ResutsByAssesment1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 361);
+            activateBtn(sender, System.Drawing.Color.Black, 559);
             showPanels(panel7);
         }
 
@@ -394,7 +397,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_AllStudents1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 401);
+            activateBtn(sender, System.Drawing.Color.Black, 621);
             showPanels(panel12);
         }
 
@@ -409,7 +412,7 @@ namespace FinalProjectDB.UI
         {
             hideUserControls();
             admin_AllTeachers1.Visible = true;
-            activateBtn(sender, System.Drawing.Color.Black, 441);
+            activateBtn(sender, System.Drawing.Color.Black, 683);
             showPanels(panel11);
         }
 

@@ -15,6 +15,7 @@ namespace FinalProjectDB.DL
 {
     internal class LecturesDL
     {
+        public static List<string> lecture = new List<string>();
         public static void validCourse(String courseName)
         {
             String query = $"SELECT course_title FROM courses INNER JOIN teachercourses ON courses.course_id=" +
@@ -148,6 +149,23 @@ namespace FinalProjectDB.DL
             }
 
             return MyCourses;
+        }
+        public static void LecturesByCourses(string course)
+        {
+            lecture.Clear();
+            string query = $"SELECT Distinct topic FROM lecture WHERE course_id ={CourseDL.getIDFromCourse(course)}";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                lecture.Add(Convert.ToString(reader["topic"]));
+            }
+        }
+        public static int getIDFromLecture(string lecture)
+        {
+            string query = $"SELECT lecture_id FROM lecture WHERE topic='{lecture}'";
+            var reader = DatabaseHelper.Instance.getData(query);
+            reader.Read();
+            return Convert.ToInt32(reader["lecture_id"]);
         }
     }
 }
