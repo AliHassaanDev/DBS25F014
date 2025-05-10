@@ -70,7 +70,7 @@ namespace FinalProjectDB.UI.UserControls
             ConfigureDataGridView();
             LoadLectureIntoGridView();
 
-            AttendanceReportDL.loadAttendanceBylecture(kryptonComboBox2.Text);
+           /* AttendanceReportDL.loadAttendanceBylecture(kryptonComboBox2.Text);
 
             reportViewer1.LocalReport.ReportPath = "AttendanceByStudentReport.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
@@ -79,9 +79,9 @@ namespace FinalProjectDB.UI.UserControls
             this.attendanceReportsBindingSource.DataSource = AttendanceReportDL.report2;
             this.reportViewer1.RefreshReport();
             loadCourses();
-            MessageBox.Show(AttendanceReportDL.report2.Count.ToString());
+            MessageBox.Show(AttendanceReportDL.report2.Count.ToString());*/
         }
-        public void loadCourses()
+       /* public void loadCourses()
         {
             CourseDL.loadCoursesList();
             this.kryptonComboBox1.DataSource = null;
@@ -96,7 +96,7 @@ namespace FinalProjectDB.UI.UserControls
         private void kryptonComboBox2_DropDown(object sender, EventArgs e)
         {
           loadLectures();
-        }
+        }*/
 
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
