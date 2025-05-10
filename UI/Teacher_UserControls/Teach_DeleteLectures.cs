@@ -32,7 +32,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void LoadLectureIntoGridView()
         {
-            List<LecturesBL> lectures = LecturesDL.teacherLectures();
+            List<TeachersLecturesBL> lectures = TeacherLecturesDL.teacherLectures();
             foreach (var lecture in lectures)
             {
                 dataGridView1.Rows.Add(
@@ -71,7 +71,7 @@ namespace FinalProjectDB.UI.UserControls
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
             String LectureTopic = LectureTopicDelete.Text;
-            LecturesDL.deleteLecture(LectureTopic);
+            TeacherLecturesDL.deleteLecture(LectureTopic);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI.UserControls
+namespace FinalProjectDB.UI.UserControls
 {
     partial class Teach_AttendanceByLecture
     {
@@ -33,23 +33,22 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.attendanceLecture = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.attendanceCourse = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.attendanceReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceLecture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceCourse)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -74,10 +73,10 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceLecture, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceCourse, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(61, 5);
@@ -97,30 +96,27 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 285);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Select Lecture";
             // 
-            // kryptonComboBox2
+            // attendanceLecture
             // 
-            this.kryptonComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceLecture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox2.DropDownWidth = 273;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(4, 310);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(430, 41);
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceLecture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.attendanceLecture.DropDownWidth = 273;
+            this.attendanceLecture.Location = new System.Drawing.Point(3, 201);
+            this.attendanceLecture.Name = "attendanceLecture";
+            this.attendanceLecture.Size = new System.Drawing.Size(285, 33);
+            this.attendanceLecture.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox2.TabIndex = 25;
-            this.kryptonComboBox2.DropDown += new System.EventHandler(this.kryptonComboBox2_DropDown);
+            this.attendanceLecture.StateCommon.ComboBox.Border.Rounding = 20;
+            this.attendanceLecture.StateCommon.ComboBox.Border.Width = 1;
+            this.attendanceLecture.TabIndex = 25;
             // 
             // label1
             // 
@@ -147,22 +143,21 @@
             this.label4.Text = "Select Course";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // kryptonComboBox1
+            // attendanceCourse
             // 
-            this.kryptonComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox1.DropDownWidth = 273;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(4, 217);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(430, 41);
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.attendanceCourse.DropDownWidth = 273;
+            this.attendanceCourse.Location = new System.Drawing.Point(3, 141);
+            this.attendanceCourse.Name = "attendanceCourse";
+            this.attendanceCourse.Size = new System.Drawing.Size(285, 33);
+            this.attendanceCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox1.TabIndex = 24;
+            this.attendanceCourse.StateCommon.ComboBox.Border.Rounding = 20;
+            this.attendanceCourse.StateCommon.ComboBox.Border.Width = 1;
+            this.attendanceCourse.TabIndex = 24;
             // 
             // tableLayoutPanel6
             // 
@@ -244,6 +239,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.51492F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.54229F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.942786F));
+            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.reportViewer1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,23 +265,15 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Attandence Report";
             // 
-            // reportViewer1
+            // dataGridView1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.DocumentMapWidth = 38;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.attendanceReportsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalProjectDB.UI.Reports.AttendanceByStudentReport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(49, 63);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(343, 477);
-            this.reportViewer1.TabIndex = 2;
-            // 
-            // attendanceReportsBindingSource
-            // 
-            this.attendanceReportsBindingSource.DataSource = typeof(FinalProjectDB.BL.AttendanceReports);
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 42);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(227, 308);
+            this.dataGridView1.TabIndex = 5;
             // 
             // Teach_AttendanceByLecture
             // 
@@ -298,12 +286,12 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceLecture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceCourse)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,12 +304,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceCourse;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource attendanceReportsBindingSource;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceLecture;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

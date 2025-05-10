@@ -30,10 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonComboBox3 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.attendanceStatus = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.attendanceStudentID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.attendanceLecture = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.attendanceCourse = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,9 +46,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceLecture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceCourse)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,10 +75,10 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox3, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonTextBox1, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox2, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceStatus, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceStudentID, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceLecture, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.attendanceCourse, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 9);
@@ -104,79 +104,79 @@
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // kryptonComboBox3
+            // attendanceStatus
             // 
-            this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox3.DropDownWidth = 273;
-            this.kryptonComboBox3.Items.AddRange(new object[] {
+            this.attendanceStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.attendanceStatus.DropDownWidth = 273;
+            this.attendanceStatus.Items.AddRange(new object[] {
             "Present",
             "Absent"});
-            this.kryptonComboBox3.Location = new System.Drawing.Point(3, 274);
-            this.kryptonComboBox3.Name = "kryptonComboBox3";
-            this.kryptonComboBox3.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceStatus.Location = new System.Drawing.Point(3, 274);
+            this.attendanceStatus.Name = "attendanceStatus";
+            this.attendanceStatus.Size = new System.Drawing.Size(285, 33);
+            this.attendanceStatus.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox3.TabIndex = 34;
+            this.attendanceStatus.StateCommon.ComboBox.Border.Rounding = 20;
+            this.attendanceStatus.StateCommon.ComboBox.Border.Width = 1;
+            this.attendanceStatus.TabIndex = 34;
             // 
-            // kryptonTextBox1
+            // attendanceStudentID
             // 
-            this.kryptonTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceStudentID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(3, 225);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(285, 32);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceStudentID.Location = new System.Drawing.Point(3, 225);
+            this.attendanceStudentID.Name = "attendanceStudentID";
+            this.attendanceStudentID.Size = new System.Drawing.Size(285, 32);
+            this.attendanceStudentID.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.attendanceStudentID.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.attendanceStudentID.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.attendanceStudentID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 33;
-            this.kryptonTextBox1.Text = "Enter Student ID";
-            this.kryptonTextBox1.Enter += new System.EventHandler(this.enter_event_studenttxt);
-            this.kryptonTextBox1.Leave += new System.EventHandler(this.leave_event_studenttxt);
+            this.attendanceStudentID.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.attendanceStudentID.StateCommon.Border.Rounding = 20;
+            this.attendanceStudentID.StateCommon.Border.Width = 1;
+            this.attendanceStudentID.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.attendanceStudentID.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attendanceStudentID.TabIndex = 33;
+            this.attendanceStudentID.Text = "Enter Student ID";
+            this.attendanceStudentID.Enter += new System.EventHandler(this.enter_event_studenttxt);
+            this.attendanceStudentID.Leave += new System.EventHandler(this.leave_event_studenttxt);
             // 
-            // kryptonComboBox2
+            // attendanceLecture
             // 
-            this.kryptonComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceLecture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox2.DropDownWidth = 273;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(3, 176);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceLecture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.attendanceLecture.DropDownWidth = 273;
+            this.attendanceLecture.Location = new System.Drawing.Point(3, 176);
+            this.attendanceLecture.Name = "attendanceLecture";
+            this.attendanceLecture.Size = new System.Drawing.Size(285, 33);
+            this.attendanceLecture.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox2.TabIndex = 32;
+            this.attendanceLecture.StateCommon.ComboBox.Border.Rounding = 20;
+            this.attendanceLecture.StateCommon.ComboBox.Border.Width = 1;
+            this.attendanceLecture.TabIndex = 32;
             // 
-            // kryptonComboBox1
+            // attendanceCourse
             // 
-            this.kryptonComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.attendanceCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox1.DropDownWidth = 273;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(3, 127);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.attendanceCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.attendanceCourse.DropDownWidth = 273;
+            this.attendanceCourse.Location = new System.Drawing.Point(3, 127);
+            this.attendanceCourse.Name = "attendanceCourse";
+            this.attendanceCourse.Size = new System.Drawing.Size(285, 33);
+            this.attendanceCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox1.TabIndex = 31;
+            this.attendanceCourse.StateCommon.ComboBox.Border.Rounding = 20;
+            this.attendanceCourse.StateCommon.ComboBox.Border.Width = 1;
+            this.attendanceCourse.TabIndex = 31;
             // 
             // label1
             // 
@@ -271,6 +271,7 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 16;
             this.kryptonButton2.Values.Text = "Mark";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // label2
             // 
@@ -350,9 +351,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceLecture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceCourse)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -374,10 +375,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceLecture;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceCourse;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox attendanceStudentID;
         private System.Windows.Forms.Label label5;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceStatus;
     }
 }

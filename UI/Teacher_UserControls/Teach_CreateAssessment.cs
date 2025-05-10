@@ -1,4 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +18,31 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_CreateAssessment()
         {
             InitializeComponent();
-        }
+            assesmentType.Items.Add("quiz");
+            assesmentType.Items.Add("assignment");
+            assesmentType.Items.Add("exam");
+            ConfigureDataGridView();
+            LoadTeacherCoursesIntoGridView();
 
+        }
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("TeacherId", "Teacher ID");
+            dataGridView1.Columns.Add("CourseTitle", "Course Title");
+        }
+        private void LoadTeacherCoursesIntoGridView()
+        {
+            List<TeacherCoursesBL> courses = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            foreach (var course in courses)
+            {
+                dataGridView1.Rows.Add(
+                    course.getTeacherId(),
+                    course.getCourseName()
+                );
+            }
+        }
         private void Teach_CreateAssignment_Load(object sender, EventArgs e)
         {
 
@@ -28,33 +53,33 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Assignment Course")
+            if (assesmentCourse.Text == "Enter Assignment Course")
             {
-                kryptonTextBox1.Text ="";
+                assesmentCourse.Text = "";
             }
         }
 
         private void leave_event_coursetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (assesmentCourse.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Assignment Course";
+                assesmentCourse.Text = "Enter Assignment Course";
             }
         }
 
         private void enter_event_topictxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter Assignment Description")
+            if (assesmentDescription.Text == "Enter Assignment Description")
             {
-                kryptonTextBox2.Text ="";
+                assesmentDescription.Text = "";
             }
         }
 
         private void leave_event_topictxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (assesmentDescription.Text == "")
             {
-                kryptonTextBox2.Text ="Enter Assignment Description";
+                assesmentDescription.Text = "Enter Assignment Description";
             }
         }
 
@@ -71,6 +96,22 @@ namespace FinalProjectDB.UI.UserControls
         private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            String assesmentcourseName = assesmentCourse.Text;
+            String assesmentdescription = assesmentDescription.Text;
+            DateTime starttime = Convert.ToDateTime(assesmentStartTime.Text);
+            DateTime endtime = Convert.ToDateTime(assesmentEndTime.Text);
+            int courseID = CourseDL.getIDFromCourse(assesmentcourseName);
+            TeacherAssesmentsBL teacherAssesmentsBL = new TeacherAssesmentsBL(courseID, assesmentType.Text, assesmentdescription, starttime, endtime);
+            TeacherAssesmentsDL.insertAssesment(teacherAssesmentsBL);
         }
     }
 }

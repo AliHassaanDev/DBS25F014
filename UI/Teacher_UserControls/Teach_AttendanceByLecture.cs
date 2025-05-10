@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProjectDB.DL;
 using Microsoft.Reporting.WinForms;
+using FinalProjectDB.BL;
 
 namespace FinalProjectDB.UI.UserControls
 {
@@ -17,15 +18,58 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_AttendanceByLecture()
         {
             InitializeComponent();
+            attendanceCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            attendanceCourse.DisplayMember = "CourseName";
+            attendanceCourse.SelectedIndexChanged += attendanceCourse_SelectedIndexChanged;
+            attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(attendanceCourse.Text);
         }
-
+        private void attendanceCourse_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (attendanceCourse.SelectedItem is TeacherCoursesBL selectedCourse)
+            {
+                String CourseName = selectedCourse.getCourseName();
+                attendanceLecture.DataSource = TeacherLecturesDL.individualTeacherLectureNameONly(CourseName);
+                attendanceLecture.DisplayMember = "Topic";
+            }
+        }
         private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("AttendanceId", "Attendance Id");
+            dataGridView1.Columns.Add("StudentId", "Student Id");
+            dataGridView1.Columns.Add("StudentName", "Student Name");
+            dataGridView1.Columns.Add("LectureTopic", "Lecture Topic");
+            dataGridView1.Columns.Add("Status", "Status");
+        }
+        private void LoadLectureIntoGridView()
+        {
+            List<AttendanceBL> attendances = AttendanceDL.attendanceList();
+            foreach (var attendance in attendances)
+            {
+                dataGridView1.Rows.Add(
+                    attendance.getAttendanceID(),
+                    attendance.getStudentID(),
+                    attendance.getStudentName(),
+                    attendance.getLectureTopic(),
+                    attendance.getStatus()
+                );
+            }
+        }
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
+            ConfigureDataGridView();
+            LoadLectureIntoGridView();
+
             AttendanceReportDL.loadAttendanceBylecture(kryptonComboBox2.Text);
 
             reportViewer1.LocalReport.ReportPath = "AttendanceByStudentReport.rdlc";

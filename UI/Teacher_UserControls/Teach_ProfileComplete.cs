@@ -87,13 +87,18 @@ namespace FinalProjectDB.UI.UserControls
 
         public void kryptonButton1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
             String name = TeacherName.Text;
+            String userName=teacherUserName.Text;
             int exp = Convert.ToInt32(TeacherJobExperience.Text);
             String studies = TeacherStudies.Text;
             String subjects = TeacherSubjects.Text;
-            TeacherProfile t1 = new TeacherProfile(name, exp, studies, subjects);
+            TeacherProfile t1 = new TeacherProfile(userName,name, exp, studies, subjects);
             TeacherProfileDL.AddTeacherData(t1);
         }
-        
     }
 }

@@ -16,7 +16,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_YourLectures()
         {
             InitializeComponent();
-            ComboBox1.DataSource = LecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            ComboBox1.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
             ComboBox1.DisplayMember = "CourseName";
 
         }
@@ -37,7 +37,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void LoadLectureIntoGridView()
         {
-            List<LecturesBL> lectures = LecturesDL.teacherLecturesByCourses(ComboBox1.Text);
+            List<TeachersLecturesBL> lectures = TeacherLecturesDL.teacherLectures();
             foreach (var lecture in lectures)
             {
                 dataGridView1.Rows.Add(

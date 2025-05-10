@@ -1,4 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,41 +18,89 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_UpdateResult()
         {
             InitializeComponent();
+            updateCourse.DataSource = TeacherLecturesDL.IndividualTeacherCoursesNameOnly(TeacherProfileDL.getTeacherId(Login.user));
+            updateCourse.DisplayMember = "CourseName";
         }
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("ResultId", "Result Id");
+            dataGridView1.Columns.Add("AssessmentId", "Assessment Id");
+            dataGridView1.Columns.Add("StudentId", "Student Id");
+            dataGridView1.Columns.Add("StudentName", "Student Name");
+            dataGridView1.Columns.Add("CourseName", "Course Name");
+            dataGridView1.Columns.Add("AssessmentType", "Assessment Type");
+            dataGridView1.Columns.Add("ObtainedMarks", "Obtained Marks");
+            dataGridView1.Columns.Add("TotalMarks", "Total Marks");
+        }
+        private void LoadEnrollmentIntoGridView()
+        {
+            List<TeacherResultBL> results = TeacherResultDL.resultList(updateCourse.Text);
+            foreach (var result in results)
+            {
+                dataGridView1.Rows.Add(
+                    result.getResultID(),
+                    result.getAssessmentID(),
+                    result.getStudentID(),
+                    result.getStudentName(),
+                    result.getCourseName(),
+                    result.getType(),
+                    result.getObtainedMarks(),
+                    result.getTotalMarks()
 
+                );
+            }
+        }
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
         private void enter_event_studenttxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox3.Text == "Enter Student ID")
+            if (updateStudentID.Text == "Enter Student ID")
             {
-                kryptonTextBox3.Text ="";
+                updateStudentID.Text ="";
             }
         }
 
         private void leave_event_studenttxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox3.Text == "")
+            if (updateStudentID.Text == "")
             {
-                kryptonTextBox3.Text ="Enter Student ID";
+                updateStudentID.Text ="Enter Student ID";
             }
         }
         private void enter_event_obtainedtxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "Enter New Obtained Marks")
+            if (updateObtainedMarks.Text == "Enter New Obtained Marks")
             {
-                kryptonTextBox2.Text ="";
+                updateObtainedMarks.Text ="";
             }
         }
 
         private void leave_event_obtainedtxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox2.Text == "")
+            if (updateObtainedMarks.Text == "")
             {
-                kryptonTextBox2.Text ="Enter New Obtained Marks";
+                updateObtainedMarks.Text ="Enter New Obtained Marks";
             }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            ConfigureDataGridView();
+            LoadEnrollmentIntoGridView();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            String courseName = updateCourse.Text;
+            int studentID = Convert.ToInt32(updateStudentID.Text);
+            decimal obtainedMarks = Convert.ToDecimal(updateObtainedMarks.Text);
+            int assessmentID = Convert.ToInt32(updateAssessment.Text);
+            TeacherResultDL.UpdateResult(studentID, assessmentID, obtainedMarks);
+
         }
     }
 }

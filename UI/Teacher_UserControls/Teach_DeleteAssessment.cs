@@ -1,4 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using FinalProjectDB.BL;
+using FinalProjectDB.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +18,35 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_DeleteAssessment()
         {
             InitializeComponent();
+            ConfigureDataGridView();
+            LoadLectureIntoGridView();
         }
-
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("AssessmentId", "Assessment ID");
+            dataGridView1.Columns.Add("CourseTitle", "Course Title");
+            dataGridView1.Columns.Add("Type", "Type");
+            dataGridView1.Columns.Add("Description", "Description");
+            dataGridView1.Columns.Add("StartTime", "Start Time");
+            dataGridView1.Columns.Add("DueTime", "Due Time");
+        }
+        private void LoadLectureIntoGridView()
+        {
+            List<TeacherAssesmentsBL> assesments = TeacherAssesmentsDL.getAssesments();
+            foreach (var assesment in assesments)
+            {
+                dataGridView1.Rows.Add(
+                    assesment.getAssessmentId(),
+                    assesment.getCourseTitle(),
+                    assesment.getType(),
+                    assesment.getDescription(),
+                    assesment.getStartTime(),
+                    assesment.getdueTime()
+                );
+            }
+        }
         private void Teach_DeleteAssignment_Load(object sender, EventArgs e)
         {
 
@@ -28,16 +57,16 @@ namespace FinalProjectDB.UI.UserControls
         }
         private void enter_event_lecturetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "Enter Assessment ID")
+            if (deleteAssessmentID.Text == "Enter Assessment ID")
             {
-                kryptonTextBox1.Text ="";
+                deleteAssessmentID.Text ="";
             }
         }
         private void leave_event_lecturetxt(object sender, EventArgs e)
         {
-            if (kryptonTextBox1.Text == "")
+            if (deleteAssessmentID.Text == "")
             {
-                kryptonTextBox1.Text ="Enter Assessment ID";
+                deleteAssessmentID.Text ="Enter Assessment ID";
             }
         }
 
@@ -52,6 +81,17 @@ namespace FinalProjectDB.UI.UserControls
         }
 
         private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            int assessmentID = Convert.ToInt32(deleteAssessmentID.Text);
+            TeacherAssesmentsDL.deleteAssesment(assessmentID);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

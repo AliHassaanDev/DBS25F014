@@ -16,9 +16,27 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_DropCourse()
         {
             InitializeComponent();
-            dataGridView1.DataSource = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            ConfigureDataGridView();
+            LoadTeacherCoursesIntoGridView();
         }
-
+        private void ConfigureDataGridView()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+            dataGridView1.Columns.Add("TeacherId", "Teacher ID");
+            dataGridView1.Columns.Add("CourseTitle", "Course Title");
+        }
+        private void LoadTeacherCoursesIntoGridView()
+        {
+            List<TeacherCoursesBL> courses = CourseDL.IndividualTeacherCourses(TeacherProfileDL.getTeacherId(Login.user));
+            foreach (var course in courses)
+            {
+                dataGridView1.Rows.Add(
+                    course.getTeacherId(),
+                    course.getCourseName()
+                );
+            }
+        }
         private void teach_DropCourse_Load(object sender, EventArgs e)
         {
 

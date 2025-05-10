@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinalProjectDB.BL;
+using FinalProjectDB.Interfaces;
 using FinalProjectDB.UI;
 
 namespace FinalProjectDB.DL
 {
-    internal class ComplaintsDL
+    internal class ComplaintsDL:IComplain
     {
-        public static List<ComplaintsBL> complaintsAgainstYou()
+        public List<ComplaintsBL> complaintsAgainstYou()
         {
             List<ComplaintsBL> complaints = new List<ComplaintsBL>();
             string query = $"SELECT description,complaint_date FROM complaints WHERE against_user_id" +
@@ -31,7 +32,7 @@ namespace FinalProjectDB.DL
 
             return complaints;
         }
-        public static List<ComplaintsBL> complaintsByYou()
+        public List<ComplaintsBL> complaintsByYou()
         {
             List<ComplaintsBL> complaints = new List<ComplaintsBL>();
             string query = $"SELECT username,description,complaint_date FROM complaints INNER JOIN" +

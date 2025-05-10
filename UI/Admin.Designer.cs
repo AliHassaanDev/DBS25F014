@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI
+namespace FinalProjectDB.UI
 {
     partial class Admin
     {
@@ -1049,7 +1049,7 @@
             this.admin_AllCourses1.Size = new System.Drawing.Size(951, 614);
             this.admin_AllCourses1.TabIndex = 32;
             // 
-            // admin_CreateCourse1
+            // admin_AllStudents1
             // 
             this.admin_CreateCourse1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_CreateCourse1.Location = new System.Drawing.Point(0, 0);
@@ -1265,71 +1265,45 @@
             this.admin_AllStudents1.Size = new System.Drawing.Size(951, 614);
             this.admin_AllStudents1.TabIndex = 56;
             // 
+            // profile1
+            // 
+            this.profile1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.profile1.Location = new System.Drawing.Point(0, 0);
+            this.profile1.Name = "profile1";
+            this.profile1.Size = new System.Drawing.Size(634, 399);
+            this.profile1.TabIndex = 31;
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(634, 399);
+            this.dashboard1.TabIndex = 30;
+            // 
             // admin_EnrolledStudents1
             // 
             this.admin_EnrolledStudents1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_EnrolledStudents1.Location = new System.Drawing.Point(0, 0);
-            this.admin_EnrolledStudents1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.admin_EnrolledStudents1.Name = "admin_EnrolledStudents1";
-            this.admin_EnrolledStudents1.Size = new System.Drawing.Size(951, 614);
+            this.admin_EnrolledStudents1.Size = new System.Drawing.Size(634, 399);
             this.admin_EnrolledStudents1.TabIndex = 57;
             // 
             // admin_AllTeachers1
             // 
             this.admin_AllTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_AllTeachers1.Location = new System.Drawing.Point(0, 0);
-            this.admin_AllTeachers1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.admin_AllTeachers1.Name = "admin_AllTeachers1";
-            this.admin_AllTeachers1.Size = new System.Drawing.Size(951, 614);
+            this.admin_AllTeachers1.Size = new System.Drawing.Size(634, 399);
             this.admin_AllTeachers1.TabIndex = 58;
             // 
             // admin_AssignedTeachers1
             // 
             this.admin_AssignedTeachers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_AssignedTeachers1.Location = new System.Drawing.Point(0, 0);
-            this.admin_AssignedTeachers1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.admin_AssignedTeachers1.Name = "admin_AssignedTeachers1";
-            this.admin_AssignedTeachers1.Size = new System.Drawing.Size(951, 614);
+            this.admin_AssignedTeachers1.Size = new System.Drawing.Size(634, 399);
             this.admin_AssignedTeachers1.TabIndex = 59;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.admin_AssignedTeachers1);
-            this.panel10.Controls.Add(this.admin_AllTeachers1);
-            this.panel10.Controls.Add(this.admin_EnrolledStudents1);
-            this.panel10.Controls.Add(this.admin_AllStudents1);
-            this.panel10.Controls.Add(this.admin_ResultByStudent1);
-            this.panel10.Controls.Add(this.teach_ResutsByAssesment1);
-            this.panel10.Controls.Add(this.admin_ComplaintResolve1);
-            this.panel10.Controls.Add(this.admin_AllComplaints1);
-            this.panel10.Controls.Add(this.admin_AttendenceByStudent1);
-            this.panel10.Controls.Add(this.teach_AttendanceByLecture1);
-            this.panel10.Controls.Add(this.admin_DeleteAnnouncement1);
-            this.panel10.Controls.Add(this.admin_UpdateAnnouncement1);
-            this.panel10.Controls.Add(this.admin_CreateAnnouncement1);
-            this.panel10.Controls.Add(this.teach_Announcements1);
-            this.panel10.Controls.Add(this.admin_DeleteDepartment1);
-            this.panel10.Controls.Add(this.admin_UpdateDepartment1);
-            this.panel10.Controls.Add(this.admin_CreateDepartment1);
-            this.panel10.Controls.Add(this.admin_AllDepartments1);
-            this.panel10.Controls.Add(this.admin_AllUsers1);
-            this.panel10.Controls.Add(this.admin_DeleteUser1);
-            this.panel10.Controls.Add(this.admin_UpdateUser1);
-            this.panel10.Controls.Add(this.admin_AddUser1);
-            this.panel10.Controls.Add(this.admin_TeachRequests1);
-            this.panel10.Controls.Add(this.admin_AssignCourse1);
-            this.panel10.Controls.Add(this.admin_DeleteCourse1);
-            this.panel10.Controls.Add(this.admin_UpdateCourse1);
-            this.panel10.Controls.Add(this.admin_CreateCourse1);
-            this.panel10.Controls.Add(this.admin_AllCourses1);
-            this.panel10.Controls.Add(this.profile1);
-            this.panel10.Controls.Add(this.dashboard1);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(300, 95);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(951, 614);
-            this.panel10.TabIndex = 2;
             // 
             // Admin
             // 

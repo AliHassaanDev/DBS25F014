@@ -3,13 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FinalProjectDB.BL;
 
 namespace FinalProjectDB.DL
 {
-    internal class TeacherCoursesBL
+    internal class TeacherCoursesBL:CourseBL
     {
-        public int TeacherId { get; set; }
-        public String CourseName { get; set; }
+        private int TeacherId { get; set; }
         public TeacherCoursesBL() { }
+        public int getTeacherId()
+        {
+            return TeacherId;
+        }
+        public void setTeacherId(int id)
+        {
+            this.TeacherId = id;
+        }
+        public override string ToString()
+        {
+            return getCourseName();
+        }
+
     }
 }

@@ -8,6 +8,7 @@ namespace FinalProjectDB.BL
 {
     internal class CourseBL
     {
+        protected string courseName;
         int courseId;
         string courseName;
         DateTime date;

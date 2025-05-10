@@ -16,5 +16,10 @@ namespace FinalProjectDB.UI.UserControls
         {
             InitializeComponent();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonComboBox3 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.assessment = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.course = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,8 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assessment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.course)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,8 +69,8 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox3, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.assessment, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.course, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
@@ -89,37 +89,37 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(291, 393);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // kryptonComboBox3
+            // assessment
             // 
-            this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.assessment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox3.DropDownWidth = 273;
-            this.kryptonComboBox3.Location = new System.Drawing.Point(3, 197);
-            this.kryptonComboBox3.Name = "kryptonComboBox3";
-            this.kryptonComboBox3.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.assessment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.assessment.DropDownWidth = 273;
+            this.assessment.Location = new System.Drawing.Point(3, 197);
+            this.assessment.Name = "assessment";
+            this.assessment.Size = new System.Drawing.Size(285, 33);
+            this.assessment.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox3.TabIndex = 32;
+            this.assessment.StateCommon.ComboBox.Border.Rounding = 20;
+            this.assessment.StateCommon.ComboBox.Border.Width = 1;
+            this.assessment.TabIndex = 32;
             // 
-            // kryptonComboBox2
+            // course
             // 
-            this.kryptonComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.course.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox2.DropDownWidth = 273;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(3, 148);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(285, 33);
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.course.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.course.DropDownWidth = 273;
+            this.course.Location = new System.Drawing.Point(3, 148);
+            this.course.Name = "course";
+            this.course.Size = new System.Drawing.Size(285, 33);
+            this.course.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox2.TabIndex = 31;
+            this.course.StateCommon.ComboBox.Border.Rounding = 20;
+            this.course.StateCommon.ComboBox.Border.Width = 1;
+            this.course.TabIndex = 31;
             // 
             // label1
             // 
@@ -224,6 +224,7 @@
             this.kryptonButton2.StateTracking.Border.Width = 1;
             this.kryptonButton2.TabIndex = 16;
             this.kryptonButton2.Values.Text = "View";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -273,8 +274,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assessment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.course)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -295,7 +296,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox course;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox assessment;
     }
 }

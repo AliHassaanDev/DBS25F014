@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProjectDB.BL
 {
-    internal class TeacherProfile
+    internal class TeacherProfile:UserBL
     {
         private int TeacherID { get; set; }
         private String TeacherName { get; set; }
@@ -16,7 +16,7 @@ namespace FinalProjectDB.BL
 
         public TeacherProfile() { }
 
-        public TeacherProfile(string teacherName, int expereience, string studies, string subjects)
+        public TeacherProfile(string username,string teacherName, int expereience, string studies, string subjects):base(username)
         {
             this.TeacherName = teacherName;
             this.Expereience = expereience;

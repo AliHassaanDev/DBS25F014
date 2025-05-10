@@ -35,6 +35,10 @@ namespace FinalProjectDB.BL
             this.username = username;
             this.password = password;
         }
+        public UserBL(String username)
+        {
+            this.username = username;
+        }
 
         public UserBL(int gridViewUserID, string gridViewEmail, string gridViewUsername, string gridViewPassword)
         {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using FinalProjectDB.BL;
 using FinalProjectDB.UI;
+using MySql.Data.MySqlClient;
 
 namespace FinalProjectDB.DL
 {
@@ -45,8 +46,17 @@ namespace FinalProjectDB.DL
 
         public static void CreateCourse(CourseBL course)
         {
-            string query = $"INSERT INTO courses (course_title,end_date,credit_hours,department_id) VALUES ('{course.getCourseName()}','{course.getDate().ToString("yyyy-MM-dd")}',{course.getCreditHours()},{course.getDept_id()})";
-            DatabaseHelper.Instance.Update(query);
+            try
+            {
+                string query = $"INSERT INTO courses (course_title,end_date,credit_hours,department_id) " +
+                    $"VALUES ('{course.getCourseName()}','{course.getDate().ToString("yyyy-MM-dd")}'," +
+                    $"{course.getCreditHours()},{course.getDept_id()})";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException ex)
+            {
+                throw new Exception("Failed to create course: " + ex.Message);
+            }
         }
 
         public static void updateCourse(int course_id,CourseBL course)
@@ -109,9 +119,8 @@ namespace FinalProjectDB.DL
             {
                 TeacherCoursesBL course = new TeacherCoursesBL(); 
                 {
-                    course.TeacherId = int.Parse(reader["teacher_id"].ToString());
-                    course.CourseName = reader["course_title"].ToString();
-
+                    course.setTeacherId(int.Parse(reader["teacher_id"].ToString()));
+                    course.setCourseName(reader["course_title"].ToString());
                 };
                 MyCourses.Add(course);
             }
