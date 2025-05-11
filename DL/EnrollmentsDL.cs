@@ -45,7 +45,7 @@ namespace FinalProjectDB.DL
             }
             return list;
         }
-        public static void insertAttendance(int studentID,int LectureID,String status)
+        public static void insertAttendance(int studentID, int LectureID, String status)
         {
             try
             {

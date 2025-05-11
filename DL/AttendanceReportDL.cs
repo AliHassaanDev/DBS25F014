@@ -32,7 +32,7 @@ namespace FinalProjectDB.DL
         {
             report2.Clear();
             var reader = DatabaseHelper.Instance.getData($"SELECT (SELECT student_name FROM student s WHERE s.student_id = a.student_id)" +
-                $" AS StudentName,'{name}' AS Lecture ,status FROM attendance a WHERE a.lecture_id = {TeacherLecturesDL.getIDFromLecture(name)}");
+                $" AS StudentName,'{name}' AS Lecture ,status FROM attendance a WHERE a.lecture_id = {TeacherLecturesDL.getLectureId(name)}");
             while (reader.Read())
             {
                 AttendanceReports data = new AttendanceReports();

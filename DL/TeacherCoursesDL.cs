@@ -21,11 +21,10 @@ namespace FinalProjectDB.DL
             {
                 TeacherCoursesBL data = new TeacherCoursesBL();
                 {
-                    data.TeacherId = Convert.ToInt32(reader["teacher_id"]);
-                    data.TeacherName = reader["teacher_name"].ToString();
-                    data.CourseName = reader["course_title"].ToString();
+                    data.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
+                    data.setTeacherName(reader["teacher_name"].ToString());
+                    data.setCourseName(reader["course_title"].ToString());
                 }
-                ;
                 assigned.Add(data);
             }
         }

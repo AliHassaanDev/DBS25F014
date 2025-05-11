@@ -203,12 +203,13 @@ namespace FinalProjectDB.DL
                 }
                 return teacherAssesments;
             }
-            catch (MySqlException e) { 
-            MessageBox.Show("Error :"+e.Message);
-             return null;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Error :" + e.Message);
+                return null;
             }
         }
-        public static List<TeacherAssesmentsBL> viewSubmissionsByCondition(String courseName,String type)
+        public static List<TeacherAssesmentsBL> viewSubmissionsByCondition(String courseName, String type)
         {
             try
             {

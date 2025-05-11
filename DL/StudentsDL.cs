@@ -21,11 +21,16 @@ namespace FinalProjectDB.DL
                 $"cnic ='{s.GetCNIC()}',gender ='{s.GetGender()}', dob ='{formattedDate}',phoneno = '{s.GetPhoneNo()}',address = '{s.GetAddress()}' WHERE student_id ={s.GetStudentID()}";
             DatabaseHelper.Instance.Update(query);
         }
-        public static void InsertStudent(StudentsBL s) 
+        public static void InsertStudent(StudentsBL s)
         {
-            string query = $"INSERT INTO student (student_id) VALUES ({s.GetStudentID()})";
+            string formattedDate = s.GetDOB().ToString("yyyy-MM-dd");
+
+            string query = $"INSERT INTO student (student_id, student_name, father_name, cnic, gender, dob, phoneno, address) " +
+                           $"VALUES ({s.GetStudentID()}, '{s.GetStudentName()}', '{s.GetFatherName()}', '{s.GetCNIC()}', " +
+                           $"'{s.GetGender()}', '{formattedDate}', '{s.GetPhoneNo()}', '{s.GetAddress()}')";
             DatabaseHelper.Instance.Update(query);
         }
+
         public static bool userExists(int id)
         {
             string query = $"SELECT COUNT(*) FROM student WHERE student_id ={id}";

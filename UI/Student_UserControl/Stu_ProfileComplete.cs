@@ -137,7 +137,7 @@ namespace FinalProjectDB.UI.Student_UserControl
                     {
                         StudentsDL.InsertStudent(student);
                     }
-                    StudentsDL.AddStudentInfo(student);
+                    //StudentsDL.AddStudentInfo(student);
 
                     kryptonTextBox1.Clear();
                     MessageBox.Show("Your Profile Updated Successfully!");

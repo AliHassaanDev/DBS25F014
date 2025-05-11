@@ -157,7 +157,7 @@
     <Compile Include="BL\AttendanceBL.cs" />
     <Compile Include="BL\ComplaintsBL.cs" />
     <Compile Include="BL\CourseBL.cs" />
-    <Compile Include="BL\DatabaseHelper.cs" />
+    <Compile Include="ConnectionWithDataBase\DatabaseHelper.cs" />
     <Compile Include="BL\DepartmentBL.cs" />
     <Compile Include="BL\StudentCoursesBL.cs" />
     <Compile Include="BL\StudentsBL.cs" />

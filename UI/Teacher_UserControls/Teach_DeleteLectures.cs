@@ -75,5 +75,16 @@ namespace FinalProjectDB.UI.UserControls
             dataGridView1.Rows.Clear();
             LoadLectureIntoGridView();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
+        }
     }
 }

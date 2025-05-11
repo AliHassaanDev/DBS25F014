@@ -9,9 +9,9 @@ namespace FinalProjectDB.BL
 {
     internal class TeacherCoursesBL:CourseBL
     {
-        public int TeacherId { get; set; }
-        public string TeacherName { get; set; }
-        public string CourseName {  get; set; }
+
+        private int TeacherId { get; set; }
+        private String TeacherName { get; set; }
         public TeacherCoursesBL() { }
         public int getTeacherId()
         {
@@ -24,6 +24,14 @@ namespace FinalProjectDB.BL
         public override string ToString()
         {
             return getCourseName();
+        }
+        public void setTeacherName(String name)
+        {
+            this.TeacherName = name;
+        }
+        public String getTeacherName()
+        {
+            return TeacherName;
         }
 
     }

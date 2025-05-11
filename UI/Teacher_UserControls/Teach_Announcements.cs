@@ -16,6 +16,7 @@ namespace FinalProjectDB.UI.UserControls
         public Teach_Announcements()
         {
             InitializeComponent();
+            load();
         }
 
         public void load()
@@ -24,6 +25,7 @@ namespace FinalProjectDB.UI.UserControls
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = AnnouncementDL.announcements;
             dataGridView1.AutoGenerateColumns = true;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,6 +33,11 @@ namespace FinalProjectDB.UI.UserControls
 
         }
         private void Teach_Announcements_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

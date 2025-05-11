@@ -24,7 +24,7 @@ namespace FinalProjectDB.BL
             this.startTime = startTime;
             this.dueTime = endTime;
         }
-        public TeacherAssesmentsBL(int assesmentID,String courseTitle, String type, String description, DateTime startTime, DateTime endTime)
+        public TeacherAssesmentsBL(int assesmentID, String courseTitle, String type, String description, DateTime startTime, DateTime endTime)
         {
             this.assessmentId = assesmentID;
             this.type = type;

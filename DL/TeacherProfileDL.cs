@@ -47,22 +47,38 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Error adding teacher: " + e.Message);
             }
         }
-        public static int getTeacherId(string name)
+        public static int getTeacherId(string username)
         {
             int teacherId = -1;
-            String query1 = $"SELECT user_id FROM users WHERE username='{name}'";
-            using (var reader = DatabaseHelper.Instance.getData(query1))
+
+            try
             {
                 using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    teacherId = reader.GetInt32("user_id");
+                    using (var cmd = new MySqlCommand("GetTeacherIdFromName", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@name", username);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                teacherId = reader.GetInt32("teacher_id");
+                            }
+                        }
+                    }
                 }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
 
             return teacherId;
         }
 
-        public static void fileComplaint(int userID,String description)
+        public static void fileComplaint(int userID, String description)
         {
             try
             {
@@ -85,6 +101,6 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("There was an error in filing the complaint: " + e.Message);
             }
         }
-        
+
     }
 }

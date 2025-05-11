@@ -45,7 +45,7 @@ namespace FinalProjectDB.UI.UserControls
         }
         public void loadLectures()
         {
-            TeacherLecturesDL.LecturesByCourses(attendanceCourse.Text);
+            TeacherLecturesDL.teacherLecturesByCourses(attendanceCourse.Text);
             this.attendanceLecture.DataSource = null;
             this.attendanceLecture.DataSource = TeacherLecturesDL.lecture;
         }

@@ -9,26 +9,31 @@ namespace FinalProjectDB.BL
 {
     internal class UserBL
     {
-        public static string current_user_email;
         public static string current_user;
         public static int current_user_id;
         public static int current_user_role_id;
-
-        protected string email;
+        string email;
         protected string username;
-        protected string password;
-        protected int role;
-
+        string password;
+        int role;
+        int user_id;
+        public static string current_user_email;
         public int GridViewUserID { get; set; }
         public string GridViewUsername { get; set; }
         public string GridViewEmail { get; set; }
         public string GridViewPassword { get; set; }
 
+        public virtual void setUserId(int id) { this.user_id = id; }
+        public virtual int getUserId() { return this.user_id; }
 
         public UserBL() { }
-        int user_id;
-        public void setUserId(int id) { this.user_id = id; }
-        public int getUserId() { return this.user_id; }
+        public UserBL(int gridViewUserID, string gridViewEmail, string gridViewUsername, string gridViewPassword)
+        {
+            GridViewUserID = gridViewUserID;
+            GridViewUsername = gridViewUsername;
+            GridViewEmail = gridViewEmail;
+            GridViewPassword = gridViewPassword;
+        }
         public UserBL(string email, string username, string password)
         {
             this.email = email;
@@ -40,15 +45,7 @@ namespace FinalProjectDB.BL
             this.username = username;
         }
 
-        public UserBL(int gridViewUserID, string gridViewEmail, string gridViewUsername, string gridViewPassword)
-        {
-            GridViewUserID = gridViewUserID;
-            GridViewUsername = gridViewUsername;
-            GridViewEmail = gridViewEmail;
-            GridViewPassword = gridViewPassword;
-        }
-
-        public UserBL(string email, string username, string password,int role)
+        public UserBL(string email, string username, string password, int role)
         {
             this.email = email;
             this.username = username;

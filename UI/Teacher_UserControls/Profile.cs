@@ -48,8 +48,8 @@ namespace FinalProjectDB.UI.UserControls
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            label1.Text = UserBL.current_user;
-            label3.Text= UserBL.current_user_email;
+            label1.Text = Login.user;
+            label3.Text= UserDL.getEmail();
         }
 
        

@@ -13,42 +13,39 @@ namespace FinalProjectDB.DL
 {
     internal class CourseDL
     {
-        public static List<CourseBL> list = new List<CourseBL>();
         public static List<string> courses = new List<string>();
 
-        public static void loadGridviewlist()
-        {
-            list.Clear();
-            string query = $"SELECT * FROM courses";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
-            {
-                list.Add(new CourseBL(Convert.ToInt32(reader["course_id"]),Convert.ToString(reader["course_title"]), Convert.ToDateTime(reader["end_date"]), Convert.ToInt32(reader["credit_hours"]), Convert.ToInt32(reader["department_id"])));
-            }
-        }
         public static void loadCoursesList()
         {
             try
             {
                 courses.Clear();
-                string query = $"SELECT * FROM courses";
+                string query = $"SELECT * FROM finalproject.courses";
                 var reader = DatabaseHelper.Instance.getData(query);
                 while (reader.Read())
                 {
                     courses.Add(Convert.ToString(reader["course_title"]));
                 }
             }
-            catch(MySqlException e)
+            catch (MySqlException e)
             {
                 MessageBox.Show("There was an error in loading the courses: " + e.Message);
             }
         }
         public static int getIDFromCourse(string course)
         {
-            string query = $"SELECT course_id FROM courses WHERE course_title='{course}'";
-            var reader = DatabaseHelper.Instance.getData(query);
-            reader.Read();
-            return Convert.ToInt32(reader["course_id"]);
+            try
+            {
+                string query = $"SELECT course_id FROM finalproject.courses WHERE course_title='{course}'";
+                var reader = DatabaseHelper.Instance.getData(query);
+                reader.Read();
+                return Convert.ToInt32(reader["course_id"]);
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Course not found: " + e.Message);
+                return -1;
+            }
         }
 
 
@@ -67,9 +64,9 @@ namespace FinalProjectDB.DL
             }
         }
 
-        public static void updateCourse(int course_id,CourseBL course)
+        public static void updateCourse(int course_id, CourseBL course)
         {
-            string query = $"UPDATE courses SET `course_title` = '{course.getCourseName()}', `end_date` = '{course.getDate().ToString("yyyy-MM-dd")}', `credit_hours` = '{course.getCreditHours()}', `department_id` = '{course.getDept_id()}' WHERE (`course_id` = '{course_id}')";
+            string query = $"UPDATE `finalproject`.`courses` SET `course_title` = '{course.getCourseName()}', `end_date` = '{course.getDate().ToString("yyyy-MM-dd")}', `credit_hours` = '{course.getCreditHours()}', `department_id` = '{course.getDept_id()}' WHERE (`course_id` = '{course_id}')";
             DatabaseHelper.Instance.Update(query);
         }
         public static void deleteCourse(int course_id)
@@ -105,7 +102,7 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to create course: " + ex.Message);
             }
         }
-        public static void dropTeacherCourse(String courseName,int teacherID)
+        public static void dropTeacherCourse(String courseName, int teacherID)
         {
 
             int courseId = -1;
@@ -117,7 +114,7 @@ namespace FinalProjectDB.DL
                     courseId = reader.GetInt32("course_id");
                 }
             }
-            if(courseId == -1)
+            if (courseId == -1)
             {
                 MessageBox.Show("Course not found");
             }
@@ -180,6 +177,31 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to load all available courses: " + ex.Message);
                 return null;
 
+            }
+        }
+        public static List<CourseBL> list = new List<CourseBL>();
+
+        public static void loadGridviewlist()
+        {
+            list.Clear();
+            string query = $"SELECT * FROM courses";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                list.Add(new CourseBL(Convert.ToInt32(reader["course_id"]), Convert.ToString(reader["course_title"]), Convert.ToDateTime(reader["end_date"]), Convert.ToInt32(reader["credit_hours"]), Convert.ToInt32(reader["department_id"])));
+            }
+        }
+        public static List<UserBL> users = new List<UserBL>();
+
+        public static void GridViewLoadUsers(int role_id)
+        {
+            users.Clear();
+            string quer = $"SELECT * FROM users WHERE role_id={role_id}";
+            var reader = DatabaseHelper.Instance.getData(quer);
+            while (reader.Read())
+            {
+                users.Add(new UserBL(Convert.ToInt32(reader["user_id"]), Convert.ToString(reader["email"]),
+                    Convert.ToString(reader["username"]), Convert.ToString(reader["hash_password"])));
             }
         }
     }

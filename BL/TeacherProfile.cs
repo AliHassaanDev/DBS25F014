@@ -16,7 +16,7 @@ namespace FinalProjectDB.BL
 
         public TeacherProfile() { }
 
-        public TeacherProfile(string username,string teacherName, int expereience, string studies, string subjects):base(username)
+        public TeacherProfile(string username, string teacherName, int expereience, string studies, string subjects) : base(username)
         {
             this.TeacherName = teacherName;
             this.Expereience = expereience;
@@ -24,7 +24,7 @@ namespace FinalProjectDB.BL
             this.Subjects = subjects;
         }
 
-        public int getUserId()
+        public override int getUserId()
         {
             return TeacherID;
         }
@@ -44,7 +44,7 @@ namespace FinalProjectDB.BL
         {
             return Subjects;
         }
-        public void setUserId(int id)
+        public override void setUserId(int id)
         {
             this.TeacherID = id;
         }

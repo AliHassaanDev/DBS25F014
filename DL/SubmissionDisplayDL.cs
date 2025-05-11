@@ -18,10 +18,10 @@ namespace FinalProjectDB.DL
 
         }
         public static List<SubmissionDisplayBL> submissionsList(int courseID, String type)
+        {
+            try
             {
-                try
-                {
-                    List<SubmissionDisplayBL> submissions = new List<SubmissionDisplayBL>();
+                List<SubmissionDisplayBL> submissions = new List<SubmissionDisplayBL>();
                 String query = $@"
     SELECT 
         submissions.submission_id,
@@ -34,24 +34,24 @@ namespace FinalProjectDB.DL
     WHERE assessments.course_id = '{courseID}' AND assessments.type = '{type}'";
 
                 using (var reader = DatabaseHelper.Instance.getData(query))
-                    {
-                        while (reader.Read())
-                        {
-                            SubmissionDisplayBL submission = new SubmissionDisplayBL();
-                            submission.SetSubmissionID(reader.GetInt32("submission_id"));
-                            submission.SetStudentName(reader.GetString("student_name"));
-                            submission.SetDescription(reader.GetString("description"));
-                            submission.SetSubmittedAt(reader.GetDateTime("submitted_at"));
-                            submissions.Add(submission);
-                        }
-                    }
-                    return submissions;
-                }
-                catch (MySqlException ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
-                    return null;
+                    while (reader.Read())
+                    {
+                        SubmissionDisplayBL submission = new SubmissionDisplayBL();
+                        submission.SetSubmissionID(reader.GetInt32("submission_id"));
+                        submission.SetStudentName(reader.GetString("student_name"));
+                        submission.SetDescription(reader.GetString("description"));
+                        submission.SetSubmittedAt(reader.GetDateTime("submitted_at"));
+                        submissions.Add(submission);
+                    }
                 }
+                return submissions;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                return null;
             }
         }
+    }
     }

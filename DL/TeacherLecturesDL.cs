@@ -124,7 +124,7 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to get lecture ID: " + e.Message);
                 return -1;
             }
-            }
+        }
         public static List<TeachersLecturesBL> teacherLectures()
         {
             try
@@ -153,27 +153,6 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to get lectures: " + e.Message);
                 return null;
             }
-        }
-        public static List<TeachersLecturesBL> studentLectures()
-        {
-            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
-            String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
-                $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
-                $"JOIN courses ON courses.course_id" +
-                $" = lecture.course_id JOIN enrollments e ON e.course_id = lecture.course_id WHERE e.student_id ={UserBL.current_user_id}";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
-            {
-                TeachersLecturesBL lecture = new TeachersLecturesBL();
-                lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
-                lecture.setCourseName(Convert.ToString(reader["course_title"]));
-                lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
-                lecture.setTopic(Convert.ToString(reader["topic"]));
-                lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
-                lecture.setDuration(Convert.ToInt32(reader["duration"]));
-                lectures.Add(lecture);
-            }
-            return lectures;
         }
         public static void deleteLecture(String topic)
         {
@@ -247,23 +226,6 @@ namespace FinalProjectDB.DL
                 return null;
             }
         }
-        public static void LecturesByCourses(string course)
-        {
-            lecture.Clear();
-            string query = $"SELECT Distinct topic FROM lecture WHERE course_id ={CourseDL.getIDFromCourse(course)}";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
-            {
-                lecture.Add(Convert.ToString(reader["topic"]));
-            }
-        }
-        public static int getIDFromLecture(string lecture)
-        {
-            string query = $"SELECT lecture_id FROM lecture WHERE topic='{lecture}'";
-            var reader = DatabaseHelper.Instance.getData(query);
-            reader.Read();
-            return Convert.ToInt32(reader["lecture_id"]);
-        }
         public static List<TeachersLecturesBL> individualTeacherLectureNameONly(String selectedCourse)
         {
             try
@@ -291,6 +253,27 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to get lecture topics: " + e.Message);
                 return null;
             }
+        }
+        public static List<TeachersLecturesBL> studentLectures()
+        {
+            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
+            String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
+                $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
+                $"JOIN courses ON courses.course_id" +
+                $" = lecture.course_id JOIN enrollments e ON e.course_id = lecture.course_id WHERE e.student_id ={UserBL.current_user_id}";
+            var reader = DatabaseHelper.Instance.getData(query);
+            while (reader.Read())
+            {
+                TeachersLecturesBL lecture = new TeachersLecturesBL();
+                lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
+                lecture.setCourseName(Convert.ToString(reader["course_title"]));
+                lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
+                lecture.setTopic(Convert.ToString(reader["topic"]));
+                lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
+                lecture.setDuration(Convert.ToInt32(reader["duration"]));
+                lectures.Add(lecture);
+            }
+            return lectures;
         }
     }
 }
