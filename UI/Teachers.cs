@@ -337,5 +337,10 @@ namespace FinalProjectDB.UI
         private void iconButton31_Click(object sender, EventArgs e)
         {
         }
+
+        private void teach_ProfileComplete1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

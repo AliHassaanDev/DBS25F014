@@ -130,7 +130,7 @@
     <Compile Include="BL\DepartmentBL.cs" />
     <Compile Include="BL\TeachersLecturesBL.cs" />
     <Compile Include="BL\EnrollmentsBL.cs" />
-    <Compile Include="BL\SubmissionBL.cs" />
+    <Compile Include="BL\SubmissionDisplayBL.cs" />
     <Compile Include="BL\TeacherAssesmentsBL.cs" />
     <Compile Include="BL\TeacherProfile.cs" />
     <Compile Include="BL\TeacherResultBL.cs" />
@@ -142,7 +142,7 @@
     <Compile Include="BL\TeacherCoursesBL.cs" />
     <Compile Include="DL\TeacherLecturesDL.cs" />
     <Compile Include="DL\EnrollmentsDL.cs" />
-    <Compile Include="DL\SubmissionDL.cs" />
+    <Compile Include="DL\SubmissionDisplayDL.cs" />
     <Compile Include="DL\TeacherAssesmentsDL.cs" />
     <Compile Include="DL\TeacherProfileDL.cs" />
     <Compile Include="DL\TeacherResultDL.cs" />

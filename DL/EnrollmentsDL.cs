@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using FinalProjectDB.BL;
 using FinalProjectDB.UI;
 using MySql.Data.MySqlClient;
@@ -38,16 +39,23 @@ namespace FinalProjectDB.DL
                     }
                 }
             }
-            catch (Exception e)
+            catch (MySqlException e)
             {
-                throw new Exception("There was an error in loading the enrollments: " + e.Message);
+                MessageBox.Show("There was an error in loading the enrollments: " + e.Message);
             }
             return list;
         }
         public static void insertAttendance(int studentID,int LectureID,String status)
         {
-            String query = $"INSERT INTO attendance(student_id,lecture_id,status) VALUES('{studentID}','{LectureID}','{status}')";
-            DatabaseHelper.Instance.Update(query);
+            try
+            {
+                String query = $"INSERT INTO attendance(student_id,lecture_id,status) VALUES('{studentID}','{LectureID}','{status}')";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("There was an error in inserting the attendance: " + e.Message);
+            }
         }
     }
 }

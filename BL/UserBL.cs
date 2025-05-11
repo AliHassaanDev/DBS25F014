@@ -18,8 +18,8 @@ namespace FinalProjectDB.BL
         int role;
         int user_id;
 
-        public void setUserId(int id) { this.user_id = id; }
-        public int getUserId() { return this.user_id; }
+        public virtual void setUserId(int id) { this.user_id = id; }
+        public virtual int getUserId() { return this.user_id; }
 
         public UserBL() { }
         public UserBL(string email, string username, string password)
@@ -33,7 +33,7 @@ namespace FinalProjectDB.BL
             this.username = username;
         }
 
-        public UserBL(string email, string username, string password,int role)
+        public UserBL(string email, string username, string password, int role)
         {
             this.email = email;
             this.username = username;
@@ -52,9 +52,9 @@ namespace FinalProjectDB.BL
         public string getPassword() { return password; }
         public int getRole() { return role; }
         public void setEmail(string email) { this.email = email; }
-        public void setPassword(string password) { this.password=password; }
-        public void setUsername(string username) { this.username=username; }
-        public void setRole(int role) { if (role!=1 && role!=2 && role!=3) { return; } this.role = role;}
+        public void setPassword(string password) { this.password = password; }
+        public void setUsername(string username) { this.username = username; }
+        public void setRole(int role) { if (role != 1 && role != 2 && role != 3) { return; } this.role = role; }
 
 
     }
