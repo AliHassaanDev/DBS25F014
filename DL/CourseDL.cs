@@ -19,7 +19,7 @@ namespace FinalProjectDB.DL
         public static void loadGridviewlist()
         {
             list.Clear();
-            string query = $"SELECT * FROM final_project.courses";
+            string query = $"SELECT * FROM courses";
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {

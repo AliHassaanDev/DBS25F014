@@ -92,50 +92,29 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(389, 483);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-<<<<<<< HEAD
-            // kryptonComboBox3
-            // 
-      /*      this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox3.DropDownWidth = 273;
-            this.kryptonComboBox3.Location = new System.Drawing.Point(4, 269);
-            this.kryptonComboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonComboBox3.Name = "kryptonComboBox3";
-            this.kryptonComboBox3.Size = new System.Drawing.Size(381, 37);
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox3.TabIndex = 28;*/
+
             // 
             // kryptonComboBox2
-=======
+
             // submissionAssessment
->>>>>>> origin/2024-CS-217
+
             // 
-            this.submissionAssessment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-<<<<<<< HEAD
-            this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox2.DropDownWidth = 273;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(4, 201);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(381, 37);
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-=======
+            this.submissionAssessment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right))));
+
+            this.submissionAssessment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.submissionAssessment.DropDownWidth = 273;
+            this.submissionAssessment.Location = new System.Drawing.Point(4, 201);
+            this.submissionAssessment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submissionAssessment.Name = "kryptonComboBox2";
+            this.submissionAssessment.Size = new System.Drawing.Size(381, 37);
+            this.submissionAssessment.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)))));
+
             this.submissionAssessment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.submissionAssessment.DropDownWidth = 273;
             this.submissionAssessment.Location = new System.Drawing.Point(3, 163);
             this.submissionAssessment.Name = "submissionAssessment";
             this.submissionAssessment.Size = new System.Drawing.Size(285, 33);
-            this.submissionAssessment.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
->>>>>>> origin/2024-CS-217
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.submissionAssessment.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)))));
             this.submissionAssessment.StateCommon.ComboBox.Border.Rounding = 20;
             this.submissionAssessment.StateCommon.ComboBox.Border.Width = 1;
             this.submissionAssessment.TabIndex = 27;
@@ -150,17 +129,7 @@ namespace FinalProjectDB.UI.UserControls
             this.label3.Size = new System.Drawing.Size(157, 16);
             this.label3.TabIndex = 26;
             this.label3.Text = "Select Assessment Type";
-            // 
-            // label2
-            // 
-            /*this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 249);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 16);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Select Assessment";*/
+           
             // 
             // label1
             // 
@@ -188,24 +157,23 @@ namespace FinalProjectDB.UI.UserControls
             // 
             // submissionCourse
             // 
-            this.submissionCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.submissionCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-<<<<<<< HEAD
-            this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kryptonComboBox1.DropDownWidth = 273;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(4, 133);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(381, 37);
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-=======
+            this.submissionCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.submissionCourse.DropDownWidth = 273;
+            this.submissionCourse.Location = new System.Drawing.Point(4, 133);
+            this.submissionCourse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submissionCourse.Name = "kryptonComboBox1";
+            this.submissionCourse.Size = new System.Drawing.Size(381, 37);
+            this.submissionCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom))))); 
+
             this.submissionCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.submissionCourse.DropDownWidth = 273;
             this.submissionCourse.Location = new System.Drawing.Point(3, 108);
             this.submissionCourse.Name = "submissionCourse";
             this.submissionCourse.Size = new System.Drawing.Size(285, 33);
             this.submissionCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
->>>>>>> origin/2024-CS-217
+
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.submissionCourse.StateCommon.ComboBox.Border.Rounding = 20;

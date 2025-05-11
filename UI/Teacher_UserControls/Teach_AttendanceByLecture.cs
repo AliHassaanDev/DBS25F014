@@ -52,8 +52,8 @@ namespace FinalProjectDB.UI.UserControls
        
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
-            ConfigureDataGridView();
-            LoadLectureIntoGridView();
+            //ConfigureDataGridView();
+          //  LoadLectureIntoGridView();
 
         }
 

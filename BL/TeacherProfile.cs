@@ -24,7 +24,7 @@ namespace FinalProjectDB.BL
             this.Subjects = subjects;
         }
 
-        public override int getUserId()
+        public int getUserId()
         {
             return TeacherID;
         }
@@ -44,7 +44,7 @@ namespace FinalProjectDB.BL
         {
             return Subjects;
         }
-        public override void setUserId(int id)
+        public void setUserId(int id)
         {
             this.TeacherID = id;
         }

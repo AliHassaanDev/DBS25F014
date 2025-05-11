@@ -47,7 +47,7 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Error adding teacher: " + e.Message);
             }
         }
-        public static int getTeacherId(string username)
+        public static int getTeacherId(string name)
         {
             int teacherId = -1;
             String query1 = $"SELECT user_id FROM users WHERE username='{name}'";
@@ -57,10 +57,6 @@ namespace FinalProjectDB.DL
                 {
                     teacherId = reader.GetInt32("user_id");
                 }
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
             }
 
             return teacherId;
