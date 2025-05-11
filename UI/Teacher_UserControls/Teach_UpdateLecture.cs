@@ -117,6 +117,8 @@ namespace FinalProjectDB.UI.UserControls
             int LectureDuration =Convert.ToInt32(LectureDurationUpdate.Text);
             DateTime LectureTime = LectureTimeUpdate.Value;
             TeacherLecturesDL.updateLecture(LectureID, LectureTopic, LectureTime, LectureDuration);
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

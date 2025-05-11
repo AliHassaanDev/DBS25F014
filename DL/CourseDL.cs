@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using FinalProjectDB.BL;
 using FinalProjectDB.UI;
@@ -27,12 +28,19 @@ namespace FinalProjectDB.DL
         }
         public static void loadCoursesList()
         {
-            courses.Clear();
-            string query = $"SELECT * FROM courses";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
+            try
             {
-                courses.Add(Convert.ToString(reader["course_title"]));
+                courses.Clear();
+                string query = $"SELECT * FROM courses";
+                var reader = DatabaseHelper.Instance.getData(query);
+                while (reader.Read())
+                {
+                    courses.Add(Convert.ToString(reader["course_title"]));
+                }
+            }
+            catch(MySqlException e)
+            {
+                MessageBox.Show("There was an error in loading the courses: " + e.Message);
             }
         }
         public static int getIDFromCourse(string course)
@@ -55,7 +63,7 @@ namespace FinalProjectDB.DL
             }
             catch (MySqlException ex)
             {
-                throw new Exception("Failed to create course: " + ex.Message);
+                MessageBox.Show("Failed to create course: " + ex.Message);
             }
         }
 
@@ -75,11 +83,33 @@ namespace FinalProjectDB.DL
             DatabaseHelper.Instance.Update(query);
         }
         //teacher
-        public static void addRequestedCourse(int teacherID,String courseName)
+        public static void addRequestedCourse(int teacherID, String courseName)
         {
+            try
+            {
+                int courseId = -1;
+                String query1 = $"SELECT course_id FROM courses WHERE courses.course_title='{courseName}'";
+
+                using (var reader = DatabaseHelper.Instance.getData(query1))
+                {
+                    if (reader.Read())
+                    {
+                        courseId = reader.GetInt32("course_id");
+                    }
+                }
+                string query = $"INSERT INTO courserequests (request_by_teacher_id,request_for_course_id,status) VALUES ('{teacherID}','{courseId}','pending')";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Failed to create course: " + ex.Message);
+            }
+        }
+        public static void dropTeacherCourse(String courseName,int teacherID)
+        {
+
             int courseId = -1;
             String query1 = $"SELECT course_id FROM courses WHERE courses.course_title='{courseName}'";
-
             using (var reader = DatabaseHelper.Instance.getData(query1))
             {
                 if (reader.Read())
@@ -87,63 +117,70 @@ namespace FinalProjectDB.DL
                     courseId = reader.GetInt32("course_id");
                 }
             }
-            string query = $"INSERT INTO courserequests (request_by_teacher_id,request_for_course_id,status) VALUES ('{teacherID}','{courseId}','pending')";
-            DatabaseHelper.Instance.Update(query);
-        }
-        public static void dropTeacherCourse(String courseName,int teacherID)
-        {
-            int courseId = -1;
-            String query1 = $"SELECT course_id FROM courses WHERE courses.course_title='{courseName}'";
-            using (var reader = DatabaseHelper.Instance.getData(query1))
+            if(courseId == -1)
             {
-                if (reader.Read())
-                {
-                    courseId = reader.GetInt32("course_id");
-                }
+                MessageBox.Show("Course not found");
             }
             string query = $"DELETE FROM teachercourses WHERE course_id='{courseId}' AND teacher_id='{teacherID}'";
             DatabaseHelper.Instance.Update(query);
         }
         public static List<TeacherCoursesBL> IndividualTeacherCourses(int teacherID)
         {
-            List<TeacherCoursesBL> MyCourses = new List<TeacherCoursesBL>();
-
-            string query = $"SELECT teacher_id, course_title FROM teachercourses " +
-               $"INNER JOIN courses ON teachercourses.course_id = courses.course_id " +
-               $"WHERE teachercourses.teacher_id = '{teacherID}'";
-
-
-            var reader = DatabaseHelper.Instance.getData(query);
-
-            while (reader.Read())
+            try
             {
-                TeacherCoursesBL course = new TeacherCoursesBL(); 
-                {
-                    course.setTeacherId(int.Parse(reader["teacher_id"].ToString()));
-                    course.setCourseName(reader["course_title"].ToString());
-                };
-                MyCourses.Add(course);
-            }
+                List<TeacherCoursesBL> MyCourses = new List<TeacherCoursesBL>();
 
-            return MyCourses;
+                string query = $"SELECT teacher_id, course_title FROM teachercourses " +
+                   $"INNER JOIN courses ON teachercourses.course_id = courses.course_id " +
+                   $"WHERE teachercourses.teacher_id = '{teacherID}'";
+
+
+                var reader = DatabaseHelper.Instance.getData(query);
+
+                while (reader.Read())
+                {
+                    TeacherCoursesBL course = new TeacherCoursesBL();
+                    {
+                        course.setTeacherId(int.Parse(reader["teacher_id"].ToString()));
+                        course.setCourseName(reader["course_title"].ToString());
+                    };
+                    MyCourses.Add(course);
+                }
+
+                return MyCourses;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Failed to load courses: " + ex.Message);
+                return null;
+            }
         }
-        
+
         public static List<CourseBL> AllAvailableCourses()
         {
-            List<CourseBL> AllCourses = new List<CourseBL>();
-            string query = "SELECT * FROM courses";
-            var reader = DatabaseHelper.Instance.getData(query);
-
-            while (reader.Read())
+            try
             {
-                CourseBL course = new CourseBL();
-                course.setCourseName(reader["course_title"].ToString());
-                course.setCreditHours(int.Parse(reader["credit_hours"].ToString()));
-                course.setDate(DateTime.Parse(reader["end_date"].ToString()));
-                course.setDept_id(int.Parse(reader["department_id"].ToString()));
-                AllCourses.Add(course);
+                List<CourseBL> AllCourses = new List<CourseBL>();
+                string query = "SELECT * FROM courses";
+                var reader = DatabaseHelper.Instance.getData(query);
+
+                while (reader.Read())
+                {
+                    CourseBL course = new CourseBL();
+                    course.setCourseName(reader["course_title"].ToString());
+                    course.setCreditHours(int.Parse(reader["credit_hours"].ToString()));
+                    course.setDate(DateTime.Parse(reader["end_date"].ToString()));
+                    course.setDept_id(int.Parse(reader["department_id"].ToString()));
+                    AllCourses.Add(course);
+                }
+                return AllCourses;
             }
-            return AllCourses;
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Failed to load all available courses: " + ex.Message);
+                return null;
+
+            }
         }
     }
 }

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using FinalProjectDB.BL;
 using FinalProjectDB.UI;
 using MySql.Data.MySqlClient;
 
 namespace FinalProjectDB.DL
 {
-    internal class TeacherAssesmentsDL
+    abstract class TeacherAssesmentsDL
     {
         public static void insertAssesment(TeacherAssesmentsBL teacher)
         {
@@ -36,180 +37,234 @@ namespace FinalProjectDB.DL
             }
             catch (MySqlException e)
             {
-                throw new Exception("Failed to insert assessment: " + e.Message);
+                MessageBox.Show("Failed to insert assessment: " + e.Message);
             }
         }
         public static void updateAssesment(string description, DateTime startTime, DateTime dueTime, int assessmentID)
         {
-            string query = "UPDATE assessments SET description = @description, start_time = @startTime, due_time = @dueTime WHERE assessment_id = @assessmentId";
-
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                if (conn.State != System.Data.ConnectionState.Open)
-                    conn.Open();
+                string query = "UPDATE assessments SET description = @description, start_time = @startTime, due_time = @dueTime WHERE assessment_id = @assessmentId";
 
-                using (var cmd = new MySqlCommand(query, conn))
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    cmd.Parameters.AddWithValue("@description", description);
-                    cmd.Parameters.AddWithValue("@startTime", startTime);
-                    cmd.Parameters.AddWithValue("@dueTime", dueTime);
-                    cmd.Parameters.AddWithValue("@assessmentId", assessmentID);
+                    if (conn.State != System.Data.ConnectionState.Open)
+                        conn.Open();
 
-                    cmd.ExecuteNonQuery();
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@description", description);
+                        cmd.Parameters.AddWithValue("@startTime", startTime);
+                        cmd.Parameters.AddWithValue("@dueTime", dueTime);
+                        cmd.Parameters.AddWithValue("@assessmentId", assessmentID);
+
+                        cmd.ExecuteNonQuery();
+                    }
                 }
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to update assessment: " + e.Message);
             }
         }
 
         public static List<TeacherAssesmentsBL> getAssesments()
         {
-            String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
-                $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
-                $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
-            List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
+                    $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
+                    $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
+                List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
-                            teacherAssesment.setAssessmentId(reader.GetInt32(0));
-                            teacherAssesment.setCourseTitle(reader.GetString(1));
-                            teacherAssesment.setType(reader.GetString(2));
-                            teacherAssesment.setDescription(reader.GetString(3));
-                            teacherAssesment.setStartTime(reader.GetDateTime(4));
-                            teacherAssesment.setDueTime(reader.GetDateTime(5));
-                            teacherAssesments.Add(teacherAssesment);
+
+                            while (reader.Read())
+                            {
+                                TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                                teacherAssesment.setAssessmentId(reader.GetInt32(0));
+                                teacherAssesment.setCourseTitle(reader.GetString(1));
+                                teacherAssesment.setType(reader.GetString(2));
+                                teacherAssesment.setDescription(reader.GetString(3));
+                                teacherAssesment.setStartTime(reader.GetDateTime(4));
+                                teacherAssesment.setDueTime(reader.GetDateTime(5));
+                                teacherAssesments.Add(teacherAssesment);
+                            }
                         }
                     }
                 }
+                return teacherAssesments;
             }
-            return teacherAssesments;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get assessments: " + e.Message);
+                return null;
+            }
         }
         public static List<TeacherAssesmentsBL> getAssesmentID(String courseName)
         {
-            String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
-                $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
-                $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
-            List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
+                    $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
+                    $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
+                List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            teacherAssesment.setAssessmentId(reader.GetInt32(0));
-                            teacherAssesment.setCourseTitle(reader.GetString(1));
-                            teacherAssesment.setType(reader.GetString(2));
-                            teacherAssesment.setDescription(reader.GetString(3));
-                            teacherAssesment.setStartTime(reader.GetDateTime(4));
-                            teacherAssesment.setDueTime(reader.GetDateTime(5));
-                            teacherAssesments.Add(teacherAssesment);
+                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                            while (reader.Read())
+                            {
+                                teacherAssesment.setAssessmentId(reader.GetInt32(0));
+                                teacherAssesment.setCourseTitle(reader.GetString(1));
+                                teacherAssesment.setType(reader.GetString(2));
+                                teacherAssesment.setDescription(reader.GetString(3));
+                                teacherAssesment.setStartTime(reader.GetDateTime(4));
+                                teacherAssesment.setDueTime(reader.GetDateTime(5));
+                                teacherAssesments.Add(teacherAssesment);
+                            }
                         }
                     }
                 }
+                return teacherAssesments;
             }
-            return teacherAssesments;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get assessments: " + e.Message);
+                return null;
+            }
         }
         public static List<TeacherAssesmentsBL> viewSubmissions()
         {
-            String query = $"SELECT course_title,type,description,start_time,due_time FROM" +
-                $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
-                $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
-            List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                String query = $"SELECT course_title,type,description,start_time,due_time FROM" +
+                    $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
+                    $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}'";
+                List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            teacherAssesment.setAssessmentId(reader.GetInt32(0));
-                            teacherAssesment.setCourseTitle(reader.GetString(1));
-                            teacherAssesment.setType(reader.GetString(2));
-                            teacherAssesment.setDescription(reader.GetString(3));
-                            teacherAssesment.setStartTime(reader.GetDateTime(4));
-                            teacherAssesment.setDueTime(reader.GetDateTime(5));
-                            teacherAssesments.Add(teacherAssesment);
+                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                            while (reader.Read())
+                            {
+                                teacherAssesment.setAssessmentId(reader.GetInt32(0));
+                                teacherAssesment.setCourseTitle(reader.GetString(1));
+                                teacherAssesment.setType(reader.GetString(2));
+                                teacherAssesment.setDescription(reader.GetString(3));
+                                teacherAssesment.setStartTime(reader.GetDateTime(4));
+                                teacherAssesment.setDueTime(reader.GetDateTime(5));
+                                teacherAssesments.Add(teacherAssesment);
+                            }
                         }
                     }
                 }
+                return teacherAssesments;
             }
-            return teacherAssesments;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Error: " + e.Message);
+                return null;
+            }
         }
         public static List<TeacherAssesmentsBL> IndividualTeacherAssessments(String course)
         {
-            String query = $"SELECT description FROM" +
-                $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
-                $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}' AND courses.course_title='{course}'";
-            List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                String query = $"SELECT description FROM" +
+                    $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
+                    $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}' AND courses.course_title='{course}'";
+                List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
-                            teacherAssesment.setDescription(reader.GetString(0));
-                            teacherAssesments.Add(teacherAssesment);
+
+                            while (reader.Read())
+                            {
+                                TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                                teacherAssesment.setDescription(reader.GetString(0));
+                                teacherAssesments.Add(teacherAssesment);
+                            }
                         }
                     }
                 }
+                return teacherAssesments;
             }
-            return teacherAssesments;
+            catch (MySqlException e) { 
+            MessageBox.Show("Error :"+e.Message);
+             return null;
+            }
         }
         public static List<TeacherAssesmentsBL> viewSubmissionsByCondition(String courseName,String type)
         {
-            String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
-                $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
-                $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}' AND courses.course_title='{courseName}'" +
-                $" AND assessments.type='{type}'";
-            List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                String query = $"SELECT assessment_id,course_title,type,description,start_time,due_time FROM" +
+                    $" assessments INNER JOIN courses ON assessments.course_id = courses.course_id " +
+                    $"WHERE assessments.teacher_id='{TeacherProfileDL.getTeacherId(Login.user)}' AND courses.course_title='{courseName}'" +
+                    $" AND assessments.type='{type}'";
+                List<TeacherAssesmentsBL> teacherAssesments = new List<TeacherAssesmentsBL>();
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        
-                        while (reader.Read())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
-                            teacherAssesment.setAssessmentId(reader.GetInt32(0));
-                            teacherAssesment.setCourseTitle(reader.GetString(1));
-                            teacherAssesment.setType(reader.GetString(2));
-                            teacherAssesment.setDescription(reader.GetString(3));
-                            teacherAssesment.setStartTime(reader.GetDateTime(4));
-                            teacherAssesment.setDueTime(reader.GetDateTime(5));
-                            teacherAssesments.Add(teacherAssesment);
+
+                            while (reader.Read())
+                            {
+                                TeacherAssesmentsBL teacherAssesment = new TeacherAssesmentsBL();
+                                teacherAssesment.setAssessmentId(reader.GetInt32(0));
+                                teacherAssesment.setCourseTitle(reader.GetString(1));
+                                teacherAssesment.setType(reader.GetString(2));
+                                teacherAssesment.setDescription(reader.GetString(3));
+                                teacherAssesment.setStartTime(reader.GetDateTime(4));
+                                teacherAssesment.setDueTime(reader.GetDateTime(5));
+                                teacherAssesments.Add(teacherAssesment);
+                            }
                         }
                     }
                 }
+                return teacherAssesments;
             }
-            return teacherAssesments;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Error: " + e.Message);
+                return null;
+            }
         }
         public static void deleteAssesment(int assessmentID)
         {
-            string query = "DELETE FROM assessments WHERE assessment_id = @assessmentId";
-            using (var conn = DatabaseHelper.Instance.getConnection())
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                string query = "DELETE FROM assessments WHERE assessment_id = @assessmentId";
+                using (var conn = DatabaseHelper.Instance.getConnection())
                 {
-                    cmd.Parameters.AddWithValue("@assessmentId", assessmentID);
-                    cmd.ExecuteNonQuery();
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@assessmentId", assessmentID);
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to delete assessment: " + e.Message);
+            }
         }
+        public abstract void SubmissionDetails();
     }
 }

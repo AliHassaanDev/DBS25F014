@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI.UserControls
+namespace FinalProjectDB.UI.UserControls
 {
     partial class Teach_UpdateResult
     {
@@ -202,8 +202,7 @@
             // 
             this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton1.Location = new System.Drawing.Point(4, 5);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonButton1.Location = new System.Drawing.Point(3, 3);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.SpringGreen;
@@ -218,7 +217,7 @@
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.OverrideDefault.Border.Width = 1;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(194, 62);
+            this.kryptonButton1.Size = new System.Drawing.Size(127, 40);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.SpringGreen;
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -368,10 +367,9 @@
             // 
             this.updateAssessment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.updateAssessment.Location = new System.Drawing.Point(4, 234);
-            this.updateAssessment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.updateAssessment.Location = new System.Drawing.Point(3, 152);
             this.updateAssessment.Name = "updateAssessment";
-            this.updateAssessment.Size = new System.Drawing.Size(430, 39);
+            this.updateAssessment.Size = new System.Drawing.Size(285, 32);
             this.updateAssessment.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.updateAssessment.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.updateAssessment.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

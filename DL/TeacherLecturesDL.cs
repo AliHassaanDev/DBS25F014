@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using FinalProjectDB.BL;
@@ -26,7 +27,7 @@ namespace FinalProjectDB.DL
             {
                 if (Convert.ToString(reader["course_title"]) != courseName)
                 {
-                    throw new Exception("You does not teach this course");
+                    MessageBox.Show("You does not teach this course");
                 }
             }
         }
@@ -53,76 +54,105 @@ namespace FinalProjectDB.DL
             }
             catch (MySqlException e)
             {
-                throw new Exception("Failed to add a lecture: " + e.Message);
+                MessageBox.Show("Failed to add a lecture: " + e.Message);
             }
         }
         public static void updateLecture(int lectureId, string topic, DateTime startTime, int duration)
         {
-            string query = @"UPDATE lecture 
+            try
+            {
+                string query = @"UPDATE lecture 
                      SET topic = @topic, start_time = @startTime, duration = @duration 
                      WHERE lecture_id = @lectureId";
 
-            using (var conn = DatabaseHelper.Instance.getConnection())
-            using (var cmd = new MySqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@topic", topic);
-                cmd.Parameters.AddWithValue("@startTime", startTime);
-                cmd.Parameters.AddWithValue("@duration", duration);
-                cmd.Parameters.AddWithValue("@lectureId", lectureId);
+                using (var conn = DatabaseHelper.Instance.getConnection())
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@topic", topic);
+                    cmd.Parameters.AddWithValue("@startTime", startTime);
+                    cmd.Parameters.AddWithValue("@duration", duration);
+                    cmd.Parameters.AddWithValue("@lectureId", lectureId);
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to update the lecture: " + e.Message);
             }
         }
 
-
         public static int getCourseId(String course)
         {
-            int courseId = -1;
-            String query1 = $"SELECT course_id FROM courses WHERE courses.course_title='{course}'";
-            using (var reader = DatabaseHelper.Instance.getData(query1))
+            try
             {
-                if (reader.Read())
+                int courseId = -1;
+                String query1 = $"SELECT course_id FROM courses WHERE courses.course_title='{course}'";
+                using (var reader = DatabaseHelper.Instance.getData(query1))
                 {
-                    courseId = reader.GetInt32("course_id");
+                    if (reader.Read())
+                    {
+                        courseId = reader.GetInt32("course_id");
+                    }
                 }
+                return courseId;
             }
-            return courseId;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get course ID: " + e.Message);
+                return -1;
+            }
 
         }
         public static int getLectureId(String lecture)
         {
-            int lectureId = -1;
-            String query1 = $"SELECT lecture_id FROM lecture WHERE lecture.topic='{lecture}'";
-            using (var reader = DatabaseHelper.Instance.getData(query1))
+            try
             {
-                if (reader.Read())
+                int lectureId = -1;
+                String query1 = $"SELECT lecture_id FROM lecture WHERE lecture.topic='{lecture}'";
+                using (var reader = DatabaseHelper.Instance.getData(query1))
                 {
-                    lectureId = reader.GetInt32("lecture_id");
+                    if (reader.Read())
+                    {
+                        lectureId = reader.GetInt32("lecture_id");
+                    }
                 }
+                return lectureId;
             }
-            return lectureId;
-
-        }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get lecture ID: " + e.Message);
+                return -1;
+            }
+            }
         public static List<TeachersLecturesBL> teacherLectures()
         {
-            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
-            String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
-                $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
-                $"JOIN courses ON courses.course_id" +
-                $" = lecture.course_id WHERE lecture.teacher_id ={TeacherProfileDL.getTeacherId(Login.user)}";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
+            try
             {
-                TeachersLecturesBL lecture = new TeachersLecturesBL();
-                lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
-                lecture.setCourseName(Convert.ToString(reader["course_title"]));
-                lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
-                lecture.setTopic(Convert.ToString(reader["topic"]));
-                lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
-                lecture.setDuration(Convert.ToInt32(reader["duration"]));
-                lectures.Add(lecture);
+                List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
+                String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
+                    $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
+                    $"JOIN courses ON courses.course_id" +
+                    $" = lecture.course_id WHERE lecture.teacher_id ={TeacherProfileDL.getTeacherId(Login.user)}";
+                var reader = DatabaseHelper.Instance.getData(query);
+                while (reader.Read())
+                {
+                    TeachersLecturesBL lecture = new TeachersLecturesBL();
+                    lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
+                    lecture.setCourseName(Convert.ToString(reader["course_title"]));
+                    lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
+                    lecture.setTopic(Convert.ToString(reader["topic"]));
+                    lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
+                    lecture.setDuration(Convert.ToInt32(reader["duration"]));
+                    lectures.Add(lecture);
+                }
+                return lectures;
             }
-            return lectures;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get lectures: " + e.Message);
+                return null;
+            }
         }
         public static List<TeachersLecturesBL> studentLectures()
         {
@@ -147,52 +177,75 @@ namespace FinalProjectDB.DL
         }
         public static void deleteLecture(String topic)
         {
-            string query = $"DELETE FROM lecture WHERE topic='{topic}'";
-            DatabaseHelper.Instance.Update(query);
+            try
+            {
+                string query = $"DELETE FROM lecture WHERE topic='{topic}'";
+                DatabaseHelper.Instance.Update(query);
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to delete the lecture: " + e.Message);
+            }
         }
         public static List<TeachersLecturesBL> teacherLecturesByCourses(String selectedCourse)
         {
-            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
-            String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
-                $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
-                $"JOIN courses ON courses.course_id" +
-                $" = lecture.course_id WHERE lecture.teacher_id ={TeacherProfileDL.getTeacherId(Login.user)} AND courses.course_title='{selectedCourse}'";
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
+            try
             {
-                TeachersLecturesBL lecture = new TeachersLecturesBL();
-                lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
-                lecture.setCourseName(Convert.ToString(reader["course_title"]));
-                lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
-                lecture.setTopic(Convert.ToString(reader["topic"]));
-                lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
-                lecture.setDuration(Convert.ToInt32(reader["duration"]));
-                lectures.Add(lecture);
+                List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
+                String query = $"SELECT lecture.lecture_id, lecture.teacher_id, lecture.topic, " +
+                    $"lecture.start_time,lecture.duration,courses.course_title FROM lecture " +
+                    $"JOIN courses ON courses.course_id" +
+                    $" = lecture.course_id WHERE lecture.teacher_id ={TeacherProfileDL.getTeacherId(Login.user)} AND courses.course_title='{selectedCourse}'";
+                var reader = DatabaseHelper.Instance.getData(query);
+                while (reader.Read())
+                {
+                    TeachersLecturesBL lecture = new TeachersLecturesBL();
+                    lecture.setLectureId(Convert.ToInt32(reader["lecture_id"]));
+                    lecture.setCourseName(Convert.ToString(reader["course_title"]));
+                    lecture.setTeacherId(Convert.ToInt32(reader["teacher_id"]));
+                    lecture.setTopic(Convert.ToString(reader["topic"]));
+                    lecture.setStartTime(Convert.ToDateTime(reader["start_time"]));
+                    lecture.setDuration(Convert.ToInt32(reader["duration"]));
+                    lectures.Add(lecture);
+                }
+                return lectures;
             }
-            return lectures;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get lectures by the course: " + e.Message);
+                return null;
+            }
         }
         public static List<TeacherCoursesBL> IndividualTeacherCoursesNameOnly(int teacherID)
         {
-            List<TeacherCoursesBL> MyCourses = new List<TeacherCoursesBL>();
-
-            string query = $"SELECT course_title FROM courses " +
-               $"INNER JOIN teachercourses ON teachercourses.course_id = courses.course_id " +
-               $"WHERE teachercourses.teacher_id = '{teacherID}'";
-
-
-            var reader = DatabaseHelper.Instance.getData(query);
-
-            while (reader.Read())
+            try
             {
-                TeacherCoursesBL course = new TeacherCoursesBL();
+                List<TeacherCoursesBL> MyCourses = new List<TeacherCoursesBL>();
+
+                string query = $"SELECT course_title FROM courses " +
+                   $"INNER JOIN teachercourses ON teachercourses.course_id = courses.course_id " +
+                   $"WHERE teachercourses.teacher_id = '{teacherID}'";
+
+
+                var reader = DatabaseHelper.Instance.getData(query);
+
+                while (reader.Read())
                 {
-                    course.setCourseName(reader["course_title"].ToString());
+                    TeacherCoursesBL course = new TeacherCoursesBL();
+                    {
+                        course.setCourseName(reader["course_title"].ToString());
 
-                };
-                MyCourses.Add(course);
+                    };
+                    MyCourses.Add(course);
+                }
+
+                return MyCourses;
             }
-
-            return MyCourses;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get teacher's courses: " + e.Message);
+                return null;
+            }
         }
         public static void LecturesByCourses(string course)
         {
@@ -213,23 +266,31 @@ namespace FinalProjectDB.DL
         }
         public static List<TeachersLecturesBL> individualTeacherLectureNameONly(String selectedCourse)
         {
-            List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
-            string query = $"SELECT lecture.topic " +
-                           $"FROM lecture " +
-                           $"JOIN courses ON courses.course_id = lecture.course_id " +
-                           $"WHERE lecture.teacher_id = {TeacherProfileDL.getTeacherId(Login.user)} " +
-                           $"AND courses.course_title = '{selectedCourse}'";
-
-            var reader = DatabaseHelper.Instance.getData(query);
-            while (reader.Read())
+            try
             {
-                TeachersLecturesBL lecture = new TeachersLecturesBL();
+                List<TeachersLecturesBL> lectures = new List<TeachersLecturesBL>();
+                string query = $"SELECT lecture.topic " +
+                               $"FROM lecture " +
+                               $"JOIN courses ON courses.course_id = lecture.course_id " +
+                               $"WHERE lecture.teacher_id = {TeacherProfileDL.getTeacherId(Login.user)} " +
+                               $"AND courses.course_title = '{selectedCourse}'";
+
+                var reader = DatabaseHelper.Instance.getData(query);
+                while (reader.Read())
                 {
-                    lecture.setTopic(Convert.ToString(reader["topic"]));
+                    TeachersLecturesBL lecture = new TeachersLecturesBL();
+                    {
+                        lecture.setTopic(Convert.ToString(reader["topic"]));
+                    }
+                    lectures.Add(lecture);
                 }
-                lectures.Add(lecture);
+                return lectures;
             }
-            return lectures;
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Failed to get lecture topics: " + e.Message);
+                return null;
+            }
         }
     }
 }

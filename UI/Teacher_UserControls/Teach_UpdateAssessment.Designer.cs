@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI.UserControls
+namespace FinalProjectDB.UI.UserControls
 {
     partial class Teach_UpdateAssessment
     {
@@ -308,10 +308,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 83);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 44);
+            this.label1.Size = new System.Drawing.Size(285, 30);
             this.label1.TabIndex = 21;
             this.label1.Text = "Update Assessment";
             // 

@@ -30,11 +30,11 @@ namespace FinalProjectDB.UI.UserControls
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.kryptonComboBox2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.submissionAssessment = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.submissionCourse = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,8 +42,8 @@ namespace FinalProjectDB.UI.UserControls
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionAssessment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionCourse)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,11 +70,11 @@ namespace FinalProjectDB.UI.UserControls
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox2, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.submissionAssessment, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.kryptonComboBox1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.submissionCourse, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(54, 4);
@@ -93,6 +93,7 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel2.Size = new System.Drawing.Size(389, 483);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // kryptonComboBox3
             // 
       /*      this.kryptonComboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -111,9 +112,13 @@ namespace FinalProjectDB.UI.UserControls
             this.kryptonComboBox3.TabIndex = 28;*/
             // 
             // kryptonComboBox2
+=======
+            // submissionAssessment
+>>>>>>> origin/2024-CS-217
             // 
-            this.kryptonComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.submissionAssessment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
             this.kryptonComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox2.DropDownWidth = 273;
             this.kryptonComboBox2.Location = new System.Drawing.Point(4, 201);
@@ -121,11 +126,19 @@ namespace FinalProjectDB.UI.UserControls
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.Size = new System.Drawing.Size(381, 37);
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+=======
+            this.submissionAssessment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.submissionAssessment.DropDownWidth = 273;
+            this.submissionAssessment.Location = new System.Drawing.Point(3, 163);
+            this.submissionAssessment.Name = "submissionAssessment";
+            this.submissionAssessment.Size = new System.Drawing.Size(285, 33);
+            this.submissionAssessment.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+>>>>>>> origin/2024-CS-217
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox2.TabIndex = 27;
+            this.submissionAssessment.StateCommon.ComboBox.Border.Rounding = 20;
+            this.submissionAssessment.StateCommon.ComboBox.Border.Width = 1;
+            this.submissionAssessment.TabIndex = 27;
             // 
             // label3
             // 
@@ -173,10 +186,11 @@ namespace FinalProjectDB.UI.UserControls
             this.label4.TabIndex = 22;
             this.label4.Text = "Select Course";
             // 
-            // kryptonComboBox1
+            // submissionCourse
             // 
-            this.kryptonComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.submissionCourse.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 273;
             this.kryptonComboBox1.Location = new System.Drawing.Point(4, 133);
@@ -184,11 +198,19 @@ namespace FinalProjectDB.UI.UserControls
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(381, 37);
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+=======
+            this.submissionCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.submissionCourse.DropDownWidth = 273;
+            this.submissionCourse.Location = new System.Drawing.Point(3, 108);
+            this.submissionCourse.Name = "submissionCourse";
+            this.submissionCourse.Size = new System.Drawing.Size(285, 33);
+            this.submissionCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+>>>>>>> origin/2024-CS-217
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 20;
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 1;
-            this.kryptonComboBox1.TabIndex = 24;
+            this.submissionCourse.StateCommon.ComboBox.Border.Rounding = 20;
+            this.submissionCourse.StateCommon.ComboBox.Border.Width = 1;
+            this.submissionCourse.TabIndex = 24;
             // 
             // tableLayoutPanel6
             // 
@@ -295,6 +317,7 @@ namespace FinalProjectDB.UI.UserControls
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(302, 378);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -318,8 +341,8 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionAssessment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.submissionCourse)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -336,11 +359,11 @@ namespace FinalProjectDB.UI.UserControls
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox submissionCourse;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox submissionAssessment;
         private System.Windows.Forms.Label label3;
     }
 }

@@ -90,6 +90,8 @@ namespace FinalProjectDB.UI.UserControls
             String attendancestatus = attendanceStatus.Text;
             int lectureID = TeacherLecturesDL.getLectureId(lectureName);
             EnrollmentsDL.insertAttendance(studentId,lectureID,attendancestatus);
+            dataGridView1.Rows.Clear();
+            LoadLectureIntoGridView();
         }
     }
 }

@@ -67,9 +67,9 @@ namespace FinalProjectDB.BL
         public string getPassword() { return password; }
         public int getRole() { return role; }
         public void setEmail(string email) { this.email = email; }
-        public void setPassword(string password) { this.password=password; }
-        public void setUsername(string username) { this.username=username; }
-        public void setRole(int role) { if (role!=1 && role!=2 && role!=3) { return; } this.role = role;}
+        public void setPassword(string password) { this.password = password; }
+        public void setUsername(string username) { this.username = username; }
+        public void setRole(int role) { if (role != 1 && role != 2 && role != 3) { return; } this.role = role; }
 
 
     }

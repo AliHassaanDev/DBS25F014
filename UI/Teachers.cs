@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
+using ComponentFactory.Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -335,6 +335,15 @@ namespace FinalProjectDB.UI
         }
 
         private void iconButton31_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void teach_ProfileComplete1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton31_Click_1(object sender, EventArgs e)
         {
             this.Visible = false;
             Login login = new Login();

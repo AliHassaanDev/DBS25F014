@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI.UserControls
+namespace FinalProjectDB.UI.UserControls
 {
     partial class Teach_ProfileComplete
     {
@@ -217,10 +217,9 @@
             // 
             this.TeacherName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherName.Location = new System.Drawing.Point(142, 95);
-            this.TeacherName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TeacherName.Location = new System.Drawing.Point(95, 61);
             this.TeacherName.Name = "TeacherName";
-            this.TeacherName.Size = new System.Drawing.Size(667, 39);
+            this.TeacherName.Size = new System.Drawing.Size(444, 32);
             this.TeacherName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.TeacherName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TeacherName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -242,10 +241,9 @@
             this.TeacherStudies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherStudies.Location = new System.Drawing.Point(142, 273);
-            this.TeacherStudies.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TeacherStudies.Location = new System.Drawing.Point(95, 176);
             this.TeacherStudies.Name = "TeacherStudies";
-            this.TeacherStudies.Size = new System.Drawing.Size(667, 39);
+            this.TeacherStudies.Size = new System.Drawing.Size(444, 32);
             this.TeacherStudies.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.TeacherStudies.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TeacherStudies.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -290,10 +288,9 @@
             // 
             this.TeacherJobExperience.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TeacherJobExperience.Location = new System.Drawing.Point(142, 185);
-            this.TeacherJobExperience.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TeacherJobExperience.Location = new System.Drawing.Point(95, 119);
             this.TeacherJobExperience.Name = "TeacherJobExperience";
-            this.TeacherJobExperience.Size = new System.Drawing.Size(667, 39);
+            this.TeacherJobExperience.Size = new System.Drawing.Size(444, 32);
             this.TeacherJobExperience.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.TeacherJobExperience.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TeacherJobExperience.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -314,10 +311,9 @@
             // 
             this.teacherUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.teacherUserName.Location = new System.Drawing.Point(142, 443);
-            this.teacherUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.teacherUserName.Location = new System.Drawing.Point(95, 287);
             this.teacherUserName.Name = "teacherUserName";
-            this.teacherUserName.Size = new System.Drawing.Size(667, 39);
+            this.teacherUserName.Size = new System.Drawing.Size(444, 32);
             this.teacherUserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.teacherUserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.teacherUserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

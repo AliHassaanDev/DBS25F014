@@ -753,6 +753,7 @@ namespace FinalProjectDB.UI
             this.iconButton31.Text = "Log Out";
             this.iconButton31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton31.UseVisualStyleBackColor = false;
+            this.iconButton31.Click += new System.EventHandler(this.iconButton31_Click_1);
             // 
             // iconButton30
             // 
@@ -866,6 +867,7 @@ namespace FinalProjectDB.UI
             this.teach_ProfileComplete1.Name = "teach_ProfileComplete1";
             this.teach_ProfileComplete1.Size = new System.Drawing.Size(634, 399);
             this.teach_ProfileComplete1.TabIndex = 29;
+            this.teach_ProfileComplete1.Load += new System.EventHandler(this.teach_ProfileComplete1_Load);
             // 
             // profile1
             // 

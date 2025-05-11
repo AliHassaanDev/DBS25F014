@@ -1,4 +1,4 @@
-﻿namespace FinalProjectDB.UI.UserControls
+namespace FinalProjectDB.UI.UserControls
 {
     partial class Teach_DeleteResult
     {
@@ -104,10 +104,9 @@
             // 
             this.deleteAssignment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteAssignment.Location = new System.Drawing.Point(4, 259);
-            this.deleteAssignment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deleteAssignment.Location = new System.Drawing.Point(3, 168);
             this.deleteAssignment.Name = "deleteAssignment";
-            this.deleteAssignment.Size = new System.Drawing.Size(430, 39);
+            this.deleteAssignment.Size = new System.Drawing.Size(285, 32);
             this.deleteAssignment.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.deleteAssignment.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.deleteAssignment.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -126,10 +125,9 @@
             // 
             this.kryptonTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox1.Location = new System.Drawing.Point(4, 577);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(3, 375);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(430, 39);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(285, 32);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -228,8 +226,7 @@
             // 
             this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton1.Location = new System.Drawing.Point(4, 5);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonButton1.Location = new System.Drawing.Point(3, 3);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.SpringGreen;
@@ -244,7 +241,7 @@
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.OverrideDefault.Border.Width = 1;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(194, 62);
+            this.kryptonButton1.Size = new System.Drawing.Size(127, 40);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.PaleGreen;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.SpringGreen;
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -346,10 +343,9 @@
             // 
             this.deleteResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteResult.Location = new System.Drawing.Point(4, 334);
-            this.deleteResult.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deleteResult.Location = new System.Drawing.Point(3, 217);
             this.deleteResult.Name = "deleteResult";
-            this.deleteResult.Size = new System.Drawing.Size(430, 39);
+            this.deleteResult.Size = new System.Drawing.Size(285, 32);
             this.deleteResult.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.deleteResult.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.deleteResult.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
