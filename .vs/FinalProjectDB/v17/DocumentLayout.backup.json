@@ -3,19 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\teacherassesmentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\teacherassesmentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\khalilo zia\\source\\repos\\dbs25f014\\bl\\submissiondisplaybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teachercoursesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teachercoursesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherresultbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherresultbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherslecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherslecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherassesmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherassesmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\submissiondisplaybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\submissiondisplaybl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|c:\\users\\khalilo zia\\source\\repos\\dbs25f014\\dl\\submissiondisplaydl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\submissiondisplaydl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\submissiondisplaydl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,32 +43,40 @@
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\teacherprofiledl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_assessmentsubmissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teachers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teachers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\coursebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teachercoursesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teachercoursesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\teacher_usercontrols\\teach_deleteresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\enrollmentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\teacherassesmentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\teacherassesmentsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\teacherlecturesdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\teacherlecturesdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -111,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_profilecomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherresultbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherresultbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\coursedl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -125,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\dl\\departmentdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:dl\\departmentdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\attendancebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -307,24 +323,12 @@
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\teacher_usercontrols\\teach_createlecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherslecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherslecturesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\teacherassesmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\teacherassesmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\enrollmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\enrollmentsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\bl\\complaintsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:bl\\complaintsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E917262B-36FA-42D5-89FD-D572669CDEB8}|FinalProjectDB.csproj|solutionrelative:ui\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\SubmissionDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -342,11 +346,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Teach_YourCourses.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourCourses.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourCourses.cs",
@@ -359,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "CourseDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\CourseDL.cs",
               "RelativeDocumentMoniker": "DL\\CourseDL.cs",
@@ -372,20 +376,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "UserBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\UserBL.cs",
               "RelativeDocumentMoniker": "BL\\UserBL.cs",
               "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\UserBL.cs",
               "RelativeToolTip": "BL\\UserBL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwA4AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T06:59:11.186Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "TeacherProfile.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherProfile.cs",
               "RelativeDocumentMoniker": "BL\\TeacherProfile.cs",
@@ -394,11 +399,12 @@
               "ViewState": "AgIAACcAAAAAAAAAAAAYwDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T06:25:41.435Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "CourseBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\CourseBL.cs",
               "RelativeDocumentMoniker": "BL\\CourseBL.cs",
@@ -411,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "TeacherCoursesBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherCoursesBL.cs",
               "RelativeDocumentMoniker": "BL\\TeacherCoursesBL.cs",
@@ -420,11 +426,12 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T08:25:45.197Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "TeacherLecturesDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherLecturesDL.cs",
               "RelativeDocumentMoniker": "DL\\TeacherLecturesDL.cs",
@@ -437,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 78,
               "Title": "ILecture.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\Interfaces\\ILecture.cs",
               "RelativeDocumentMoniker": "Interfaces\\ILecture.cs",
@@ -450,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 4,
               "Title": "TeachersLecturesBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeachersLecturesBL.cs",
               "RelativeDocumentMoniker": "BL\\TeachersLecturesBL.cs",
@@ -459,11 +466,12 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T09:54:45.78Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Teach_YourCourses.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourCourses.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourCourses.cs",
@@ -475,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "Teach_RequestCourse.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_RequestCourse.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_RequestCourse.cs",
@@ -487,26 +495,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "TeacherAssesmentsDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherAssesmentsDL.cs",
               "RelativeDocumentMoniker": "DL\\TeacherAssesmentsDL.cs",
               "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherAssesmentsDL.cs",
               "RelativeToolTip": "DL\\TeacherAssesmentsDL.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAArwNgAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T13:01:06.602Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "TeacherProfileDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherProfileDL.cs",
               "RelativeDocumentMoniker": "DL\\TeacherProfileDL.cs",
               "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherProfileDL.cs",
               "RelativeToolTip": "DL\\TeacherProfileDL.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAArwEcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T08:38:24.911Z",
               "IsPinned": true,
@@ -514,13 +523,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "SubmissionDisplayDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\SubmissionDisplayDL.cs",
               "RelativeDocumentMoniker": "DL\\SubmissionDisplayDL.cs",
               "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\SubmissionDisplayDL.cs",
               "RelativeToolTip": "DL\\SubmissionDisplayDL.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwCUAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvw4AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T09:41:35.583Z",
               "IsPinned": true,
@@ -552,57 +561,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SubmissionDisplayBL.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\SubmissionDisplayBL.cs",
-              "RelativeDocumentMoniker": "BL\\SubmissionDisplayBL.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\SubmissionDisplayBL.cs",
-              "RelativeToolTip": "BL\\SubmissionDisplayBL.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAIwFgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "BL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\DatabaseHelper.cs",
+              "RelativeToolTip": "BL\\DatabaseHelper.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwC4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T09:47:47.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T08:38:11.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Teachers.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.cs",
-              "RelativeDocumentMoniker": "UI\\Teachers.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.cs",
-              "RelativeToolTip": "UI\\Teachers.cs",
-              "ViewState": "AgIAAEkBAAAAAAAAAIAxwFYBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs",
+              "RelativeDocumentMoniker": "UI\\Admin.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs",
+              "RelativeToolTip": "UI\\Admin.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAIAxwMsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:18:58.333Z"
+              "WhenOpened": "2025-05-11T11:02:58.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Teach_AssessmentSubmissions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs [Design]",
-              "RelativeToolTip": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T08:29:39.314Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Teach_AssessmentSubmissions.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "RelativeToolTip": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwCsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T14:37:45.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Teachers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.cs",
               "RelativeDocumentMoniker": "UI\\Teachers.cs",
@@ -613,7 +596,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TeacherAssesmentsBL.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherAssesmentsBL.cs",
+              "RelativeDocumentMoniker": "BL\\TeacherAssesmentsBL.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherAssesmentsBL.cs",
+              "RelativeToolTip": "BL\\TeacherAssesmentsBL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T09:45:16.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubmissionDisplayBL.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\SubmissionDisplayBL.cs",
+              "RelativeDocumentMoniker": "BL\\SubmissionDisplayBL.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\SubmissionDisplayBL.cs",
+              "RelativeToolTip": "BL\\SubmissionDisplayBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T09:47:47.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeacherResultBL.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherResultBL.cs",
+              "RelativeDocumentMoniker": "BL\\TeacherResultBL.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherResultBL.cs",
+              "RelativeToolTip": "BL\\TeacherResultBL.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T13:42:12.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Teach_AssessmentSubmissions.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "RelativeToolTip": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T14:37:45.467Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "Teach_AssessmentSubmissions.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs [Design]",
+              "RelativeToolTip": "UI\\Teacher_UserControls\\Teach_AssessmentSubmissions.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T08:29:39.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Teachers.cs",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.cs",
+              "RelativeDocumentMoniker": "UI\\Teachers.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.cs",
+              "RelativeToolTip": "UI\\Teachers.cs",
+              "ViewState": "AgIAAFABAAAAAAAAAAAjwF8BAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:18:58.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs",
+              "RelativeDocumentMoniker": "UI\\Admin.cs",
+              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs [Design]",
+              "RelativeToolTip": "UI\\Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T06:53:02.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Teach_UpdateResult.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateResult.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateResult.cs",
@@ -625,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Teach_DeleteResult.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteResult.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteResult.cs",
@@ -637,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "Teachers.Designer.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teachers.Designer.cs",
               "RelativeDocumentMoniker": "UI\\Teachers.Designer.cs",
@@ -649,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Teach_DropCourse.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DropCourse.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DropCourse.cs",
@@ -661,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Teach_RequestCourse.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_RequestCourse.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_RequestCourse.cs",
@@ -673,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Teach_ResutsByAssesment.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ResutsByAssesment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ResutsByAssesment.cs",
@@ -685,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Teach_YourLectures.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourLectures.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourLectures.cs",
@@ -697,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "AttendanceDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\AttendanceDL.cs",
               "RelativeDocumentMoniker": "DL\\AttendanceDL.cs",
@@ -709,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "EnrollmentsDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\EnrollmentsDL.cs",
               "RelativeDocumentMoniker": "DL\\EnrollmentsDL.cs",
@@ -721,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "TeacherResultDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\TeacherResultDL.cs",
               "RelativeDocumentMoniker": "DL\\TeacherResultDL.cs",
@@ -733,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "ComplaintsDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\ComplaintsDL.cs",
               "RelativeDocumentMoniker": "DL\\ComplaintsDL.cs",
@@ -745,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Teach_ProfileComplete.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
@@ -757,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Teach_ProfileComplete.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ProfileComplete.cs",
@@ -768,19 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TeacherResultBL.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherResultBL.cs",
-              "RelativeDocumentMoniker": "BL\\TeacherResultBL.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherResultBL.cs",
-              "RelativeToolTip": "BL\\TeacherResultBL.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowA8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:42:12.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "UserDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\UserDL.cs",
               "RelativeDocumentMoniker": "DL\\UserDL.cs",
@@ -792,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "DepartmentDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\DepartmentDL.cs",
               "RelativeDocumentMoniker": "DL\\DepartmentDL.cs",
@@ -804,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "SubmissionDL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\DL\\SubmissionDL.cs",
               "RelativeDocumentMoniker": "DL\\SubmissionDL.cs",
@@ -816,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "AttendanceBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\AttendanceBL.cs",
               "RelativeDocumentMoniker": "BL\\AttendanceBL.cs",
@@ -828,19 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "BL\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\DatabaseHelper.cs",
-              "RelativeToolTip": "BL\\DatabaseHelper.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAASwDQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T08:38:11.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Teach_YourLectures.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourLectures.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourLectures.cs",
@@ -851,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Teach_UpdateResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateResult.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateResult.cs",
@@ -862,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Teach_YourComplaints.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourComplaints.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourComplaints.cs",
@@ -873,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "Teach_UpdateAssessment.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateAssessment.cs",
@@ -885,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "Teach_UpdateAssessment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateAssessment.cs",
@@ -896,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Teach_UpdateLecture.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateLecture.cs",
@@ -907,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Teach_UpdateLecture.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_UpdateLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_UpdateLecture.cs",
@@ -919,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Teach_DropCourse.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DropCourse.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DropCourse.cs",
@@ -930,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "Teach_ResutsByAssesment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ResutsByAssesment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ResutsByAssesment.cs",
@@ -941,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "Teach_DeleteResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteResult.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteResult.cs",
@@ -952,7 +996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "Teach_DeleteLectures.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteLectures.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteLectures.cs",
@@ -964,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "Teach_DeleteLectures.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteLectures.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteLectures.cs",
@@ -975,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "Teach_DeleteAssessment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteAssessment.cs",
@@ -986,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "Teach_CreateResult.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CreateResult.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CreateResult.cs",
@@ -997,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "Teach_CreateAssessment.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CreateAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CreateAssessment.cs",
@@ -1009,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "Teach_DeleteAssessment.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_DeleteAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_DeleteAssessment.cs",
@@ -1021,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "Teach_CreateAssessment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CreateAssessment.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CreateAssessment.cs",
@@ -1032,7 +1076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "Teach_CourseAssessments.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CourseAssessments.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CourseAssessments.cs",
@@ -1044,7 +1088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "Teach_CreateLecture.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CreateLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CreateLecture.cs",
@@ -1055,7 +1099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "Teach_CourseAssessments.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CourseAssessments.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CourseAssessments.cs",
@@ -1066,7 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "Teach_ComplaintFile.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ComplaintFile.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ComplaintFile.cs",
@@ -1078,7 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 60,
               "Title": "Teach_ComplaintFile.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_ComplaintFile.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_ComplaintFile.cs",
@@ -1089,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 63,
               "Title": "Teach_AttendanceByLecture.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AttendanceByLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AttendanceByLecture.cs",
@@ -1101,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 64,
               "Title": "Teach_AttendanceByLecture.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AttendanceByLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AttendanceByLecture.cs",
@@ -1112,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 62,
               "Title": "Teach_AttendanceMark.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AttendanceMark.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AttendanceMark.cs",
@@ -1123,7 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 61,
               "Title": "Teach_AttendanceMark.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_AttendanceMark.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_AttendanceMark.cs",
@@ -1135,7 +1179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 65,
               "Title": "Teach_Announcements.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_Announcements.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_Announcements.cs",
@@ -1146,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 66,
               "Title": "Profile.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Profile.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Profile.cs",
@@ -1157,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Dashboard.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Dashboard.cs",
@@ -1168,7 +1212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 68,
               "Title": "Admin_DeleteUser.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_DeleteUser.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_DeleteUser.cs",
@@ -1179,7 +1223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 69,
               "Title": "Admin_TeachRequests.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_TeachRequests.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_TeachRequests.cs",
@@ -1191,7 +1235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 70,
               "Title": "Admin_TeachRequests.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_TeachRequests.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_TeachRequests.cs",
@@ -1202,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 71,
               "Title": "Admin_DeleteDepartment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_DeleteDepartment.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_DeleteDepartment.cs",
@@ -1213,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 73,
               "Title": "Admin_AssignedTeachers.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_AssignedTeachers.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_AssignedTeachers.cs",
@@ -1224,7 +1268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 74,
               "Title": "Admin_AttendenceByStudent.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_AttendenceByStudent.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_AttendenceByStudent.cs",
@@ -1235,7 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 75,
               "Title": "Admin_AssignCourse.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_AssignCourse.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_AssignCourse.cs",
@@ -1246,7 +1290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 72,
               "Title": "Admin_ComplaintResolve.cs [Design]",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin_UserControl\\Admin_ComplaintResolve.cs",
               "RelativeDocumentMoniker": "UI\\Admin_UserControl\\Admin_ComplaintResolve.cs",
@@ -1257,7 +1301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 76,
               "Title": "Teach_YourComplaints.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_YourComplaints.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_YourComplaints.cs",
@@ -1269,7 +1313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 77,
               "Title": "IComplain.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\Interfaces\\IComplain.cs",
               "RelativeDocumentMoniker": "Interfaces\\IComplain.cs",
@@ -1281,7 +1325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 79,
               "Title": "Teach_CreateLecture.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Teacher_UserControls\\Teach_CreateLecture.cs",
               "RelativeDocumentMoniker": "UI\\Teacher_UserControls\\Teach_CreateLecture.cs",
@@ -1293,7 +1337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "SubmissionBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\SubmissionBL.cs",
               "RelativeDocumentMoniker": "BL\\SubmissionBL.cs",
@@ -1305,19 +1349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "TeacherAssesmentsBL.cs",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherAssesmentsBL.cs",
-              "RelativeDocumentMoniker": "BL\\TeacherAssesmentsBL.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\TeacherAssesmentsBL.cs",
-              "RelativeToolTip": "BL\\TeacherAssesmentsBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T09:45:16.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "EnrollmentsBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\EnrollmentsBL.cs",
               "RelativeDocumentMoniker": "BL\\EnrollmentsBL.cs",
@@ -1329,7 +1361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "ComplaintsBL.cs",
               "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\BL\\ComplaintsBL.cs",
               "RelativeDocumentMoniker": "BL\\ComplaintsBL.cs",
@@ -1338,17 +1370,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T06:58:50.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs",
-              "RelativeDocumentMoniker": "UI\\Admin.cs",
-              "ToolTip": "C:\\Users\\khalilo zia\\source\\repos\\DBS25F014\\UI\\Admin.cs [Design]",
-              "RelativeToolTip": "UI\\Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T06:53:02.956Z"
             }
           ]
         }

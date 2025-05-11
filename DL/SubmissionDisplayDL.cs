@@ -10,9 +10,14 @@ using MySql.Data.MySqlClient;
 
 namespace FinalProjectDB.DL
 {
-    internal class SubmissionDisplayDL
+    internal class SubmissionDisplayDL:TeacherAssesmentsDL
     {
-            public static List<SubmissionDisplayBL> submissionsList(int courseID, String type)
+        public override void SubmissionDetails()
+        {
+            MessageBox.Show("Submission Details");
+
+        }
+        public static List<SubmissionDisplayBL> submissionsList(int courseID, String type)
             {
                 try
                 {

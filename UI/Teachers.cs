@@ -342,5 +342,14 @@ namespace FinalProjectDB.UI
         {
 
         }
+
+        private void iconButton31_Click_1(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Login login = new Login();
+            login.StartPosition = FormStartPosition.Manual;
+            login.Location = this.Location;
+            login.Show();
+        }
     }
 }

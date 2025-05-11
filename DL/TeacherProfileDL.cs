@@ -66,10 +66,6 @@ namespace FinalProjectDB.DL
                             {
                                 teacherId = reader.GetInt32("teacher_id");
                             }
-                            //if (teacherId == -1)
-                            //{
-                            //    MessageBox.Show("Teacher not found.");
-                            //}
                         }
                     }
                 }

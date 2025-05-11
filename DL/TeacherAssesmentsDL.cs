@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace FinalProjectDB.DL
 {
-    internal class TeacherAssesmentsDL
+    abstract class TeacherAssesmentsDL
     {
         public static void insertAssesment(TeacherAssesmentsBL teacher)
         {
@@ -265,5 +265,6 @@ namespace FinalProjectDB.DL
                 MessageBox.Show("Failed to delete assessment: " + e.Message);
             }
         }
+        public abstract void SubmissionDetails();
     }
 }
