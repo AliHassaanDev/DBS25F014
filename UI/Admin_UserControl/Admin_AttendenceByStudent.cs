@@ -41,16 +41,12 @@ namespace FinalProjectDB.UI.Admin_UserControl
 
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
+            AttendanceReportDL.report1.Clear();
             AttendanceReportDL.loadAttendanceByStudent(kryptonComboBox2.Text);
-
-            reportViewer1.LocalReport.ReportPath = "AttendanceByStudentReport.rdlc";
-            reportViewer1.LocalReport.DataSources.Clear();
-            ReportDataSource rds = new ReportDataSource("DataSet1", AttendanceReportDL.report1);
-            reportViewer1.LocalReport.DataSources.Add(rds);
             this.attendanceReportsBindingSource.DataSource = AttendanceReportDL.report1;
             this.reportViewer1.RefreshReport();
             loadCourses();
-            MessageBox.Show(AttendanceReportDL.report1.Count.ToString());
+            loadStudents();
         }
 
         private void kryptonComboBox1_Leave(object sender, EventArgs e)
@@ -71,6 +67,11 @@ namespace FinalProjectDB.UI.Admin_UserControl
         private void reportViewer1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void reportViewer1_Load_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

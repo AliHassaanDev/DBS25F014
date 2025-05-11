@@ -78,11 +78,9 @@ namespace FinalProjectDB.UI
             panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
-            panel7.Visible = false;
+            
             panel8.Visible = false;
             panel9.Visible = false;
-            panel11.Visible = false;
-            panel12.Visible = false;
         }
 
         private void hidePanel()
@@ -91,11 +89,9 @@ namespace FinalProjectDB.UI
             if (panel4.Visible) { panel4.Visible = false; }
             if (panel5.Visible) { panel5.Visible = false; }
             if (panel6.Visible) { panel6.Visible = false; }
-            if (panel7.Visible) { panel7.Visible = false; }
+            
             if (panel8.Visible) { panel8.Visible = false; }
             if (panel9.Visible) { panel9.Visible = false; }
-            if (panel11.Visible) { panel11.Visible = false; }
-            if (panel12.Visible) { panel12.Visible = false; }
         }
 
         private void showPanels(Panel subMenu)
@@ -351,6 +347,7 @@ namespace FinalProjectDB.UI
             activateBtn(sender, System.Drawing.Color.Black, 435);
             showPanels(panel8);
             teach_AttendanceByLecture1.loadCourses();
+            teach_AttendanceByLecture1.loadLectures();
         }
 
         private void iconButton27_Click(object sender, EventArgs e)
@@ -358,7 +355,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             admin_AttendenceByStudent1.Visible = true;
             admin_AttendenceByStudent1.loadCourses();
-           
+            admin_AttendenceByStudent1.loadStudents();
         }
 
 
@@ -383,7 +380,7 @@ namespace FinalProjectDB.UI
             hideUserControls();
             teach_ResutsByAssesment1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 559);
-            showPanels(panel7);
+            hidePanel();
         }
 
         private void iconButton22_Click(object sender, EventArgs e)
@@ -396,16 +393,12 @@ namespace FinalProjectDB.UI
         private void iconButton29_Click(object sender, EventArgs e)
         {
             hideUserControls();
-            admin_AllStudents1.Visible = true;
+            admin_EnrolledStudents1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 621);
-            showPanels(panel12);
+            hidePanel();
+            admin_EnrolledStudents1.loadCourses();
         }
 
-        private void iconButton18_Click(object sender, EventArgs e)
-        {
-            hideUserControls();
-            admin_EnrolledStudents1.Visible = true;
-        }
 
         //-----------Teacher Report Btns---------------//
         private void iconButton17_Click_1(object sender, EventArgs e)
@@ -413,13 +406,18 @@ namespace FinalProjectDB.UI
             hideUserControls();
             admin_AllTeachers1.Visible = true;
             activateBtn(sender, System.Drawing.Color.Black, 683);
-            showPanels(panel11);
+            hidePanel();
+            admin_AllTeachers1.loadteachers();
         }
 
-        private void iconButton36_Click(object sender, EventArgs e)
+        private void admin_AssignedTeachers1_Load(object sender, EventArgs e)
         {
-            hideUserControls();
-            admin_AssignedTeachers1.Visible = true;
+
+        }
+
+        private void Admin_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalProjectDB.DL;
+using FinalProjectDB.BL;
 namespace FinalProjectDB.UI.UserControls
 {
     public partial class Teach_DropCourse : UserControl

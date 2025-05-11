@@ -14,7 +14,7 @@ namespace FinalProjectDB.DL
         public static void loadDepartmentsList()
         {
             department_list.Clear();
-            string query = $"SELECT * FROM final_project.departments";
+            string query = $"SELECT * FROM departments";
             var reader=DatabaseHelper.Instance.getData(query);
             while(reader.Read())
             {
@@ -24,7 +24,7 @@ namespace FinalProjectDB.DL
         public static void GridViewloadDepartmentsList()
         {
             list.Clear();
-            string query = $"SELECT * FROM final_project.departments";
+            string query = $"SELECT * FROM departments";
             var reader = DatabaseHelper.Instance.getData(query);
             while (reader.Read())
             {
@@ -33,7 +33,7 @@ namespace FinalProjectDB.DL
         }
         public static int getIDFromDept(string dept)
         {
-            string query = $"SELECT department_id FROM final_project.departments WHERE dept_name='{dept}'";
+            string query = $"SELECT department_id FROM departments WHERE dept_name='{dept}'";
             var reader= DatabaseHelper.Instance.getData(query);
             reader.Read();
             return Convert.ToInt32(reader["department_id"]);
@@ -53,7 +53,7 @@ namespace FinalProjectDB.DL
 
         public static void updateDepartment(string dept,int id)
         {
-            string query = $"UPDATE `final_project`.`departments` SET `dept_name` = '{dept}' WHERE (`department_id` = {id})";
+            string query = $"UPDATE `departments` SET `dept_name` = '{dept}' WHERE (`department_id` = {id})";
             DatabaseHelper.Instance.Update(query);
         }
     }

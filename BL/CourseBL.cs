@@ -10,7 +10,7 @@ namespace FinalProjectDB.BL
     {
         protected string courseName;
         int courseId;
-        string courseName;
+        
         DateTime date;
         int creditHours;
         int dept_id;

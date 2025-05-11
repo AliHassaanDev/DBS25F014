@@ -29,7 +29,7 @@ namespace FinalProjectDB.UI.UserControls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,14 +41,15 @@ namespace FinalProjectDB.UI.UserControls
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.attendanceReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.attendanceLecture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attendanceCourse)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -96,9 +97,9 @@ namespace FinalProjectDB.UI.UserControls
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 185);
+            this.label2.Location = new System.Drawing.Point(3, 285);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 26;
             this.label2.Text = "Select Lecture";
             // 
@@ -108,9 +109,9 @@ namespace FinalProjectDB.UI.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.attendanceLecture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.attendanceLecture.DropDownWidth = 273;
-            this.attendanceLecture.Location = new System.Drawing.Point(3, 201);
+            this.attendanceLecture.Location = new System.Drawing.Point(3, 308);
             this.attendanceLecture.Name = "attendanceLecture";
-            this.attendanceLecture.Size = new System.Drawing.Size(285, 33);
+            this.attendanceLecture.Size = new System.Drawing.Size(432, 41);
             this.attendanceLecture.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -149,15 +150,16 @@ namespace FinalProjectDB.UI.UserControls
             | System.Windows.Forms.AnchorStyles.Right)));
             this.attendanceCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.attendanceCourse.DropDownWidth = 273;
-            this.attendanceCourse.Location = new System.Drawing.Point(3, 141);
+            this.attendanceCourse.Location = new System.Drawing.Point(3, 215);
             this.attendanceCourse.Name = "attendanceCourse";
-            this.attendanceCourse.Size = new System.Drawing.Size(285, 33);
+            this.attendanceCourse.Size = new System.Drawing.Size(432, 41);
             this.attendanceCourse.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.attendanceCourse.StateCommon.ComboBox.Border.Rounding = 20;
             this.attendanceCourse.StateCommon.ComboBox.Border.Width = 1;
             this.attendanceCourse.TabIndex = 24;
+            this.attendanceCourse.DropDownClosed += new System.EventHandler(this.attendanceCourse_DropDownClosed);
             // 
             // tableLayoutPanel6
             // 
@@ -239,9 +241,8 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.51492F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.54229F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.942786F));
-            this.tableLayoutPanel3.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label6, 1, 0);
-//            this.tableLayoutPanel3.Controls.Add(this.reportViewer1, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.reportViewer1, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(507, 5);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -265,15 +266,23 @@ namespace FinalProjectDB.UI.UserControls
             this.label6.TabIndex = 1;
             this.label6.Text = "Attandence Report";
             // 
-            // dataGridView1
+            // reportViewer1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(227, 308);
-            this.dataGridView1.TabIndex = 5;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.DocumentMapWidth = 38;
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.attendanceReportsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalProjectDB.UI.Reports.AttendanceByStudentReports.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(49, 63);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(343, 477);
+            this.reportViewer1.TabIndex = 2;
+            // 
+            // attendanceReportsBindingSource
+            // 
+            this.attendanceReportsBindingSource.DataSource = typeof(FinalProjectDB.BL.AttendanceReports);
             // 
             // Teach_AttendanceByLecture
             // 
@@ -291,7 +300,7 @@ namespace FinalProjectDB.UI.UserControls
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,6 +318,7 @@ namespace FinalProjectDB.UI.UserControls
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox attendanceLecture;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource attendanceReportsBindingSource;
     }
 }

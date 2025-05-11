@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.attendanceReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,18 +42,15 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).BeginInit();
+            this.attendanceReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // attendanceReportsBindingSource
-            // 
-            this.attendanceReportsBindingSource.DataSource = typeof(FinalProjectDB.BL.AttendanceReports);
             // 
             // tableLayoutPanel1
             // 
@@ -283,13 +279,17 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.attendanceReportsBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalProjectDB.UI.Reports.AttendanceByStudentReport.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalProjectDB.UI.Reports.AttendanceByStudentReports.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(49, 63);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(343, 477);
             this.reportViewer1.TabIndex = 2;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load_1);
+            // 
+            // attendanceReportsBindingSource
+            // 
+            this.attendanceReportsBindingSource.DataSource = typeof(FinalProjectDB.BL.AttendanceReports);
             // 
             // Admin_AttendenceByStudent
             // 
@@ -299,7 +299,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Admin_AttendenceByStudent";
             this.Size = new System.Drawing.Size(951, 614);
-            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -308,6 +307,7 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attendanceReportsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -59,5 +59,10 @@ namespace FinalProjectDB.UI.UserControls
             ConfigureDataGridView();
             LoadLectureIntoGridView();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

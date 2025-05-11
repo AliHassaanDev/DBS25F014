@@ -48,12 +48,12 @@ namespace FinalProjectDB.DL
         public static int getTeacherId(String name)
         {
             int teacherId = -1;
-            String query1 = $"SELECT teacher_id FROM teachers WHERE teachers.user_name='{name}'";
+            String query1 = $"SELECT user_id FROM users WHERE username='{name}'";
             using (var reader = DatabaseHelper.Instance.getData(query1))
             {
                 if (reader.Read())
                 {
-                    teacherId = reader.GetInt32("teacher_id");
+                    teacherId = reader.GetInt32("user_id");
                 }
             }
             return teacherId;

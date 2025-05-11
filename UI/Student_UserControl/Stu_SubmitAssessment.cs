@@ -29,5 +29,10 @@ namespace FinalProjectDB.UI.Student_UserControl
                 label5.Text = selectedPdfPath;
             }
         }
+
+        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
